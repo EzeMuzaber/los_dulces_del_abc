@@ -1,0 +1,304 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; 
+}
+body{
+    background-image: url("/img/fondo\ liso.jpg");
+    height: 600px; 
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;   
+     margin-bottom:50px;
+   }
+
+/* menu de navegacion */
+a{
+    text-decoration: none;
+    list-style-type:none;
+    font-size: 20px;
+}
+.menu{
+    border: 1px solid #cfbaf0; 
+  /*   background-color: #dee2e6; */
+    background-image: url(/img/fondo\ menu.jpg);
+    text-align: right;
+    padding: 20px;
+}
+
+.menu li{
+    display:inline-block;
+    font-size: 20px; 
+    padding: 6px;
+    position: relative;  
+    
+}
+.submenu{
+    position: absolute;
+    display: none;
+    text-align: left;
+  
+}
+.submenu li{
+    display:block;
+    padding: 5px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    width:auto;
+}
+.menu li:hover .submenu{
+    display:block;
+    
+}
+/* main contenido de la pagina */
+
+.tituloPrincipal{
+    font-family: 'Dynalight', cursive;
+    font-size: 125px;
+    font-weight: lighter;
+    text-align: center;
+    color: #9d4edd;
+    padding: 20px;
+    max-width:600px;
+	margin:auto;
+}
+.logoPrincipal{
+ display: inline-block;
+ position: absolute;
+border-radius: 30px;
+padding-right: 5px;
+ padding-top:60px;
+ padding-left: 5px;
+ width: 300px;
+
+}
+/* titulos secundarios del index */
+.subtitulos{
+    background-color:antiquewhite ;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Emilys Candy',cursive;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+.parrafos{
+    font-family:'Emilys Candy',cursive;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    font-size: 30px;
+    margin: 30px;
+    /* OJO ME DESALINEA OTRAS COSAS */
+   /*  width: 900px;  */
+}
+
+ /*.imagenIndex{
+    float: left;
+    display:block;
+    position:absolute;
+ 
+}
+.parrafoReposteria{
+    padding: 20px;
+    position: relative;
+    margin-top: 5px;
+    margin-left: 500px;
+    bottom: 10px;
+    text-align: left;
+}*/
+.link{
+    text-align: center;
+    margin-bottom:25px
+}
+.redes{
+     text-align: center;
+     font-family:'Emilys Candy',cursive;
+}
+
+.presentacion{
+    text-align: center;
+}
+/* reposteria index grid */
+.gridIndex{
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: 250px;
+    grid-template-areas:
+    "img text"
+    "link";
+
+}
+.img{
+    grid-area: imagenRepos;
+}
+.text{
+    grid-area: textoRepos;
+}
+.link{
+    grid-area: linkRepos;
+}
+/*Pagina Quienes somos*/
+.parrafos1{
+    padding: 5px;
+    width: 1200px;
+    text-align: center;
+    margin-left:60px;
+    margin-right: 40px;
+    
+  
+}
+
+/* Pagina Decoracion de tortas */
+.grid1{
+ 
+    padding: 10px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: (3 1fr);
+    grid-template-rows: (3 1fr);
+    grid-template-areas:
+    "uno  dos tres"
+    "cuatro cinco seis"
+    "siete ocho nueve";
+    grid-row-gap: 45px;
+    grid-column-gap: 20px;
+    
+    
+}
+.uno{
+    grid-area:uno;
+}
+.dos{
+    grid-area:dos;
+}   
+.tres{
+    grid-area:tres;
+}
+.cuatro{
+    grid-area:cuatro;
+}
+.cinco{
+    grid-area: cinco;
+}
+.seis{
+    grid-area:seis;
+}
+.siete{
+    grid-area: siete;
+}
+.ocho{
+    grid-area: ocho;
+}
+
+.bordes{
+    border-radius: 25px;
+    border: 2.5px solid black;
+}
+/* reposteria */
+
+
+/* pagina de contacto */
+.formulario{
+    text-align: center;
+}
+.botones{
+text-decoration:none;
+font-weight: 600px;
+font-size: 17px;
+color:#333333;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:20px;
+padding-right:20px;
+background-color:#FFD27D;
+border-color: #d8d8d8;
+border-width: 4px;
+border-style: solid;
+border-radius:35px;
+
+}
+  
+
+
+
+        /* footer */
+.pagos{
+    display:flex; 
+    padding: 20px 20px; 
+    border: 5px 5px;
+    justify-content: space-between;
+}
+.wpp{
+    margin-right:10px;  
+}
+.footerTexto{
+    border: 1px dashed black;
+    background-color: lightcyan;
+    font-family: 'Emilys Candy',cursive;
+    line-height: 22px;
+    font-size: 20px;
+    max-width: 280px;
+}
+.footerTextoDos{
+    max-width: 250px;
+}
+.footerTextoTres{
+    max-width: 200px;
+}
+.tarjeta{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.candado{
+    margin-left:5px
+}
+.pagos.Fondo{
+    background-color: lightgrey;
+}
+
+.grid{
+    padding-top:20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+     display: grid;
+    grid-template-columns: (3 1fr);
+    grid-template-rows: (1 1fr);
+    
+    grid-template-areas:
+    
+    "google seguinos logoFinal"
+    "google seguinos logoFinal"
+    "google seguinos logoFinal"
+    "google seguinos logoFinal"
+}
+.google{
+    grid-area:google;
+}
+.seguinos{
+    grid-area:seguinos;
+ }
+.logoFinal{
+    grid-area:logoFinal;
+}
+
+.seguinosH2{
+    font-family:'Emilys Candy',cursive;
+    font-size: 28px;
+}
+.envianosH2{
+font-family: 'Emilys Candy',cursive;
+padding-left:77px;
+font-size: 28px;
+}
+.wpp{
+    position: relative;
+    left: 180px;
+}
+.iconosRedes{
+    position: relative;
+    left: 60px;
+}
+.copyright{
+    text-align:right;
+}
