@@ -22,7 +22,11 @@ a{
 .menu{
     border: 1px solid #cfbaf0; 
   /*   background-color: #dee2e6; */
-    background-image: url(/img/fondo\ menu.jpg);
+    /* background-image: url(/img/fondo\ menu.jpg); */
+    background: rgb(231,139,179);
+    background: linear-gradient(342deg, 
+    rgba(231,139,179,0.9716058298319328) 7%, 
+    rgba(139,162,246,0.9716058298319328) 100%);
     text-align: right;
     padding: 20px;
 }
@@ -32,6 +36,7 @@ a{
     font-size: 20px; 
     padding: 6px;
     position: relative;  
+    border-right: 1px solid black;
     
 }
 .submenu{
@@ -43,7 +48,10 @@ a{
 .submenu li{
     display:block;
     padding: 5px;
-    background-color: aquamarine;
+    background: rgb(231,139,179);
+    background: linear-gradient(380deg, 
+    rgba(231,139,179,0.9716058298319328) 40%, 
+    rgba(139,162,246,0.9716058298319328) 80%);;
     border: 1px solid black;
     width:auto;
 }
@@ -83,6 +91,8 @@ padding-right: 5px;
     border-radius: 10px;
     background-color: white;
     padding:2px;
+    width: 95px;
+
 }
 /* titulos secundarios del index */
 .subtitulos{
@@ -137,15 +147,22 @@ hr{
 
 .imagenRepo{
     margin-left: 20px;
-    /* transform: translate(40px,80px);*/
-   /*  transform: rotate(160deg); */
-  /*  transform: skew(20deg,30deg); */
+    height: 250px;
 }
 .imagenDeco{
 margin-left: 20px;
 }
 .imagenPorce{
     margin-left: 20px;
+}
+.imagenTransicion{
+height: 250px;
+width: 500px;
+transition: all 2s;
+}
+.imagenTransicion:hover{
+    width: 600px;
+    height: 330px;
 }
 
 .link{
@@ -208,6 +225,7 @@ margin-left: 20px;
     margin-bottom: 30px;
     margin-left: 500px;
 }
+
 
 
 /*--------------------- Pagina Decoracion de tortas --------------------*/
@@ -275,6 +293,7 @@ margin-left: 20px;
 .bordes{
     border-radius: 25px;
     border: 2.5px solid black;
+ 
 }
 /* .parrafos{
     font-family:'Emilys Candy',cursive;
@@ -412,9 +431,14 @@ margin-bottom: 20px;
 .candado{
     margin-left:5px
 }
-.pagos.Fondo{
+/* .pagos.Fondo{
     background-color: lightgrey;
+ } */
+ .pagosFondo{
+    background: rgb(231,139,179);
+background: radial-gradient(circle, rgba(231,139,179,1) 7%, rgba(139,162,246,1) 100%);
 }
+
 /* GRID FOOTER */
 .grid{
     padding-top:20px;
@@ -440,7 +464,16 @@ margin-bottom: 20px;
 .logoFinal{
     grid-area:logoFinal;
 }
-
+.grid{
+    /* background: rgb(231,139,179);
+    background: linear-gradient(342deg, 
+    rgba(231,139,179,0.9716058298319328) 7%, 
+    rgba(139,162,246,0.9716058298319328) 100%); */
+    background: rgb(231,139,179);
+    background: radial-gradient(circle, 
+    rgba(231,139,179,1) 7%, 
+    rgba(139,162,246,1) 100%);
+}
 .seguinosH2{
     font-family:'Emilys Candy',cursive;
     font-size: 28px;
