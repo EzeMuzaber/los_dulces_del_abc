@@ -4,7 +4,7 @@
     box-sizing: border-box; 
 }
 body{
-    background-image: url("../img/fondo\ liso.jpg");
+    background-image: url("../img/fondo liso.jpg");
     height: 600px; 
      background-attachment: fixed;
      background-position: center;
