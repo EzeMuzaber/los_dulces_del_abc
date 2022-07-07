@@ -14,15 +14,21 @@ body{
    }
 
 /* menu de navegacion */
-a{
+.menu1{
+    background: rgb(231,139,179);
+    background: linear-gradient(342deg, 
+    rgba(231,139,179,0.9716058298319328) 7%, 
+    rgba(139,162,246,0.9716058298319328) 100%);
+    font-size: 20px;
+}
+
+ a{
     text-decoration: none;
     list-style-type:none;
     font-size: 20px;
 }
 .menu{
     border: 1px solid #cfbaf0; 
-  /*   background-color: #dee2e6; */
-    /* background-image: url(/img/fondo\ menu.jpg); */
     background: rgb(231,139,179);
     background: linear-gradient(342deg, 
     rgba(231,139,179,0.9716058298319328) 7%, 
@@ -58,7 +64,7 @@ a{
 .menu li:hover .submenu{
     display:block;
     
-}
+} 
 /*------------------- INDEX -------------
 ------------------MAIN--------------*/
 
@@ -84,6 +90,7 @@ padding-right: 5px;
 }
 .wppFlotante{  
     position: fixed;
+    z-index: 5000;
     left: 1250px;
 }
 .wppParrafo{
@@ -225,11 +232,28 @@ transition: all 2s;
     margin-bottom: 30px;
     margin-left: 500px;
 }
-
+.contenedorCarousel1{
+    width: 850px;
+    height: 606px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    border: 3px solid black;
+}
+.contenedorCarousel2{
+    width: 697px;
+    height: 508px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    border: 3px solid black;
+     
+    
+}
 
 
 /*--------------------- Pagina Decoracion de tortas --------------------*/
-.grid1{
+/* .grid1{
     display: grid;
     grid-template-columns: (3 1fr);
     grid-template-rows: (5 1fr);
@@ -288,7 +312,7 @@ transition: all 2s;
 }
 .quince{
     grid-area: quince;
-}
+} */
 
 .bordes{
     border-radius: 25px;
@@ -359,6 +383,10 @@ VER ULTIMA CLASE, COLORES EN  */
     margin-left: 200px;
     border-radius: 30px;
     padding: 20px;
+}
+.separacion{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .formulario{
     text-align: center;
