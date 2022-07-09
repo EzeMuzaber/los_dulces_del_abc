@@ -384,6 +384,12 @@ VER ULTIMA CLASE, COLORES EN  */
     border-radius: 30px;
     padding: 20px;
 }
+.formulario div{
+    margin-bottom: 20px;
+}
+.parrafos{
+    width: 1000px;
+}
 .separacion{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -426,6 +432,7 @@ margin-bottom: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
     padding-bottom: 5px;
+    width: 900px;
 }
   
 /*--------------- footer --------------------*/

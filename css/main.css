@@ -1,0 +1,10 @@
+h1 {
+  font-size: 30px; }
+
+ul {
+  list-style-type: none; }
+  ul li {
+    padding: 10px;
+    font-size: 40px; }
+    ul li a {
+      text-decoration: none; }
