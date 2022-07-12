@@ -27,42 +27,69 @@
     <!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
     
     <link rel="stylesheet" href="../css/estilos.css" />
+
   </head>
   <body>
     <header>
-      <nav class="navegacion">
-        <ul class="menu">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="QuienesSomos.html">¿Quienes Somos?</a></li>
-          <li>
-            <a href="">Producto</a>
-            <ul class="submenu">
-              <li><a href="Reposteria.html">Reposteria</a></li>
-              <li>
-                <a href="DecoracionDeTortas.html"
-                  >Decoracion de Tortas</a
-                >
-              </li>
-              <li><a href="PorcelanaFria.html">Porcelana Fria</a></li>
-            </ul>
-          </li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><img src="../img/carro de compras2.png" alt="" width="25px" height="20px"></li>
-        </ul>
-      </nav>
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark menu1">
+          <div class="container-fluid ">
+            <a class="navbar-brand" >Los Dulces del ABC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto" >
+                <li class="nav-item"  >
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/QuienesSomos.html">Quienes somos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" class="menu1">
+                    <li><a class="dropdown-item" href="../paginas/Reposteria.html">Reposteria</a></li>
+                    <li><a class="dropdown-item" href="../paginas/DecoracionDeTortas.html">Decoracion De Tortas</a></li>
+                    <li><a class="dropdown-item" href="../paginas/PorcelanaFria.html">Porcelana Fria</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                </li>
+                <li class="carrito">
+                  <img
+                    src="../img/carro de compras2.png"
+                    alt="carrito de compras"
+                    width="25px"
+                    height="20px"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
     </header>
     <!------------------------- MAIN ---------------------------->
-    <main>
-      <img src="../img/LOGO.png" alt="LOGO Los Dulces del ABC" width="200px" class="logoPrincipal"/>
+    <main class="container-fluid">
+      <div class="row">                                                   
+        <img src="../img/LOGO.png" alt="LOGO Los Dulces del ABC" width="20px" class="logoPrincipal"/>
 
-      <h1 class="tituloPrincipal animate__animated animate__swing">Los Dulces del ABC</h1>
-    
+        <h1 class="tituloPrincipal animate__animated animate__swing ">Los Dulces del ABC</h1>
+      </div>
       <div class="wppFlotante">
           <a href="http://web.whatsapp.com/" target="_blank">
           <img src="../img/whatsapp.png" 
           alt="Whatsapp" 
           height="80px" 
-          width="80px">
+          width="80px"
+          class="wppLogo">
           <p class="wppFlotante wppParrafo">¡Ayudame!</p>
         </a>
       </div>
@@ -73,110 +100,110 @@
     <!------------------------ SECTION ----------------------------->
     <section>
       <!---------------------- REPOSTERIA --------------------------->
-      <h2 class="subtitulos">Reposteria</h2>
-      <div class="parrafosRepo bordes">
-        <p >*Relleno a elección. Consultar stock.</p> 
-          
-        <p>*16 cm de Diametro ( 4 - 6 porciones) $2500</p>
-        <p> *24 cm de Diametro (8-17 porciones) $3100</p>
-        <p>*24x24 cm Cuadrada (18-26 porciones) $3600 </p>
-        <p>*22x33 Rectangular ( 26-30 porciones) $3900 </p>
-        <p>*33x33 Cuadrada( 30- 35 porciones) $4500 </p>
-        <p>#Consultar por tamaños mas grandes </p>
-        <p>#Sujeto a cambios en el precio, según sus requerimientos específicos. </p>
-          
-        <p>#Consultar por tamaños o modelos.</p>
-
-      </div>
-
-    <div class="contenedorCarousel1 ">
-      <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel" class="conteiner" >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../img/1.alfajores-de-coco.jpg" class="d-block w-100" alt="..." width="500px" height="600px">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/14.torta-de-crema-y-frutilla.jpg" class="d-block w-100" alt="..." width="500px" height="600px">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/16.torta-jeronimo.jpg" class="d-block w-100" alt="..." width="500px" height="600px">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/17.torta-marquise-de-chocolate.jpg" class="d-block w-100" alt="..." width="500px" height="600px">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/18.torta-mousse-de-chocolate.jpg" class="d-block w-100" alt="..." width="500px" height="600px">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/19.torta-nevada.jpg" class="d-block w-100" alt="..." width="500px" height="600px">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/2.alfajores-de-maizena.jpg" class="d-block w-100" alt="..." width="500px" height="600px">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/20.torta-rogel.jpg" class="d-block w-100" alt="..." width="500px" height="600px">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/21.torta-rogel-dulce-de-leche.jpg" class="d-block w-100" alt="..." width="500px" height="600px">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/Torta OreoFranui.png" class="d-block w-100" alt="..." width="500px" height="600px">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/3.brownies.jpg" class="d-block w-100" alt="..." width="500px" height="600px">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/6.crumble.jpg" class="d-block w-100" alt="..." width="500px" height="600px">
+        <h2 class="subtitulos">Reposteria</h2>
+        <div class="bordes parrafosRepo"> 
+          <p>*Relleno a elección. Consultar stock.</p>
+    
+          <p>*16 cm de Diametro ( 4 - 6 porciones) $2500</p>
+          <p> *24 cm de Diametro (8-17 porciones) $3100</p>
+          <p>*24x24 cm Cuadrada (18-26 porciones) $3600 </p>
+          <p>*22x33 Rectangular ( 26-30 porciones) $3900 </p>
+          <p>*33x33 Cuadrada( 30- 35 porciones) $4500 </p>
+          <p>#Consultar por tamaños mas grandes </p>
+          <p>#Sujeto a cambios en el precio, según sus requerimientos específicos. </p>
+    
+          <p>#Consultar por tamaños o modelos.</p>
+    
+        </div>
+    
+        <div class="contenedorCarousel1">
+          <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel" class="conteiner">
+            <div class="carousel-inner imagenesCarousel">
+              <div class="carousel-item active ">
+                <img src="../img/1.alfajores-de-coco.jpg" class="d-block w-100" alt="..." width="500px" height="600px">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/14.torta-de-crema-y-frutilla.jpg" class="d-block w-100" alt="..." width="500px"
+                  height="600px">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/16.torta-jeronimo.jpg" class="d-block w-100" alt="..." width="500px" height="600px">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/17.torta-marquise-de-chocolate.jpg" class="d-block w-100" alt="..." width="500px"
+                  height="600px">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/18.torta-mousse-de-chocolate.jpg" class="d-block w-100" alt="..." width="500px"
+                  height="600px">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/19.torta-nevada.jpg" class="d-block w-100" alt="..." width="500px" height="600px">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/2.alfajores-de-maizena.jpg" class="d-block w-100" alt="..." width="500px" height="600px">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/20.torta-rogel.jpg" class="d-block w-100" alt="..." width="500px" height="600px">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/21.torta-rogel-dulce-de-leche.jpg" class="d-block w-100" alt="..." width="500px"
+                  height="600px">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/Torta OreoFranui.png" class="d-block w-100" alt="..." width="500px" height="600px">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/3.brownies.jpg" class="d-block w-100" alt="..." width="500px" height="600px">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/6.crumble.jpg" class="d-block w-100" alt="..." width="500px" height="600px">
+              </div>
+            </div>
+    
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-      
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-
-
-      <!-- <div class="grid1 imagenes fondoDeco">            
-        <img src="../img/tortaOreo.png" alt="Torta oreo" width="400px" height="400px" class="uno bordes" >
-        <img src="../img/7.mini-lemon-pie.jpg" alt="Torta mini-lemon-pie" width="400px" height="400px" class="dos bordes">
-        <img src="../img/Torta OreoFranui.png" alt="Torta Homero" width="400px" height="400px" class="tres bordes">
-        <img src="../img/15..jpg" alt="Torta cheesecake frutos rojos " width="400px" height="400px" class="cuatro bordes">
-        <img src="../img/22.torta-marquise-de-chocolate.jpg" alt="Torta jeronimo" width="400px" height="400px" class="cinco bordes">
-        <img src="../img/18.torta-mousse-de-chocolate.jpg" alt="Torta mousse" width="400px" height="400px" class="seis bordes">
-        <img src="../img/6.crumble.jpg" alt="Torta crumble" width="400px" height="400px" class="siete bordes">
-        <img src="../img/14.torta-de-crema-y-frutilla.jpg" alt="Torta de crema y frutillas" width="400px" height="400px" class="ocho bordes">
-        <img src="../img/13.scones.jpg" alt="pie de manzana" width="400px" height="400px" class="nueve bordes">
-        <img src="../img/20.torta-rogel.jpg" alt="Torta rojel" width="400px" height="400px" class="diez bordes">
-        <img src="../img/21.torta-rogel-dulce-de-leche.jpg" alt="Torta rojel con dulce de leche" width="400px" height="400px" class="once bordes">
-        <img src="../img/9.muffins.jpg" alt="coquitos" width="400px" height="400px" class="doce bordes">
-        <img src="../img/3.brownies.jpg" alt="brownies" width="400px" height="400px" class="trece bordes">
-        <img src="../img/2.alfajores-de-maizena.jpg" alt="alfajorcitos de alfajores-de-maizena" width="400px" height="400px" class="catorce bordes">
-        <img src="../img/1.alfajores-de-coco.jpg" alt="alfajorcitos de coco" width="400px" height="400px" class="quince bordes">
-
-      </div> -->
-      
-      <p class="parrafosRepo parrafoEscribinos bordes"> * Escribinos por whatsapp y preguntanos sobre stock, envíos o lo que necesites. 
-        Recordá que la Pastelería debe pedirse con 48 hs. de anticipación.</p>
-
-      <h3 class="subtitulos">Torta Arco Iris</h3>
-
-    <iframe
-      src="https://assets.pinterest.com/ext/embed.html?id=35395547057666728"
-      height="445"
-      width="345"
-      frameborder="0"
-      scrolling="no"
-      class="pastel1"
-    ></iframe>
-
-     
-      <!-- despues va una receta -->
+    
+    
+        <!-- <div class="grid1 imagenes fondoDeco">            
+                <img src="../img/tortaOreo.png" alt="Torta oreo" width="400px" height="400px" class="uno bordes" >
+                <img src="../img/7.mini-lemon-pie.jpg" alt="Torta mini-lemon-pie" width="400px" height="400px" class="dos bordes">
+                <img src="../img/Torta OreoFranui.png" alt="Torta Homero" width="400px" height="400px" class="tres bordes">
+                <img src="../img/15..jpg" alt="Torta cheesecake frutos rojos " width="400px" height="400px" class="cuatro bordes">
+                <img src="../img/22.torta-marquise-de-chocolate.jpg" alt="Torta jeronimo" width="400px" height="400px" class="cinco bordes">
+                <img src="../img/18.torta-mousse-de-chocolate.jpg" alt="Torta mousse" width="400px" height="400px" class="seis bordes">
+                <img src="../img/6.crumble.jpg" alt="Torta crumble" width="400px" height="400px" class="siete bordes">
+                <img src="../img/14.torta-de-crema-y-frutilla.jpg" alt="Torta de crema y frutillas" width="400px" height="400px" class="ocho bordes">
+                <img src="../img/13.scones.jpg" alt="pie de manzana" width="400px" height="400px" class="nueve bordes">
+                <img src="../img/20.torta-rogel.jpg" alt="Torta rojel" width="400px" height="400px" class="diez bordes">
+                <img src="../img/21.torta-rogel-dulce-de-leche.jpg" alt="Torta rojel con dulce de leche" width="400px" height="400px" class="once bordes">
+                <img src="../img/9.muffins.jpg" alt="coquitos" width="400px" height="400px" class="doce bordes">
+                <img src="../img/3.brownies.jpg" alt="brownies" width="400px" height="400px" class="trece bordes">
+                <img src="../img/2.alfajores-de-maizena.jpg" alt="alfajorcitos de alfajores-de-maizena" width="400px" height="400px" class="catorce bordes">
+                <img src="../img/1.alfajores-de-coco.jpg" alt="alfajorcitos de coco" width="400px" height="400px" class="quince bordes">
+        
+              </div> -->
+    
+        <p class="parrafosRepo parrafoEscribinos bordes"> * Escribinos por whatsapp y preguntanos sobre stock, envíos o lo
+          que
+          necesites.
+          Recordá que la Pastelería debe pedirse con 48 hs. de anticipación.</p>
+    
+        <h3 class="subtitulos">Torta Arco Iris</h3>
+        <div>
+          <iframe src="https://assets.pinterest.com/ext/embed.html?id=35395547057666728" height="445" width="345"
+            frameborder="0" scrolling="no" class="pastel1"></iframe>
+        </div>
     </section>
     <!-- footer,redes,pagos -->
     <footer>
@@ -193,11 +220,10 @@
         5e0!3m2!1ses-419!2sar!4v1655312174722!5m2!1ses-419!2sar"
           width="250"
           height="250"
-          style="border: 0"
           allowfullscreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
         <img src="../img/LOGO.png" alt="" width="290px" class="logoFinal" />
         
         <div class="seguinos"> 
@@ -242,6 +268,7 @@
       <img src="../img/whatsapp.png"
        alt="whatsapp" 
        width="60px"
+       class="wppFooter"
        />
       <p class="footerTexto">
         <b>CONSULTAS O RESERVAS</b>

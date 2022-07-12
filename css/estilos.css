@@ -65,6 +65,20 @@ body{
     display:block;
     
 } 
+.dropdown-menu{
+    background: rgb(231,139,179);
+    background: linear-gradient(400deg, 
+    rgba(231,139,179,0.9716058298319328) 40%, 
+    rgba(139,162,246,0.9716058298319328) 80%);
+}   
+.dropdown-menu  li{
+    border-bottom: 1px solid rgb(185, 88, 185);
+}
+.dropdown-menu :hover{
+background-color: lightblue;
+}
+
+
 /*------------------- INDEX -------------
 ------------------MAIN--------------*/
 
@@ -149,7 +163,6 @@ hr{
 }
 .link{
     grid-area: linkGridindex;
-    ;
 }
 
 .imagenRepo{
@@ -253,66 +266,6 @@ transition: all 2s;
 
 
 /*--------------------- Pagina Decoracion de tortas --------------------*/
-/* .grid1{
-    display: grid;
-    grid-template-columns: (3 1fr);
-    grid-template-rows: (5 1fr);
-    grid-template-areas:
-    "uno  dos tres"
-    "cuatro cinco seis"
-    "siete ocho nueve"
-    "diez once doce"
-    "trece catorce quince";
-    grid-row-gap: 15px;
-    grid-column-gap: 15px;
-    justify-content: center;
-      
-}
-.uno{
-    grid-area:uno;
-}
-.dos{
-    grid-area:dos;
-}   
-.tres{
-    grid-area:tres;
-}
-.cuatro{
-    grid-area:cuatro;
-}
-.cinco{
-    grid-area: cinco;
-}
-.seis{
-    grid-area:seis;
-}
-.siete{
-    grid-area: siete;
-}
-.ocho{
-    grid-area: ocho;
-}
-.nueve{
-    grid-area: nueve;
-}
-.diez{
-    grid-area: diez;
-}
-.once{
-    grid-area: once;
-}
-.doce{
-    grid-area: doce;
-}
-.trece{
-    grid-area: trece;
-}
-.catorce{
-    grid-area: catorce;
-}
-.quince{
-    grid-area: quince;
-} */
 
 .bordes{
     border-radius: 25px;
@@ -348,9 +301,7 @@ transition: all 2s;
     margin-bottom: 30px;
     margin-left: 50px;
 }
-/* VA O NO VA? 
-BUSCAR OTRO COLOR PARA ESA PARTE!
-VER ULTIMA CLASE, COLORES EN  */
+
 .fondoDeco{
     background-color: lightblue;
     border-radius: 30px;
@@ -377,7 +328,7 @@ VER ULTIMA CLASE, COLORES EN  */
     font-family:'Emilys Candy',cursive;
     border: 1px solid black;
     background-color: antiquewhite;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     width: 950px;
     margin-left: 200px;
@@ -424,6 +375,9 @@ border-radius:35px;
 .boton{
     margin-top: 20px;
 }
+.radio{
+    margin-left:10px;
+}
   
 .botonesContacto{
 margin-bottom: 20px;
@@ -432,9 +386,23 @@ margin-bottom: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
     padding-bottom: 5px;
-    width: 900px;
+    width: 750px;
+    height: 250px;
 }
-  
+.cajaArchivos{
+    display: inline-block;
+    width: 450px;
+}
+.cajaSelect{
+margin-left: 350px;
+    width: 300px;
+} 
+.bordeFormu{
+    border: 1px dashed rgb(65, 63, 63);
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #a5a3a362;
+}
 /*--------------- footer --------------------*/
 .pagos{
     display:flex; 
@@ -466,9 +434,7 @@ margin-bottom: 20px;
 .candado{
     margin-left:5px
 }
-/* .pagos.Fondo{
-    background-color: lightgrey;
- } */
+
  .pagosFondo{
     background: rgb(231,139,179);
 background: radial-gradient(circle, rgba(231,139,179,1) 7%, rgba(139,162,246,1) 100%);
@@ -500,10 +466,6 @@ background: radial-gradient(circle, rgba(231,139,179,1) 7%, rgba(139,162,246,1) 
     grid-area:logoFinal;
 }
 .grid{
-    /* background: rgb(231,139,179);
-    background: linear-gradient(342deg, 
-    rgba(231,139,179,0.9716058298319328) 7%, 
-    rgba(139,162,246,0.9716058298319328) 100%); */
     background: rgb(231,139,179);
     background: radial-gradient(circle, 
     rgba(231,139,179,1) 7%, 
@@ -529,9 +491,300 @@ font-size: 28px;
 .copyright{
     text-align:right;
 }
-/* ----------MEDIAS QUERIES------------ */
+/* ----------MEDIAS QUERIES-------------------------------- */
+/* ------------ tablet ------------------- */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+}
+@media only screen and (min-width:469px)and (max-width:768px) {
+    .tituloPrincipal{
+        font-size: 95px;
+        color: #9d4edd;
+        width:450px;
+        text-align: center;
+    }
+    .logoPrincipal{
+        width: 200px;
+        padding-top: 40px;
+        padding-right: 20px;
+    }
+    .gridIndex{
+        display: grid;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "img text" 
+        "img  ."
+        "link";
+        }
+    .img{
+        grid-area:imagenGridindex;
+    }
+    .text{
+        grid-area: textoGridindex;
+    }
+    .link{
+        right: 200px;
+        bottom:200px;
+    }
+    .imagenTransicion{
+        transition: "width" 3s;
+    }
+    .imagenTransicion:hover{
+        width: 400px;
+    }
+    .parrafosIndex{
+        font-size: 25px;
+        height: 480px;
+        margin: 10px;
+    }
+    .quienes{
+        height: 300px;
+        width: 670px;
+        margin-left: 40px;
+    }
+    .boton{
+        position:relative;
+        top: 10px;
+        bottom: 150px;
+        right: 300px;
+        width: 300px;
+        height: 100px;
+    }
+    .bordes{
+        margin-top: 90px;
+        width: 400px;
+        height: 250px;
+    }
+    .imagenRepo{
+        margin-top: 25px;
+        margin-left:40px;
+    }
+    .imagenDeco{
+    margin-top: 24px;
+    margin-left: 40px;
+    }
+    .imagenPorce{
+    margin-top: 24px;
+    margin-left: 40px;
+    }
+    .wppFlotante{ 
+    position: fixed;
+    left:0px;
+    }
+    .wppParrafo{
+    margin-left: 10px;
+    width: 105px;
+    background-color: antiquewhite; 
+    }
+    .wppLogo{
+    width: 80px;
+    height: 80px;        
+    }
+    /*  -------------------------*/
+    .google{
+    margin-top: 40px;
+    width: 170px;
+    height: 200px;
+    margin-right: 15px;
+    border-radius: 20px;
+    }
+    .iconosRedes{
+        position: relative;
+        padding: 10px;;
+        left: 30px;
+    }
+    .youtube{
+    width: 70px;
+    }
+    .facebook{
+    width: 70px;
+    }
+    .instagram{
+    width: 70px;
+    }
+    .twitter{
+    width: 70px;
+    }
+    .seguinosH2{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: center;
+    }
+    .envianosH2{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 40px;
+    padding: 10px;
+    } 
+    .wpp{
+    position: relative;
+    left: 140px;
+    width: 70px;
+    }
+    .logoFinal{
+    display:flex;
+    margin-top: 40px;
+    margin-right: 15px;
+    border-radius: 20px;
+    width: 180px;
+    height: 200px;
+    padding-left: 15px;
+    }
+    /*------ quienes somos? ---------------*/
+    .parrafos02{ 
+        margin-left: 50px;
+        padding: 5px;
+        width: 650px;
+        font-size: 25px;
+    }
+
+    .imagenQuienes{
+    margin-left: 80px;
+    height: 500px;
+    width: 600px;
+    } 
+    /* -----------Reposteria------------- */
+    .parrafosRepo{
+    width: 500px;
+    height: 500px;
+    margin-left: 150px;
+    font-size: 22px;
+    margin-bottom: 30px ;
+    margin-top: 40px;
+    }
+    .parrafoEscribinos{
+    width: 580px;
+    height: 120px;
+    font-size: 22px;
+    margin-left: 80px;
+    margin-top: 40px;
+    }
+    .contenedorCarousel1{
+    box-sizing: border-box;
+    width: 580px;
+    height: 586px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    border: 3px solid black;
+    border-radius: 20px;
+    }
+    .imagenesCarousel{
+    width: 573px;
+    height: 578px;
+    border-radius:20px;
+    }
+    .pastel1{
+    margin-left: 160px;
+    width: 400px;
+    height: 350px;
+    }
+/*------------ DECORACION DE TORTAS --------------------*/
+    .subtitulos{
+    font-size: 45px;
+    }
+    .contenedorCarousel2{
+    box-sizing: border-box;
+    width: 580px;
+    height: 510px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    border: 3px solid black;
+    border-radius: 20px;
+    }
+
+    .parrafosDeco{
+        width: 580px;
+        height: 380px;
+        font-size: 22px;
+        margin-left: 80px;
+        margin-bottom: 30px ;
+        margin-top: 40px;
+    }
+    .pastel2{
+    width: 340px;
+    height: 440px;
+    margin-left: 50px;
+    border:2px solid black;
+    border-radius: 25px;
+    }
+    .pastel3{
+    
+    width: 340px;
+    height: 440px;
+    border:2px solid black;
+    border-radius: 25px;
+    }
+/* -------------------- PORCELANA FRIA ----------------- */
+    .parrafoPorce{
+    margin-left:80px;
+    width: 580px;
+    height: 390px;
+    font-size: 22px;
+    } 
+    .parrafoEscribinos{
+    height: 130px;
+    width: 550px;
+    }
+/*------------------ CONTACTO -----------------------------*/
+    .parrafoFormu{
+    margin-left: 20px;
+    font-size: 22px;
+    width: 680px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    }
+    .cajaContacto{
+    width: 480px;
+    }
+    .parrafoCompletar{
+    font-size: 16px;
+    }
+    .cajaSelect{
+    margin-left:200px;
+    width: 250px;
+    } 
+    .cajaArchivos{
+    width: 350px;
+    }
+ /*--------footer -------------------*/
+
+    .pagos{
+    padding: 10px;
+    } 
+    .wppFooter{
+        margin-top:15px;
+        width: 50px;
+        height: 60px;
+    }
+    .footerTexto{
+        font-size: 15px;
+        margin: 5px;
+    }
+    .tarjeta{
+        margin-top: 25px;
+        width: 40px;
+        height: 40px;
+    }
+    .candado{
+        margin-top: 25px;
+        width: 45px;
+        height: 50px;
+
+    }
+    .copyright{
+        font-size: 10px;
+    }
+} 
+
+
 /* celular (mas chico) */
-@media screen and (max-width:480px){
+@media only screen and (min-width:360px) and (max-width:468px){
     .gridIndex{
         grid-template-columns: 445px;
         grid-template-rows: 290px;
@@ -546,6 +799,12 @@ font-size: 28px;
         right: 200px;
         bottom:200px;
     }
+    .imagenTransicion{
+        transition: "width" 3s;
+        }
+    .imagenTransicion:hover{
+        width: 400px;
+    }
     .boton{
         position:relative;
         top: 50px;
@@ -553,12 +812,13 @@ font-size: 28px;
         width: 300px;
         height: 100px;
     }
-     .tituloPrincipal{
-        font-size: 60px;
-        color: #9d4edd;
-        width:350px;
-        text-align: center;
-    }
+    .tituloPrincipal{
+    font-size: 60px;
+    color: #9d4edd;
+    width:350px;
+    margin-left: 80px;
+    text-align: center;
+}
     .logoPrincipal{
         width: 100px;
         padding-top: 40px;
@@ -570,183 +830,223 @@ font-size: 28px;
         width: 400px;
         height: 250px;
     }
-   .imagenRepo{
+    .imagenRepo{
         margin-top: 30px;
         margin-left:40px;
-   }
-   .imagenDeco{
+    }
+    .imagenDeco{
     margin-top: 24px;
     margin-left: 40px;
-   }
-   .imagenPorce{
+    }
+    .imagenPorce{
     margin-top: 24px;
     margin-left: 40px;
-   }
-    .wppFlotante{  
-        position: fixed;
-        left: 380px;
-    }/*
-   .bordes{
-    width: 400px;
-    height: 250px;
-   }
-   .parrafoIndex{
-    width: 965px;
-    height: 200px;
-   } */
-   /*  -------------------------*/
-   .google{
+    }
+    .wppFlotante{ 
+    position: fixed;
+    left:0px;
+    }
+    .wppParrafo{
+    margin-left: 10px;
+    width: 105px;
+    background-color: antiquewhite; 
+    }
+    .wppLogo{
+    width: 60px;
+    height: 60px;        
+    }
+    /*  -------------------------*/
+    .google{
     width: 130px;
     height: 130px;
-   }
-   .seguinos H2{
+    }
+    .seguinosH2{
     font-size: 15px;
     margin-left: 20px;
+    margin-top: 20px;
     text-align: center;
-   }
-   .youtube{
+    }
+    .youtube{
     width: 50px;
-   }
-   .facebook{
-     width: 50px;
-   }
-   .instagram{
+    }
+    .facebook{
+        width: 50px;
+    }
+    .instagram{
     width: 50px;
-   }
-   .twitter{
+    }
+    .twitter{
     width: 50px;
-   }
-  .iconosRedes{
-    margin-top: 5px;
+    }
+    .iconosRedes{
+    position: relative;
+    left: 5px;
+    margin-top: 11px;
     margin-bottom: 5px;
-    margin-right: 30px;
-   }
-   .envianosH2{
+    margin-right: 5px;
+    margin-left: 25px;
+    }
+    .envianosH2{
     text-align: center;
     font-size: 15px;
+    margin-left: 10px;
     margin-right: 40px;
-    
-   }
-   .wpp{
+    padding: 10px;
+    }
+    .wpp{
+    position: relative;
+    left: 90px;
     height: 40px;
     width: 50px;
-   }
-   .logoFinal{
+    }
+    .logoFinal{
     display: none;
     width: 100px;
-   }
-   /*--------footer -------------------*/
-    .wppFooter{
-        width: 40px;
     }
-    .footerTexto{
-        font-size: 10px;
-        margin: 5px;
-    }
-    .tarjeta{
-        width: 40px;
-    }
-    .candado{
-        width: 40px;
-
-    }
-    .copyright{
-        font-size: 10px;
-    }
-   /*------ quienes somos? ---------------*/
-   .parrafos02{ 
-    width: 380px;
+    /*------ quienes somos? ---------------*/
+    .parrafos02{ 
+    width: 390px;
     font-size: 15px;
-   }
-   .imagenQuienes{
+    margin-left: 30px;
+    }
+    .imagenQuienes{
     margin-left: 20px;
     height: 300px;
-    width: 450px;
-   } 
-   /* -----------Reposteria------------- */
-  .parrafosRepo{
-     width: 360px;
-        height: 360px;
-        margin-left: 50px;
-        font-size: 17px;
-   }
-   .parrafoEscribinos{
+    width: 400px;
+    } 
+    /* -----------Reposteria------------- */
+    .parrafosRepo{
+    width: 390px;
+    height: 410px;
+    margin-left: 30px;
+    font-size: 17px;
+    margin-bottom: 20px ;
+    }
+    .parrafoEscribinos{
     width: 360px;
     height: 120px;
     font-size: 17px;
-   }
-   .grid1{
-    grid-template-columns: 400px;
-    grid-template-rows: 250px 250px;
-    grid-template-areas: 
-    "uno"
-    "dos"
-    "tres" 
-    "cuatro"
-    "cinco" 
-    "seis"
-    "siete"
-    "ocho"
-    "nueve"
-    "diez"
-    "once"
-    "doce"
-    "trece" 
-    "catorce"
-    "quince .";
+    }
+    .contenedorCarousel1{
+    box-sizing: border-box;
+    width: 406px;
+    height: 586px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    border: 3px solid black;
+    border-radius: 20px;
+    }
+    .imagenesCarousel{
+        width: 400px;
+        height: 580px;
+        border-radius: 20px;
+    }
 
-    grid-row-gap: 15px;
-    grid-column-gap: 0px;
-   }
-   .imagenes{
+    .imagenes{
     display: flex;
     flex-direction: column;
     align-items: center;
-   }
-   .pastel1{
-    margin-left: 70px;
-   }
+    }
+    .pastel1{
+    margin-left: 50px;
+    width: 350px;
+    height: 345px;
+    }
    
-   /*------------ DECORACION DE TORTAS --------------------*/
-  .parrafosDeco{
+/*------------ DECORACION DE TORTAS --------------------*/
+    .subtitulos{
+    font-size: 35px;
+    }
+    .contenedorCarousel2{
+    box-sizing: border-box;
+    width: 406px;
+    height: 506px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    border: 3px solid black;
+    border-radius: 18px;
+    }
+
+    .parrafosDeco{
     font-size: 17px;
     width: 360px;
     margin-left: 50px;
     padding: 15px;  
     }
     .pastel2{
-        width: 340px;
-        height: 440px;
-        margin-left: 50px;
-        border:1px solid black;
-        border-radius: 25px;
+    width: 340px;
+    height: 440px;
+    margin-left: 50px;
+    border:1px solid black;
+    border-radius: 25px;
     }
     .pastel3{
-        width: 340px;
-        height: 440px;
-        border:1px solid black;
-        border-radius: 25px;
+    width: 340px;
+    height: 440px;
+    border:1px solid black;
+    border-radius: 25px;
     }
+/* -------------------- PORCELANA FRIA ----------------- */
     .parrafoPorce{
-        margin-left:50px;
-        width: 360px;
-        height: 230px;
-        font-size: 17px;
+    margin-left:50px;
+    width: 370px;
+    height: 340px;
+    font-size: 17px;
     } 
     .parrafoEscribinos{
-        height: 130px;
+    height: 130px;
     }
+/*------------------ CONTACTO -----------------------------*/
     .parrafoFormu{
-        margin-left: 20px;
-        font-size: 17px;
-        width: 420px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 17px;
+    width: 420px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     }
     .cajaContacto{
-        width: 385px;
+    width: 385px;
     }
     .parrafoCompletar{
-        font-size: 16px;
+    font-size: 16px;
+    }
+    .cajaSelect{
+    margin-left:110px;
+    width: 150px;
+    font-size: 10px;
+    } 
+    .cajaArchivos{
+    width: 350px;
+    }
+ /*--------footer -------------------*/
+
+    .pagos{
+    padding: 10px;
+    } 
+    .wppFooter{
+        margin-top: 25px;
+        width: 50px;
+        height: 60px;
+    }
+    .footerTexto{
+        font-size: 10px;
+        margin: 5px;
+    }
+    .tarjeta{
+        margin-top: 25px;
+        width: 40px;
+        height: 40px;
+    }
+    .candado{
+        margin-top: 25px;
+        width: 45px;
+        height: 50px;
+
+    }
+    .copyright{
+        font-size: 10px;
     }
 }
+

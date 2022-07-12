@@ -28,23 +28,52 @@
 
     <link rel="stylesheet" href="../css/estilos.css" />
 </head>
-  <body class="parrafosQuienes">
+  <body>
     <header>
-      <nav class="navegacion">
-        <ul class="menu">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="QuienesSomos.html">¿Quienes Somos?</a></li>
-          <li><a href="">Producto</a>       
-            <ul class="submenu">
-              <li><a href="Reposteria.html">Reposteria</a></li>
-              <li><a href="DecoracionDeTortas.html">Decoracion de Tortas</a></li>
-              <li><a href="PorcelanaFria.html">Porcelana Fria</a></li>
-            </ul>
-          </li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><img src="../img/carro de compras2.png" alt="" width="25px" height="20px"></li>
-        </ul>
-      </nav>
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark menu1">
+          <div class="container-fluid ">
+            <a class="navbar-brand" >Los Dulces del ABC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto" >
+                <li class="nav-item"  >
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/QuienesSomos.html">Quienes somos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" class="menu1">
+                    <li><a class="dropdown-item" href="../paginas/Reposteria.html">Reposteria</a></li>
+                    <li><a class="dropdown-item" href="../paginas/DecoracionDeTortas.html">Decoracion De Tortas</a></li>
+                    <li><a class="dropdown-item" href="../paginas/PorcelanaFria.html">Porcelana Fria</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                </li>
+                <li class="carrito">
+                  <img
+                    src="../img/carro de compras2.png"
+                    alt="carrito de compras"
+                    width="25px"
+                    height="20px"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
     </header>
 
     <main>
@@ -57,7 +86,8 @@
           <img src="../img/whatsapp.png" 
           alt="Whatsapp" 
           height="80px" 
-          width="80px">
+          width="80px"
+          class="wppLogo">
           <p class="wppFlotante wppParrafo">¡Ayudame!</p>
         </a>
       </div>  
@@ -159,6 +189,7 @@
       <img src="../img/whatsapp.png"
        alt="whatsapp" 
        width="60px"
+       class="wppFooter"
        />
       <p class="footerTexto">
         <b>CONSULTAS O RESERVAS</b>

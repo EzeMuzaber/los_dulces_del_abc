@@ -31,21 +31,50 @@
 </head>
 <body>
     <header>
-      <nav class="navegacion">
-        <ul class="menu">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="QuienesSomos.html">¿Quienes Somos?</a></li>
-          <li><a href="">Producto</a>       
-            <ul class="submenu">
-              <li><a href="Reposteria.html">Reposteria</a></li>
-              <li><a href="DecoracionDeTortas.html">Decoracion de Tortas</a></li>
-              <li><a href="PorcelanaFria.html">Porcelana Fria</a></li>
-            </ul>
-          </li>
-          <li><a href="/paginas/contacto.html">Contacto</a></li>
-          <li><img src="../img/carro de compras2.png" alt="" width="25px" height="20px"></li>
-        </ul>
-      </nav>
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark menu1">
+          <div class="container-fluid ">
+            <a class="navbar-brand" >Los Dulces del ABC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto" >
+                <li class="nav-item"  >
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/QuienesSomos.html">Quienes somos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" class="menu1">
+                    <li><a class="dropdown-item" href="../paginas/Reposteria.html">Reposteria</a></li>
+                    <li><a class="dropdown-item" href="../paginas/DecoracionDeTortas.html">Decoracion De Tortas</a></li>
+                    <li><a class="dropdown-item" href="../paginas/PorcelanaFria.html">Porcelana Fria</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                </li>
+                <li class="carrito">
+                  <img
+                    src="../img/carro de compras2.png"
+                    alt="carrito de compras"
+                    width="25px"
+                    height="20px"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
     </header>   
     <main>
       <img src="../img/LOGO.png" alt="LOGO Los Dulces del ABC" width="200px" class="logoPrincipal"/>
@@ -57,7 +86,8 @@
             <img src="../img/whatsapp.png" 
             alt="Whatsapp" 
             height="80px" 
-            width="80px">
+            width="80px"
+            class="wppLogo">
             <p class="wppFlotante wppParrafo">¡Ayudame!</p>
          </a>
         </div>  
@@ -82,7 +112,7 @@
     </div>
     <div class="contenedorCarousel2 ">
       <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner imagenesCarousel">
           <div class="carousel-item active">
             <img src="../img/torta Fernet.png" class="d-block w-100" alt="torta fernet" width="400px" height="500px">
           </div>
@@ -132,21 +162,6 @@
       </div>
     </div>
 
-   <!--  <div class="grid1 imagenes fondoDeco"> VA FONDO O NO? FIJARSE, CORREGIR COLOR!! 
-      <img src="../img/torta Fernet.png" alt="Torta Fernet" width="400px" height="400px" class="uno bordes" >
-      <img src="../img/torta buzz.png" alt="Torta Buzz" width="400px" height="400px" class="dos bordes">
-      <img src="../img/torta homero.jpg" alt="Torta Homero" width="400px" height="400px" class="tres bordes">
-      <img src="../img/torta Unicornio.png" alt="Torta Unicornio" width="400px" height="400px" class="cuatro bordes">
-      <img src="../img/torta bob sponja.jpg" alt="Torta BobSponja" width="400px" height="400px" class="cinco bordes">
-      <img src="../img/torta tiktok.png" alt="Torta Tiktok" width="400px" height="400px" class="seis bordes">
-      <img src="../img/torta flores.png" alt="Torta Flores" width="400px" height="400px" class="siete bordes">
-      <img src="../img/torta conejo.jpg" alt="Torta conejo" width="400px" height="400px" class="ocho bordes">
-      <img src="../img/torta decorada oso.jpg" alt="Torta oso" width="400px" height="400px" class="nueve bordes">
-      <img src="../img/torta decorada oso2.jpg" alt="Torta oso2" width="400px" height="400px" class="diez bordes">
-      <img src="../img/torta hongo.jpg" alt="Torta hongo" width="400px" height="400px" class="once bordes">
-      <img src="../img/torta maquillaje.jpg" alt="Torta maquillaje" width="400px" height="400px" class="doce bordes">
-    </div> -->
-    
     <p class="parrafosDeco parrafoEscribinos "> * Escribinos por whatsapp y preguntanos sobre stock, envíos o lo que necesites. 
       Recordá que la Pastelería debe pedirse con 48 hs. de anticipación.</p>
     
@@ -232,14 +247,14 @@
 
           <div class="pagos pagosFondo">
       <img src="../img/whatsapp.png"
-       alt="whatsapp" 
-       width="60px"
-       />
+      alt="whatsapp" 
+      width="60px"
+      class="wppFooter"
+      />
       <p class="footerTexto">
         <b>CONSULTAS O RESERVAS</b>
         Para consultas o reservas podes enviarnos un whtasapp.
       </p>
-     
       <img src="../img/tarjeta2.png"
         alt="tarjeta"
         width="80px" 
