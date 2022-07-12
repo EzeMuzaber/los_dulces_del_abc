@@ -495,7 +495,7 @@ font-size: 28px;
 /* ------------ tablet ------------------- */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 }
-@media only screen and (min-width:469px)and (max-width:768px) {
+@media only screen and (min-width:481px)and (max-width:768px) {
     .tituloPrincipal{
         font-size: 95px;
         color: #9d4edd;
@@ -534,7 +534,7 @@ font-size: 28px;
     }
     .parrafosIndex{
         font-size: 25px;
-        height: 480px;
+        height: 460px;
         margin: 10px;
     }
     .quienes{
@@ -784,7 +784,7 @@ font-size: 28px;
 
 
 /* celular (mas chico) */
-@media only screen and (min-width:360px) and (max-width:468px){
+@media only screen and (min-width:360px) and (max-width:480px){
     .gridIndex{
         grid-template-columns: 445px;
         grid-template-rows: 290px;
