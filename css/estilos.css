@@ -493,9 +493,9 @@ font-size: 28px;
 }
 /* ----------MEDIAS QUERIES-------------------------------- */
 /* ------------ tablet ------------------- */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-}
-@media only screen and (min-width:481px)and (max-width:768px) {
+@media (min-width: 769px){
+}/*   */
+@media (min-width:481px) and (max-width:768px) {
     .tituloPrincipal{
         font-size: 95px;
         color: #9d4edd;
@@ -783,8 +783,8 @@ font-size: 28px;
 } 
 
 
-/* celular (mas chico) */
-@media only screen and (min-width:360px) and (max-width:480px){
+/* celular (mas chico) *//* (min-width:360px) and */ 
+@media(max-width:480px){
     .gridIndex{
         grid-template-columns: 445px;
         grid-template-rows: 290px;
