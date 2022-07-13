@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; 
+}
+.menu1{
+    background: rgb(231,139,179);
+    background: linear-gradient(342deg, 
+    rgba(231,139,179,0.9716058298319328) 7%, 
+    rgba(139,162,246,0.9716058298319328) 100%);
+    font-size: 20px;
+}
+body{
+    background-image: url("../img/fondo_liso.jpg");
+    height: 600px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    margin-bottom:50px;
+}
+.dropdown-menu{
+    background: rgb(231,139,179);
+    background: linear-gradient(400deg, 
+    rgba(231,139,179,0.9716058298319328) 40%, 
+    rgba(139,162,246,0.9716058298319328) 80%);
+    
+    li{
+        border-bottom: 1px solid rgb(185, 88, 185); 
+    }
+    :hover{
+        background-color: lightblue;
+    }
+}
+.carrito{
+    width: 25px;
+    height: 20px;
+}
+.logoPrincipal{
+    display: inline-block;
+    position: absolute;
+    border-radius: 30px;
+    padding-right: 5px;
+    padding-top:60px;
+    padding-left: 5px;
+    width: 250px;
+}
+.tituloPrincipal{
+    font-family: 'Dynalight', cursive;
+    font-size: 125px;
+    font-weight: lighter;
+    text-align: center;
+    color: #9d4edd;
+    padding: 20px;
+    max-width:600px;
+	margin:auto;
+}
+.wppLogo{
+    width: 80px;
+    height: 80px;        
+}
+

@@ -1,33 +1,28 @@
-*{
+/* *{   OK
     margin:0;
     padding:0;
     box-sizing: border-box; 
-}
-body{
+} */
+/* body{ OK
     background-image: url("../img/fondo_liso.jpg");
     height: 600px; 
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;   
-     margin-bottom:50px;
-   }
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    margin-bottom:50px;
+} */
 
 /* menu de navegacion */
-.menu1{
+/* .menu1{ OK
     background: rgb(231,139,179);
     background: linear-gradient(342deg, 
     rgba(231,139,179,0.9716058298319328) 7%, 
     rgba(139,162,246,0.9716058298319328) 100%);
     font-size: 20px;
-}
+} */
 
- a{
-    text-decoration: none;
-    list-style-type:none;
-    font-size: 20px;
-}
-.menu{
+/* .menu{ YA NO VA
     border: 1px solid #cfbaf0; 
     background: rgb(231,139,179);
     background: linear-gradient(342deg, 
@@ -35,23 +30,22 @@ body{
     rgba(139,162,246,0.9716058298319328) 100%);
     text-align: right;
     padding: 20px;
-}
+} */
 
-.menu li{
+/* .menu li{ YA NO VA
     display:inline-block;
     font-size: 20px; 
     padding: 6px;
     position: relative;  
     border-right: 1px solid black;
-    
-}
-.submenu{
+} */
+/* .submenu{ YA NO VA
     position: absolute;
     display: none;
     text-align: left;
-  
-}
-.submenu li{
+   */
+/* }
+.submenu li{ YA NO VA 
     display:block;
     padding: 5px;
     background: rgb(231,139,179);
@@ -61,35 +55,35 @@ body{
     border: 1px solid black;
     width:auto;
 }
-.menu li:hover .submenu{
+.menu li:hover .submenu{ YA NO VA
     display:block;
     
-} 
-.dropdown-menu{
+}  */
+/* .dropdown-menu{  OK
     background: rgb(231,139,179);
     background: linear-gradient(400deg, 
     rgba(231,139,179,0.9716058298319328) 40%, 
     rgba(139,162,246,0.9716058298319328) 80%);
-}   
-.dropdown-menu  li{
+}    */
+/* .dropdown-menu  li{  OK
     border-bottom: 1px solid rgb(185, 88, 185);
-}
-.dropdown-menu :hover{
+} */
+/* .dropdown-menu :hover{  OK
 background-color: lightblue;
-}
-.carrito{
+} */
+/* .carrito{
     width: 25px;
     height: 20px;
-}
-.wppLogo{
+} */
+/* .wppLogo{
     width: 80px;
     height: 80px;        
-    }
+} */
 
 /*------------------- INDEX -------------
 ------------------MAIN--------------*/
 
-.tituloPrincipal{
+/* .tituloPrincipal{  OK
     font-family: 'Dynalight', cursive;
     font-size: 125px;
     font-weight: lighter;
@@ -98,17 +92,16 @@ background-color: lightblue;
     padding: 20px;
     max-width:600px;
 	margin:auto;
-}
-.logoPrincipal{
- display: inline-block;
- position: absolute;
+} */
+/* .logoPrincipal{ OK
+display: inline-block;
+position: absolute;
 border-radius: 30px;
 padding-right: 5px;
- padding-top:60px;
- padding-left: 5px;
- width: 250px;
- 
-}
+padding-top:60px;
+padding-left: 5px;
+width: 250px;
+} */
 .wppFlotante{  
     position: fixed;
     z-index: 5000;
@@ -360,7 +353,7 @@ transition: all 2s;
     padding: 20px;
 }
 /* ---------------pagina de contacto----------------- */
-.parrafoFormu{
+/* .parrafoFormu{     OK
     font-family:'Emilys Candy',cursive;
     border: 1px solid black;
     background-color: antiquewhite;
@@ -368,23 +361,23 @@ transition: all 2s;
     text-align: center;
     width: 900px;
     margin-left: 150px;
-    border-radius: 30px;
+    border-radius: 30px; 
     padding: 20px;
-}
-.formulario div{
+} */
+/* .formulario div{    OK
     margin-bottom: 20px;
-}
-/* .parrafos{
+} */
+/* .parrafos{  OK
     width: 1000px;
 } */
-.separacion{
+/* .separacion{  OK
     margin-top: 20px;
     margin-bottom: 20px;
-}
-.formulario{
+} */
+/* .formulario{  NO USADO
     text-align: center;
-}
-.parrafoCompletar{
+} */
+/* .parrafoCompletar{   ¿DE QE ES?
     line-height: 70px;
     font-family:'Emilys Candy',cursive;
     border: 1px solid black;
@@ -392,8 +385,8 @@ transition: all 2s;
     font-size: 30px;
     margin: 30px;
     border-radius: 30px;
-}
-.botones{
+} */
+/* .botones{   OK
 text-decoration:none;
 font-weight: 600px;
 font-size: 17px;
@@ -407,7 +400,7 @@ border-color: #d8d8d8;
 border-width: 4px;
 border-style: solid;
 border-radius:35px;
-}
+} */
 .boton{
     margin-top: 20px;
 }
@@ -415,30 +408,30 @@ border-radius:35px;
     margin-left:10px;
 }
   
-.botonesContacto{
+/* .botonesContacto{  OK
 margin-bottom: 20px;
-}
-.cajaContacto{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-bottom: 5px;
-    width: 750px;
-    height: 250px;
-}
-.cajaArchivos{
+} */
+/* .cajaContacto{  OK
+margin-top: 5px;
+margin-bottom: 5px;
+padding-bottom: 5px;
+width: 750px;
+height: 250px;
+} */
+/* .cajaArchivos{  OK
     display: inline-block;
     width: 450px;
-}
-.cajaSelect{
+} */
+/* .cajaSelect{   OK
 margin-left: 350px;
     width: 300px;
-} 
-.bordeFormu{
+}  */
+/* .bordeFormu{
     border: 1px dashed rgb(65, 63, 63);
     border-radius: 15px;
     padding: 15px;
     background-color: #a5a3a362;
-}
+} */
 /*--------------- footer --------------------*/
 .pagos{
     display:flex; 
@@ -868,7 +861,7 @@ font-size: 28px;
         height: 100px;
     }
     .tituloPrincipal{
-    font-size: 60px;
+    font-size: 50px;
     color: #9d4edd;
     width:350px;
     margin-left: 80px;
