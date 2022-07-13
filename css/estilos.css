@@ -77,7 +77,14 @@ body{
 .dropdown-menu :hover{
 background-color: lightblue;
 }
-
+.carrito{
+    width: 25px;
+    height: 20px;
+}
+.wppLogo{
+    width: 80px;
+    height: 80px;        
+    }
 
 /*------------------- INDEX -------------
 ------------------MAIN--------------*/
@@ -99,20 +106,21 @@ border-radius: 30px;
 padding-right: 5px;
  padding-top:60px;
  padding-left: 5px;
- width: 300px;
+ width: 250px;
  
 }
 .wppFlotante{  
     position: fixed;
     z-index: 5000;
-    left: 1250px;
+    left: 0px;
 }
 .wppParrafo{
     border: 1px solid black;
     border-radius: 10px;
     background-color: white;
     padding:2px;
-    width: 95px;
+    width: 105px;
+    margin-left: 10px;
 
 }
 /* titulos secundarios del index */
@@ -168,14 +176,19 @@ hr{
 .imagenRepo{
     margin-left: 20px;
     height: 250px;
+    width: 500px;
 }
 .imagenDeco{
 margin-left: 20px;
+height: 300px;
+width: 500px;
 }
 .imagenPorce{
-    margin-left: 20px;
+margin-left: 20px;
+height: 250px;
+width: 500px;
 }
-.imagenTransicion{
+/* .imagenTransicion{
 height: 250px;
 width: 500px;
 transition: all 2s;
@@ -183,7 +196,7 @@ transition: all 2s;
 .imagenTransicion:hover{
     width: 600px;
     height: 330px;
-}
+} */
 
 .link{
     text-align: center;
@@ -205,21 +218,20 @@ transition: all 2s;
     background-color: antiquewhite;
     margin: 30px;
     padding: 5px;
-    width: 1200px;
+    width: 900px;
     text-align: center;
     margin-left:60px;
     margin-right: 40px;
-    font-size: 30px;
+    font-size: 25px;
     border-radius: 30px;
 }
 .imagenQuienes{
-    margin-left: 150px;
+    width: 790px;
+    margin-left: 100px;
     margin-bottom: 20px;
     border-radius: 30px;
 }
 /* --------------reposteria---------------- */
-
-/*GRID en la pagina de decoracion de tortas  */
 
 .parrafosRepo{
     font-family:'Emilys Candy',cursive;
@@ -229,39 +241,55 @@ transition: all 2s;
     margin: 30px;
     text-align: left;
     width: 800px;
-    margin-left: 280px;
+    margin-left: 220px;
     border-radius: 30px;
     padding: 20px;
     border: 20px;
 }
-.parrafoEscribinos{
-    width: 1020px;
-    margin-left: 150px;
-    border-radius: 20px;
-    padding: 10px;
-}
+.escribinos{
+    font-family:'Emilys Candy',cursive;
+    border: 2px solid black;
+    background-color: antiquewhite;
+    font-size: 25px;
+    margin: 30px 30px 30px 220px;
+    text-align: center;
+    border-radius: 30px;
+    padding:10px 10px 10px 10px;
+    width: 800px;
+    height: 120px;
+    }
 .pastel1{
+    border-radius: 30px;
+    height:445px;
+    width:345px;
     margin-top: 20px;
     margin-bottom: 30px;
-    margin-left: 500px;
+    margin-left: 450px;
 }
 .contenedorCarousel1{
-    width: 850px;
-    height: 606px;
+    width: 500px;
+    height: 506px;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 200px;
+    margin-left: 350px;
     border: 3px solid black;
 }
+.img1{
+    width: 500px;
+    height: 500px;
+}
+
 .contenedorCarousel2{
-    width: 697px;
-    height: 508px;
+    width: 550px;
+    height: 556px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 300px;
     border: 3px solid black;
-     
-    
+}
+.img2{
+    width: 550px;
+    height: 550px;
 }
 
 
@@ -281,25 +309,33 @@ transition: all 2s;
 } */
 .parrafosDeco{
     font-family:'Emilys Candy',cursive;
-    border: 1px solid black;
+    border: 2px solid black;
     background-color: antiquewhite;
-    font-size: 30px;
+    font-size: 25px;
     text-align: left;
-    width: 1150px;
+    width: 900px;
     margin-left: 120px;
     border-radius: 30px;
     padding: 15px;
 }
 .pastel2{
+    border:1px solid black;
+    border-radius: 25px;
     margin-top:20px;
     margin-bottom: 30px;
     margin-left: 300px;
+    height:445px; 
+    width:360px; 
 }
 
 .pastel3{
+    border:1px solid black;
+    border-radius: 25px;
     margin-top: 20px;
     margin-bottom: 30px;
     margin-left: 50px;
+    height: 445px;
+    width: 345px;
 }
 
 .fondoDeco{
@@ -313,12 +349,12 @@ transition: all 2s;
 /* ------------------- porcelana Fria ------------------ */
 .parrafoPorce{
     font-family:'Emilys Candy',cursive;
-    border: 1px solid black;
+    border: 2px solid black;
     background-color: antiquewhite;
-    font-size: 30px;
+    font-size: 25px;
     margin: 30px;
     text-align: left;
-    width: 1100px;
+    width: 900px;
     margin-left: 120px;
     border-radius: 30px;
     padding: 20px;
@@ -330,17 +366,17 @@ transition: all 2s;
     background-color: antiquewhite;
     font-size: 25px;
     text-align: center;
-    width: 950px;
-    margin-left: 200px;
+    width: 900px;
+    margin-left: 150px;
     border-radius: 30px;
     padding: 20px;
 }
 .formulario div{
     margin-bottom: 20px;
 }
-.parrafos{
+/* .parrafos{
     width: 1000px;
-}
+} */
 .separacion{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -419,19 +455,21 @@ margin-left: 350px;
     font-family: 'Emilys Candy',cursive;
     line-height: 22px;
     font-size: 20px;
-    max-width: 280px;
+    width: 280px;
 }
 .footerTextoDos{
-    max-width: 250px;
+    width: 250px;
 }
 .footerTextoTres{
-    max-width: 200px;
+    width: 200px;
 }
 .tarjeta{
+    width: 80px;
     margin-right: 5px;
     margin-left: 5px;
 }
 .candado{
+    width: 40px;
     margin-left:5px
 }
 
@@ -446,7 +484,7 @@ background: radial-gradient(circle, rgba(231,139,179,1) 7%, rgba(139,162,246,1) 
     padding-bottom: 10px;
     padding-left: 20px;
     display: grid;
-    grid-template-columns: (3 1fr);
+    grid-template-columns: (3 440px);
     grid-template-rows: (1 1fr);
     
     grid-template-areas:
@@ -458,11 +496,14 @@ background: radial-gradient(circle, rgba(231,139,179,1) 7%, rgba(139,162,246,1) 
 }
 .google{
     grid-area:google;
+    width: 250px;
+    height: 250px;
 }
 .seguinos{
     grid-area:seguinos;
  }
 .logoFinal{
+    width: 290px;
     grid-area:logoFinal;
 }
 .grid{
@@ -475,6 +516,22 @@ background: radial-gradient(circle, rgba(231,139,179,1) 7%, rgba(139,162,246,1) 
     font-family:'Emilys Candy',cursive;
     font-size: 28px;
 }
+.iconosRedes{
+    position: relative;
+    left: 60px;
+}
+.youtube{
+    width: 80px;
+}
+.facebook{
+    width: 70px;
+}
+.instagram{
+    width: 80px;
+}
+.twitter{
+    width: 70px;
+}
 .envianosH2{
 font-family: 'Emilys Candy',cursive;
 padding-left:77px;
@@ -483,18 +540,22 @@ font-size: 28px;
 .wpp{
     position: relative;
     left: 180px;
+    width: 90px;
 }
-.iconosRedes{
-    position: relative;
-    left: 60px;
+.banner{
+    width: auto;
+    height: auto;
+    margin-left: 280px;
+}
+.wppFooter{
+    width: 60px;
 }
 .copyright{
     text-align:right;
 }
 /* ----------MEDIAS QUERIES-------------------------------- */
+
 /* ------------ tablet ------------------- */
-@media (min-width: 769px){
-}/*   */
 @media (min-width:481px) and (max-width:768px) {
     .tituloPrincipal{
         font-size: 95px;
@@ -507,34 +568,17 @@ font-size: 28px;
         padding-top: 40px;
         padding-right: 20px;
     }
-    .gridIndex{
-        display: grid;
-        grid-template-columns: repeat(2 1fr);
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "img text" 
-        "img  ."
-        "link";
-        }
-    .img{
-        grid-area:imagenGridindex;
-    }
-    .text{
-        grid-area: textoGridindex;
-    }
-    .link{
-        right: 200px;
-        bottom:200px;
-    }
-    .imagenTransicion{
+
+/*     .imagenTransicion{
         transition: "width" 3s;
     }
     .imagenTransicion:hover{
         width: 400px;
-    }
+    } */
     .parrafosIndex{
-        font-size: 25px;
-        height: 460px;
+        font-size: 22px;
+        width: auto;
+        height: auto;
         margin: 10px;
     }
     .quienes{
@@ -551,7 +595,7 @@ font-size: 28px;
         height: 100px;
     }
     .bordes{
-        margin-top: 90px;
+        margin-top: 40px;
         width: 400px;
         height: 250px;
     }
@@ -590,7 +634,7 @@ font-size: 28px;
     }
     .iconosRedes{
         position: relative;
-        padding: 10px;;
+        padding: 10px;
         left: 30px;
     }
     .youtube{
@@ -633,12 +677,15 @@ font-size: 28px;
     height: 200px;
     padding-left: 15px;
     }
+    .banner{
+        margin-left: 50px;
+    }
     /*------ quienes somos? ---------------*/
     .parrafos02{ 
         margin-left: 50px;
-        padding: 5px;
+        padding: 10px 10px 10px 10px;
         width: 650px;
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .imagenQuienes{
@@ -655,46 +702,50 @@ font-size: 28px;
     margin-bottom: 30px ;
     margin-top: 40px;
     }
-    .parrafoEscribinos{
+  .escribinos{
+    font-size: 22px;
     width: 580px;
     height: 120px;
-    font-size: 22px;
-    margin-left: 80px;
-    margin-top: 40px;
     }
     .contenedorCarousel1{
     box-sizing: border-box;
-    width: 580px;
-    height: 586px;
+    width: 400px;
+    height: 406px;
     margin-top: 30px;
     margin-bottom: 20px;
-    margin-left: 80px;
+    margin-left: 180px;
     border: 3px solid black;
     border-radius: 20px;
     }
-    .imagenesCarousel{
-    width: 573px;
-    height: 578px;
-    border-radius:20px;
+    .img1{
+        width: 400px;
+        height: 400px;
+        border-radius: 20px;
     }
+
     .pastel1{
-    margin-left: 160px;
+    margin-left: 120px;
     width: 400px;
     height: 350px;
     }
 /*------------ DECORACION DE TORTAS --------------------*/
     .subtitulos{
-    font-size: 45px;
+    font-size: 35px;
     }
     .contenedorCarousel2{
     box-sizing: border-box;
-    width: 580px;
-    height: 510px;
+    width: 400px;
+    height: 406px;
     margin-top: 30px;
     margin-bottom: 20px;
-    margin-left: 80px;
+    margin-left: 150px;
     border: 3px solid black;
     border-radius: 20px;
+    }
+    .img2{
+        width: 400px;
+        height: 400px;
+        border-radius: 20px;
     }
 
     .parrafosDeco{
@@ -709,27 +760,20 @@ font-size: 28px;
     width: 340px;
     height: 440px;
     margin-left: 50px;
-    border:2px solid black;
-    border-radius: 25px;
     }
     .pastel3{
-    
     width: 340px;
     height: 440px;
-    border:2px solid black;
-    border-radius: 25px;
     }
 /* -------------------- PORCELANA FRIA ----------------- */
     .parrafoPorce{
-    margin-left:80px;
+    padding: 10px 10px 10px 10px;
+    margin-left:90px;
     width: 580px;
     height: 390px;
     font-size: 22px;
     } 
-    .parrafoEscribinos{
-    height: 130px;
-    width: 550px;
-    }
+    
 /*------------------ CONTACTO -----------------------------*/
     .parrafoFormu{
     margin-left: 20px;
@@ -782,29 +826,35 @@ font-size: 28px;
     }
 } 
 
-
 /* celular (mas chico) *//* (min-width:360px) and */ 
 @media(max-width:480px){
+  /*   *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    } */
     .gridIndex{
-        grid-template-columns: 445px;
-        grid-template-rows: 290px;
+        grid-template-columns: 1fr;
         grid-template-areas: 
-        "img " 
+        "img" 
         "link";
     }
     .img{
         grid-area: imagenGridindex;
     }
-    .link{
+    .text{
+        grid-area: none;
+    }
+/*     .link{
         right: 200px;
         bottom:200px;
-    }
-    .imagenTransicion{
-        transition: "width" 3s;
+    } */
+   /*  .imagenTransicion{
+        transition: "none" 3s;
         }
     .imagenTransicion:hover{
         width: 400px;
-    }
+    } */
     .boton{
         position:relative;
         top: 50px;
@@ -855,16 +905,31 @@ font-size: 28px;
     width: 60px;
     height: 60px;        
     }
+    .iconos{
+        margin-left: 0px;
+        height:70%;
+        max-width:100%;
+    }
+    .banner{
+        margin-left:10px;
+        width: 450px;
+    }
     /*  -------------------------*/
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr;
+        grid-template-areas:
+        "seguinos";
+    }
     .google{
-    width: 130px;
-    height: 130px;
+        display: none;
     }
     .seguinosH2{
-    font-size: 15px;
-    margin-left: 20px;
+    font-size: 18px;
+    margin-left: 40px;
     margin-top: 20px;
-    text-align: center;
+    text-align: start;
     }
     .youtube{
     width: 50px;
@@ -880,22 +945,22 @@ font-size: 28px;
     }
     .iconosRedes{
     position: relative;
-    left: 5px;
+    left: 1px;
     margin-top: 11px;
     margin-bottom: 5px;
-    margin-right: 5px;
-    margin-left: 25px;
+    margin-left: 80px;
     }
     .envianosH2{
-    text-align: center;
+    text-align: start;
     font-size: 15px;
-    margin-left: 10px;
+    margin-left: 100px;
     margin-right: 40px;
     padding: 10px;
     }
     .wpp{
     position: relative;
     left: 90px;
+    margin-left: 70px;
     height: 40px;
     width: 50px;
     }
@@ -922,27 +987,27 @@ font-size: 28px;
     font-size: 17px;
     margin-bottom: 20px ;
     }
-    .parrafoEscribinos{
-    width: 360px;
-    height: 120px;
+    .escribinos{
     font-size: 17px;
+    margin-left:25px;
+    width: 400px;
+    height: 115px;
     }
     .contenedorCarousel1{
     box-sizing: border-box;
-    width: 406px;
-    height: 586px;
+    width: 256px;
+    height: 256px;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 30px;
+    margin-left: 80px;
     border: 3px solid black;
     border-radius: 20px;
     }
-    .imagenesCarousel{
-        width: 400px;
-        height: 580px;
+    .img1{
+        width: 250px;
+        height: 250px;
         border-radius: 20px;
     }
-
     .imagenes{
     display: flex;
     flex-direction: column;
@@ -950,23 +1015,28 @@ font-size: 28px;
     }
     .pastel1{
     margin-left: 50px;
-    width: 350px;
+    width: 300px;
     height: 345px;
     }
    
 /*------------ DECORACION DE TORTAS --------------------*/
     .subtitulos{
-    font-size: 35px;
+    font-size: 25px;
     }
     .contenedorCarousel2{
     box-sizing: border-box;
-    width: 406px;
-    height: 506px;
+    width: 256px;
+    height: 256px;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 30px;
+    margin-left: 80px;
     border: 3px solid black;
     border-radius: 18px;
+    }
+    .img2{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
     }
 
     .parrafosDeco{
@@ -976,28 +1046,23 @@ font-size: 28px;
     padding: 15px;  
     }
     .pastel2{
-    width: 340px;
-    height: 440px;
+    width: 300px;
+    height: 345px;
     margin-left: 50px;
-    border:1px solid black;
-    border-radius: 25px;
     }
     .pastel3{
-    width: 340px;
-    height: 440px;
-    border:1px solid black;
-    border-radius: 25px;
+    width: 300px;
+    height: 345px;
     }
 /* -------------------- PORCELANA FRIA ----------------- */
     .parrafoPorce{
     margin-left:50px;
     width: 370px;
     height: 340px;
+    padding-top: 5px;
     font-size: 17px;
     } 
-    .parrafoEscribinos{
-    height: 130px;
-    }
+
 /*------------------ CONTACTO -----------------------------*/
     .parrafoFormu{
     margin-left: 20px;
@@ -1050,3 +1115,5 @@ font-size: 28px;
     }
 }
 
+/* @media (min-width: 769px){
+} */
