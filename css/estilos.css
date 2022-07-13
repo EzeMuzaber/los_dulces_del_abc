@@ -156,12 +156,11 @@ hr{
 /* reposteria,decoracion y porcelana index grid */
 .gridIndex{
     display: grid;
-    grid-template-columns: repeat(2 1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: 1fr;
     grid-template-areas:
     "img text" 
-    "img  ."
-    "link";
+    "img  .";
 }
 .img{
     grid-area: imagenGridindex;
@@ -170,6 +169,7 @@ hr{
     grid-area: textoGridindex;
 }
 .link{
+    display: none;
     grid-area: linkGridindex;
 }
 
@@ -554,9 +554,19 @@ font-size: 28px;
     text-align:right;
 }
 /* ----------MEDIAS QUERIES-------------------------------- */
-
 /* ------------ tablet ------------------- */
 @media (min-width:481px) and (max-width:768px) {
+    .gridIndex{
+        grid-template-columns:768px;
+        grid-template-areas: 
+        "img";
+    }
+    .text{
+        display: none;
+    }
+    .link{
+        display: none;
+    }
     .tituloPrincipal{
         font-size: 95px;
         color: #9d4edd;
@@ -569,7 +579,7 @@ font-size: 28px;
         padding-right: 20px;
     }
 
-/*     .imagenTransicion{
+/*   .imagenTransicion{
         transition: "width" 3s;
     }
     .imagenTransicion:hover{
@@ -703,6 +713,7 @@ font-size: 28px;
     margin-top: 40px;
     }
   .escribinos{
+    margin: 20px 20px 20px 80px;
     font-size: 22px;
     width: 580px;
     height: 120px;
@@ -828,22 +839,16 @@ font-size: 28px;
 
 /* celular (mas chico) *//* (min-width:360px) and */ 
 @media(max-width:480px){
-  /*   *{
-        margin:0;
-        padding: 0;
-        box-sizing: border-box;
-    } */
     .gridIndex{
-        grid-template-columns: 1fr;
+        grid-template-columns:480px;
         grid-template-areas: 
-        "img" 
-        "link";
-    }
-    .img{
-        grid-area: imagenGridindex;
+        "img";
     }
     .text{
-        grid-area: none;
+        display: none;
+    }
+    .link{
+        display: none;
     }
 /*     .link{
         right: 200px;
