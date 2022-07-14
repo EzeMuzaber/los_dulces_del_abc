@@ -71,11 +71,11 @@
 /* .dropdown-menu :hover{  OK
 background-color: lightblue;
 } */
-/* .carrito{
+/* .carrito{  OK
     width: 25px;
     height: 20px;
 } */
-/* .wppLogo{
+/* .wppLogo{    OK
     width: 80px;
     height: 80px;        
 } */
@@ -102,22 +102,21 @@ padding-top:60px;
 padding-left: 5px;
 width: 250px;
 } */
-.wppFlotante{  
+/* .wppFlotante{    OK
     position: fixed;
     z-index: 5000;
     left: 0px;
-}
-.wppParrafo{
+} */
+/* .wppParrafo{   OK
     border: 1px solid black;
     border-radius: 10px;
     background-color: white;
     padding:2px;
     width: 105px;
     margin-left: 10px;
-
-}
+} */
 /* titulos secundarios del index */
-.subtitulos{
+/* .subtitulos{  OK
     background-color:antiquewhite ;
     text-align: center;
     font-size: 40px;
@@ -125,21 +124,21 @@ width: 250px;
     font-weight: lighter;
     margin-bottom: 20px;
     margin-top: 8px;
-}
+} */
 
-.parrafosIndex{
+/* .parrafosIndex{  OK
     font-family:'Emilys Candy',cursive;
     border: 1px solid black;
     background-color: antiquewhite;
     font-size: 30px;
     margin: 30px;
 } 
-.bordesIndex{
+.bordesIndex{  OK
     border-radius: 25px;
     border: 2.5px solid black;
     line-height: 40px;
     padding: 15px;  
-}
+} */
 
 hr{
     border: 1px dashed #9d4edd;
@@ -147,7 +146,7 @@ hr{
 
 
 /* reposteria,decoracion y porcelana index grid */
-.gridIndex{
+/* .gridIndex{   OK
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 1fr;
@@ -155,46 +154,46 @@ hr{
     "img text" 
     "img  .";
 }
-.img{
+.img{  OK
     grid-area: imagenGridindex;
 }
-.text{
+.text{  OK
     grid-area: textoGridindex;
 }
-.link{
+.link{  OK
     display: none;
     grid-area: linkGridindex;
-}
+} */
 
-.imagenRepo{
+/* .imagenRepo{  OK
     margin-left: 20px;
     height: 250px;
     width: 500px;
-}
-.imagenDeco{
+} */
+/* .imagenDeco{  OK
 margin-left: 20px;
 height: 300px;
 width: 500px;
-}
-.imagenPorce{
+} */
+/* .imagenPorce{  OK
 margin-left: 20px;
 height: 250px;
 width: 500px;
-}
-/* .imagenTransicion{
+} */
+/* .imagenTransicion{ NOSE QUE HACER
 height: 250px;
 width: 500px;
 transition: all 2s;
 }
-.imagenTransicion:hover{
+.imagenTransicion:hover{ SI USARLA O NO
     width: 600px;
     height: 330px;
 } */
 
-.link{
+/*.link{ OK PERO NO VA MAS ME PARECE
     text-align: center;
     margin-bottom:25px
-}
+}*/
 .redes{
      text-align: center;
      font-family:'Emilys Candy',cursive;
@@ -288,11 +287,10 @@ transition: all 2s;
 
 /*--------------------- Pagina Decoracion de tortas --------------------*/
 
-.bordes{
+/* .bordes{ OJO PROBLEMAS  EN REPO NO HAY BORDES
     border-radius: 25px;
     border: 2.5px solid black;
- 
-}
+  } */
 /* .parrafos{
     font-family:'Emilys Candy',cursive;
     border: 1px solid black;
@@ -401,9 +399,9 @@ border-width: 4px;
 border-style: solid;
 border-radius:35px;
 } */
-.boton{
+/* .boton{  OK
     margin-top: 20px;
-}
+} */
 .radio{
     margin-left:10px;
 }
@@ -433,46 +431,46 @@ margin-left: 350px;
     background-color: #a5a3a362;
 } */
 /*--------------- footer --------------------*/
-.pagos{
+/* .pagos{
     display:flex; 
     padding: 20px 20px; 
     border: 5px 5px;
     justify-content: space-between;
-}
+} */
 .wpp{
     margin-right:10px;  
 }
-.footerTexto{
+/* .footerTexto{  OK
     border: 1px dashed black;
     background-color: lightcyan;
     font-family: 'Emilys Candy',cursive;
     line-height: 22px;
     font-size: 20px;
     width: 280px;
-}
-.footerTextoDos{
+} */
+/* .footerTextoDos{
     width: 250px;
-}
-.footerTextoTres{
+} */
+/* .footerTextoTres{
     width: 200px;
-}
-.tarjeta{
+} */
+/* .tarjeta{
     width: 80px;
     margin-right: 5px;
     margin-left: 5px;
-}
-.candado{
+} */
+/* .candado{
     width: 40px;
     margin-left:5px
-}
+} */
 
- .pagosFondo{
+/*  .pagosFondo{
     background: rgb(231,139,179);
 background: radial-gradient(circle, rgba(231,139,179,1) 7%, rgba(139,162,246,1) 100%);
-}
+} */
 
 /* GRID FOOTER */
-.grid{
+/* .grid{  OK
     padding-top:20px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -487,7 +485,7 @@ background: radial-gradient(circle, rgba(231,139,179,1) 7%, rgba(139,162,246,1) 
     "google seguinos logoFinal"
     "google seguinos logoFinal"
 }
-.google{
+.google{ OK
     grid-area:google;
     width: 250px;
     height: 250px;
@@ -495,57 +493,55 @@ background: radial-gradient(circle, rgba(231,139,179,1) 7%, rgba(139,162,246,1) 
 .seguinos{
     grid-area:seguinos;
  }
-.logoFinal{
+.logoFinal{  OK
     width: 290px;
     grid-area:logoFinal;
-}
-.grid{
+} */
+/* .grid{
     background: rgb(231,139,179);
     background: radial-gradient(circle, 
     rgba(231,139,179,1) 7%, 
     rgba(139,162,246,1) 100%);
-}
-.seguinosH2{
+} */
+/* .seguinosH2{
     font-family:'Emilys Candy',cursive;
     font-size: 28px;
-}
-.iconosRedes{
+} */
+/* .iconosRedes{    OK
     position: relative;
     left: 60px;
 }
-.youtube{
+.youtube{   OK
     width: 80px;
 }
-.facebook{
+.facebook{    OK
     width: 70px;
 }
-.instagram{
+.instagram{     OK
     width: 80px;
 }
-.twitter{
+.twitter{OK
     width: 70px;
-}
-.envianosH2{
+} */
+/* .envianosH2{ ELIMINADO
 font-family: 'Emilys Candy',cursive;
 padding-left:77px;
 font-size: 28px;
-}
-.wpp{
+} */
+/* .wpp{
     position: relative;
     left: 180px;
     width: 90px;
-}
-.banner{
+} */
+/* .banner{   OK
     width: auto;
     height: auto;
     margin-left: 280px;
-}
-.wppFooter{
+} */
+/* .wppFooter{   OK
     width: 60px;
-}
-.copyright{
-    text-align:right;
-}
+} */
+/*   */
 /* ----------MEDIAS QUERIES-------------------------------- */
 /* ------------ tablet ------------------- */
 @media (min-width:481px) and (max-width:768px) {

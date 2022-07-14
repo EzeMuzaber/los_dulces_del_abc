@@ -105,6 +105,150 @@ body {
   max-width: 600px;
   margin: auto; }
 
-.wppLogo {
-  width: 80px;
-  height: 80px; }
+.wppFlotante {
+  position: fixed;
+  z-index: 5000;
+  left: 0px; }
+  .wppFlotante .wppLogo {
+    width: 80px;
+    height: 80px; }
+  .wppFlotante .wppParrafo {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 2px;
+    width: 90px;
+    margin-left: 10px; }
+
+.subtitulos {
+  background-color: antiquewhite;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Emilys Candy',cursive;
+  font-weight: lighter;
+  margin-bottom: 20px;
+  margin-top: 8px; }
+
+.gridIndex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "img text"  "img  ."; }
+  .gridIndex .img {
+    grid-area: imagenGridindex; }
+  .gridIndex .text {
+    grid-area: textoGridindex; }
+  .gridIndex .link {
+    display: none;
+    grid-area: linkGridindex; }
+  .gridIndex .bordes {
+    border-radius: 25px;
+    border: 2.5px solid black; }
+  .gridIndex .imagenRepo {
+    margin-left: 20px;
+    margin-top: 45px;
+    height: 250px;
+    width: 500px; }
+  .gridIndex .imagenDeco {
+    margin-left: 20px;
+    height: 300px;
+    width: 500px; }
+  .gridIndex .imagenPorce {
+    margin-left: 20px;
+    margin-top: 40px;
+    height: 250px;
+    width: 500px; }
+
+.link {
+  text-align: center;
+  margin-bottom: 25px; }
+
+.parrafosIndex {
+  font-family: 'Emilys Candy',cursive;
+  border: 1px solid black;
+  background-color: antiquewhite;
+  font-size: 30px;
+  margin: 30px; }
+
+.bordesIndex {
+  border-radius: 25px;
+  border: 2.5px solid black;
+  line-height: 40px;
+  padding: 15px; }
+
+/*------------ FOOTER ----------------------*/
+.grid {
+  background: #e78bb3;
+  background: radial-gradient(circle, #e78bb3 7%, #8ba2f6 100%);
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 3 440px;
+  grid-template-rows: 1 1fr;
+  grid-template-areas: "google seguinos logoFinal" "google seguinos logoFinal" "google seguinos logoFinal" "google seguinos logoFinal"; }
+  .grid .google {
+    grid-area: google;
+    width: 250px;
+    height: 250px; }
+  .grid .seguinos {
+    grid-area: seguinos; }
+    .grid .seguinos H2 {
+      font-family: 'Emilys Candy',cursive;
+      font-size: 28px;
+      text-align: center;
+      margin-top: 20px; }
+  .grid .logoFinal {
+    width: 290px;
+    grid-area: logoFinal; }
+  .grid .iconosRedes {
+    position: relative;
+    left: 120px; }
+    .grid .iconosRedes .youtube {
+      width: 80px; }
+    .grid .iconosRedes .facebook {
+      width: 70px; }
+    .grid .iconosRedes .instagram {
+      width: 80px; }
+    .grid .iconosRedes .twitter {
+      width: 70px; }
+  .grid .wpp {
+    position: relative;
+    left: 220px;
+    width: 80px; }
+
+.pagosFondo {
+  background: #e78bb3;
+  background: radial-gradient(circle, #e78bb3 7%, #8ba2f6 100%); }
+  .pagosFondo .banner {
+    width: auto;
+    height: auto;
+    margin-left: 280px; }
+  .pagosFondo .pagos {
+    display: flex;
+    padding: 20px 20px;
+    border: 5px 5px;
+    justify-content: space-between; }
+    .pagosFondo .pagos .wppFooter {
+      width: 60px; }
+    .pagosFondo .pagos .footerTexto {
+      border: 1px dashed black;
+      background-color: lightcyan;
+      font-family: 'Emilys Candy',cursive;
+      line-height: 22px;
+      font-size: 20px;
+      width: 280px; }
+    .pagosFondo .pagos .tarjeta {
+      width: 80px;
+      margin-right: 5px;
+      margin-left: 5px; }
+    .pagosFondo .pagos .footerTextoDos {
+      width: 250px; }
+    .pagosFondo .pagos .candado {
+      width: 40px;
+      margin-left: 5px; }
+    .pagosFondo .pagos .footerTextoTres {
+      width: 200px; }
+
+.copyright {
+  text-align: right; }

@@ -32,6 +32,7 @@ body{
         background-color: lightblue;
     }
 }
+
 .carrito{
     width: 25px;
     height: 20px;
@@ -55,8 +56,196 @@ body{
     max-width:600px;
 	margin:auto;
 }
-.wppLogo{
-    width: 80px;
-    height: 80px;        
+.wppFlotante{  
+    position: fixed;
+    z-index: 5000;
+    left: 0px;
+    .wppLogo{
+        width: 80px;
+        height: 80px;        
+    }
+    .wppParrafo{
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: white;
+        padding:2px;
+        width: 90px;
+        margin-left: 10px;
+    }
+}
+.subtitulos{
+    background-color:antiquewhite ;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Emilys Candy',cursive;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+.gridIndex{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "img text" 
+    "img  .";
+    
+    .img{
+    grid-area: imagenGridindex;
+    }
+    .text{
+    grid-area: textoGridindex;
+    }
+    .link{
+    display: none;
+    grid-area: linkGridindex;
+    }
+    .bordes{
+    border-radius: 25px;
+    border: 2.5px solid black;
+    }
+    .imagenRepo{
+        margin-left: 20px;
+        margin-top: 45px;
+        height: 250px;
+        width: 500px;
+    }
+    .imagenDeco{
+        margin-left: 20px;
+        height: 300px;
+        width: 500px;
+    }
+    .imagenPorce{
+        margin-left: 20px;
+        margin-top: 40px;
+        height: 250px;
+        width: 500px;
+    }
+}
+.link{
+    text-align: center; 
+    margin-bottom:25px
 }
 
+.parrafosIndex{
+font-family:'Emilys Candy',cursive;
+border: 1px solid black;
+background-color: antiquewhite;
+font-size: 30px;
+margin: 30px;
+} 
+.bordesIndex{
+border-radius: 25px;
+border: 2.5px solid black;
+line-height: 40px;
+padding: 15px;  
+}     
+/*------------ FOOTER ----------------------*/
+
+.grid{
+    background: rgb(231,139,179);
+    background: radial-gradient(circle, 
+    rgba(231,139,179,1) 7%, 
+    rgba(139,162,246,1) 100%);
+    padding-top:20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: (3 440px);
+    grid-template-rows: (1 1fr);
+    
+    grid-template-areas: 
+    "google seguinos logoFinal"
+    "google seguinos logoFinal"
+    "google seguinos logoFinal"
+    "google seguinos logoFinal";
+    
+    .google{
+    grid-area:google;
+    width:250px;
+    height:250px;
+    }
+    .seguinos{
+    grid-area:seguinos;
+        H2{
+        font-family:'Emilys Candy',cursive;
+        font-size: 28px;
+        text-align: center;
+        margin-top: 20px;
+        }
+    }
+    .logoFinal{
+    width: 290px;
+    grid-area:logoFinal;
+    }
+    .iconosRedes{
+    position: relative;
+    left: 120px;
+        .youtube{
+        width: 80px;
+        }
+        .facebook{
+        width: 70px;
+        }
+        .instagram{
+        width: 80px;
+        }
+        .twitter{
+        width: 70px;
+        }
+       
+     }
+    .wpp{
+    position: relative;
+    left: 220px;
+    width: 80px;
+    }
+}
+.pagosFondo{
+    background: rgb(231,139,179);
+    background: radial-gradient(circle, 
+    rgba(231,139,179,1) 7%, 
+    rgba(139,162,246,1) 100%);
+    
+    .banner{
+    width: auto;
+    height: auto;
+    margin-left: 280px;
+    }
+    .pagos{
+    display:flex; 
+    padding: 20px 20px; 
+    border: 5px 5px;
+    justify-content: space-between;
+        .wppFooter{
+        width: 60px;
+        }
+        .footerTexto{
+        border: 1px dashed black;
+        background-color: lightcyan;
+        font-family: 'Emilys Candy',cursive;
+        line-height: 22px;
+        font-size: 20px;
+        width: 280px;
+        }
+        .tarjeta{
+        width: 80px;
+        margin-right: 5px;
+        margin-left: 5px;
+        }
+        .footerTextoDos{
+        width: 250px;
+        }
+        .candado{
+        width: 40px;
+        margin-left:5px
+        }
+        .footerTextoTres{
+        width: 200px;
+        }
+    }
+}
+.copyright{
+    text-align:right;
+}
+    
