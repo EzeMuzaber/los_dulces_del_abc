@@ -175,7 +175,7 @@ padding: 15px;
         }
     }
     .logoFinal{
-    width: 290px;
+    width: 250px;
     grid-area:logoFinal;
     }
     .iconosRedes{
@@ -209,7 +209,7 @@ padding: 15px;
     .banner{
     width: 600px;
     height: auto;
-    margin-left:320px;
+    margin-left:300px;
     }
     .pagos{
     display:flex; 
@@ -365,6 +365,25 @@ padding: 15px;
         .link{
             display: none;
         }
+        .bordes{
+            width: 400px;
+            height: 250px;
+        }
+        .imagenRepo{
+            margin-top: 30px;
+            margin-left:40px;
+        }
+        .imagenDeco{
+        margin-top: 24px;
+        margin-left: 40px;
+        }
+        .imagenPorce{
+        margin-top: 24px;
+        margin-left: 40px;
+        }
+    }
+    .parrafosIndex{
+        display: none;
     }
 }
 /*----------------- MEDIA QUERIE FOOTER ------------------ */

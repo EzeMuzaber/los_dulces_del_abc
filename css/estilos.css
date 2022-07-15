@@ -862,10 +862,10 @@ font-size: 28px;
         width: 100px;
         padding-top: 40px;
     } */
-    .parrafosIndex{
+  /*   .parrafosIndex{
         display: none;
     }
-    .bordes{
+    .bordes{  OK
         width: 400px;
         height: 250px;
     }
@@ -880,7 +880,7 @@ font-size: 28px;
     .imagenPorce{
     margin-top: 24px;
     margin-left: 40px;
-    }
+    } */
    /*  .wppFlotante{    OK
     position: fixed;
     left:0px;
@@ -1053,7 +1053,7 @@ font-size: 28px;
     } 
 
 /*------------------ CONTACTO -----------------------------*/
-    .parrafoFormu{
+/*     .parrafoFormu{
     margin-left: 20px;
     font-size: 17px;
     width: 420px;
@@ -1073,7 +1073,7 @@ font-size: 28px;
     } 
     .cajaArchivos{
     width: 350px;
-    }
+    } */
  /*--------footer -------------------*/
 
     .pagos{

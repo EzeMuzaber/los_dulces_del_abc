@@ -9,7 +9,7 @@
         font-size: 25px;
         text-align: center;
         width: 900px;
-        margin-left: 150px;
+        margin-left: 70px;
         border-radius: 30px;
         padding: 20px;
     }
@@ -84,7 +84,27 @@
     }
 }
 @media(max-width:480px){
-
-
-    
+.formulario{
+    .parrafoFormu{
+        margin-left: 20px;
+        font-size: 17px;
+        width: 420px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        }
+    .cajaContacto{
+        width: 385px;
+        }
+    .parrafoCompletar{
+        font-size: 16px;
+        }
+    .cajaSelect{
+        margin-left:110px;
+        width: 150px;
+        font-size: 10px;
+        } 
+    .cajaArchivos{
+        width: 350px;
+        }
+    }
 }

@@ -8,7 +8,7 @@
   font-size: 25px;
   text-align: center;
   width: 900px;
-  margin-left: 150px;
+  margin-left: 70px;
   border-radius: 30px;
   padding: 20px; }
 
@@ -71,6 +71,24 @@
   .formulario .cajaSelect {
     margin-left: 200px;
     width: 250px; }
+  .formulario .cajaArchivos {
+    width: 350px; } }
+
+@media (max-width: 480px) {
+  .formulario .parrafoFormu {
+    margin-left: 20px;
+    font-size: 17px;
+    width: 420px;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .formulario .cajaContacto {
+    width: 385px; }
+  .formulario .parrafoCompletar {
+    font-size: 16px; }
+  .formulario .cajaSelect {
+    margin-left: 110px;
+    width: 150px;
+    font-size: 10px; }
   .formulario .cajaArchivos {
     width: 350px; } }
 
@@ -218,7 +236,7 @@ body {
       text-align: center;
       margin-top: 20px; }
   .grid .logoFinal {
-    width: 290px;
+    width: 250px;
     grid-area: logoFinal; }
   .grid .iconosRedes {
     position: relative;
@@ -242,7 +260,7 @@ body {
   .pagosFondo .banner {
     width: 600px;
     height: auto;
-    margin-left: 320px; }
+    margin-left: 300px; }
   .pagosFondo .pagos {
     display: flex;
     padding: 20px 20px;
@@ -362,7 +380,21 @@ body {
     .gridIndex .text {
       display: none; }
     .gridIndex .link {
-      display: none; } }
+      display: none; }
+    .gridIndex .bordes {
+      width: 400px;
+      height: 250px; }
+    .gridIndex .imagenRepo {
+      margin-top: 30px;
+      margin-left: 40px; }
+    .gridIndex .imagenDeco {
+      margin-top: 24px;
+      margin-left: 40px; }
+    .gridIndex .imagenPorce {
+      margin-top: 24px;
+      margin-left: 40px; }
+  .parrafosIndex {
+    display: none; } }
 
 /*----------------- MEDIA QUERIE FOOTER ------------------ */
 @media (max-width: 480px) {
