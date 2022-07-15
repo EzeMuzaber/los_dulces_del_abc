@@ -55,6 +55,25 @@
   border-style: solid;
   border-radius: 35px; }
 
+/* MEDIA QUERIE CONTACTO */
+@media (min-width: 481px) and (max-width: 768px) {
+  .formulario .parrafoFormu {
+    margin-left: 20px;
+    font-size: 22px;
+    width: 680px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px; }
+  .formulario .cajaContacto {
+    width: 480px; }
+  .formulario .parrafoCompletar {
+    font-size: 16px; }
+  .formulario .cajaSelect {
+    margin-left: 200px;
+    width: 250px; }
+  .formulario .cajaArchivos {
+    width: 350px; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -221,9 +240,9 @@ body {
   background: #e78bb3;
   background: radial-gradient(circle, #e78bb3 7%, #8ba2f6 100%); }
   .pagosFondo .banner {
-    width: auto;
+    width: 600px;
     height: auto;
-    margin-left: 280px; }
+    margin-left: 320px; }
   .pagosFondo .pagos {
     display: flex;
     padding: 20px 20px;
@@ -252,3 +271,222 @@ body {
 
 .copyright {
   text-align: right; }
+
+/* MEDIA QUERIE TABLET */
+@media (min-width: 481px) and (max-width: 768px) {
+  .logoPrincipal {
+    width: 200px;
+    padding-top: 40px;
+    padding-right: 20px; }
+  .tituloPrincipal {
+    font-size: 95px;
+    color: #9d4edd;
+    width: 450px;
+    text-align: center; }
+  .wppFlotante {
+    position: fixed;
+    left: 0px; }
+    .wppFlotante .wppParrafo {
+      margin-left: 10px;
+      width: 90px;
+      background-color: antiquewhite; }
+    .wppFlotante .wppLogo {
+      width: 80px;
+      height: 80px; }
+  .subtitulos {
+    font-size: 35px; }
+  .gridIndex {
+    grid-template-columns: 768px;
+    grid-template-areas: "img" "text"; }
+    .gridIndex .link {
+      display: none; }
+    .gridIndex .bordes {
+      margin-top: 40px;
+      width: 400px;
+      height: 250px; }
+    .gridIndex .imagenRepo {
+      margin-top: 25px;
+      margin-left: 180px; }
+    .gridIndex .imagenDeco {
+      margin-top: 24px;
+      margin-left: 180px; }
+    .gridIndex .imagenPorce {
+      margin-top: 24px;
+      margin-left: 180px; }
+  .parrafosIndex {
+    font-size: 22px;
+    width: auto;
+    height: auto;
+    margin: 10px; }
+  /*   .boton{
+        position:relative;
+        top: 10px;
+        bottom: 150px;
+        right: 300px;
+        width: 300px;
+        height: 100px;
+    } */ }
+
+/* MEDIA QUERIE CELULAR*/
+@media (max-width: 480px) {
+  .logoPrincipal {
+    width: 100px;
+    padding-top: 40px; }
+  .tituloPrincipal {
+    font-size: 50px;
+    color: #9d4edd;
+    width: 350px;
+    margin-left: 80px;
+    text-align: center; }
+  .wppFlotante {
+    position: fixed;
+    left: 0px; }
+    .wppFlotante .wppParrafo {
+      margin-left: 10px;
+      width: 90px;
+      background-color: antiquewhite; }
+    .wppFlotante .wppLogo {
+      width: 60px;
+      height: 60px; }
+  .subtitulos {
+    font-size: 25px; }
+  .logoFinal {
+    width: 290px;
+    grid-area: logoFinal; }
+  .iconosRedes {
+    position: relative;
+    left: 80px; }
+  .gridIndex {
+    grid-template-columns: 480px;
+    grid-template-areas: "img"; }
+    .gridIndex .text {
+      display: none; }
+    .gridIndex .link {
+      display: none; } }
+
+/*----------------- MEDIA QUERIE FOOTER ------------------ */
+@media (max-width: 480px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "seguinos"; }
+    .grid .google {
+      display: none; }
+    .grid .google {
+      margin-top: 40px;
+      width: 170px;
+      height: 200px;
+      margin-right: 15px;
+      border-radius: 20px; }
+    .grid .seguinos h2 {
+      font-size: 20px;
+      margin-left: 10px;
+      margin-top: 10px;
+      text-align: center; }
+    .grid .logoFinal {
+      display: none; }
+    .grid .iconosRedes {
+      position: relative;
+      left: 1px;
+      margin-top: 11px;
+      margin-bottom: 5px;
+      margin-left: 140px; }
+      .grid .iconosRedes .youtube {
+        width: 50px; }
+      .grid .iconosRedes .facebook {
+        width: 50px; }
+      .grid .iconosRedes .instagram {
+        width: 50px; }
+      .grid .iconosRedes .twitter {
+        width: 50px; }
+    .grid .wpp {
+      position: relative;
+      left: 90px;
+      margin-left: 120px;
+      height: 40px;
+      width: 50px; }
+  .pagosFondo .banner {
+    width: 400px;
+    height: auto;
+    margin-left: 50px; }
+  .pagosFondo .pagos {
+    padding: 10px; }
+    .pagosFondo .pagos .wppFooter {
+      margin-top: 25px;
+      width: 40px;
+      height: 50px; }
+    .pagosFondo .pagos .footerTexto {
+      font-size: 15px;
+      margin: 5px; }
+    .pagosFondo .pagos .tarjeta {
+      margin-top: 25px;
+      width: 40px;
+      height: 40px; }
+    .pagosFondo .pagos .candado {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      width: 45px;
+      height: 50px; }
+  .copyright {
+    font-size: 10px; } }
+
+/*------------------- MEDIA QUERIES FOOTER--------------------- */
+@media (min-width: 481px) and (max-width: 768px) {
+  .grid .google {
+    margin-top: 40px;
+    width: 170px;
+    height: 200px;
+    margin-right: 15px;
+    border-radius: 20px; }
+  .grid .seguinos h2 {
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: center; }
+  .grid .logoFinal {
+    display: flex;
+    margin-top: 40px;
+    margin-right: 15px;
+    border-radius: 20px;
+    width: 180px;
+    height: 200px;
+    padding-left: 15px; }
+  .grid .iconosRedes {
+    position: relative;
+    padding: 10px;
+    left: 30px; }
+    .grid .iconosRedes .youtube {
+      width: 70px; }
+    .grid .iconosRedes .facebook {
+      width: 70px; }
+    .grid .iconosRedes .instagram {
+      width: 70px; }
+    .grid .iconosRedes .twitter {
+      width: 70px; }
+  .grid .wpp {
+    position: relative;
+    left: 140px;
+    width: 70px; }
+  .pagosFondo .banner {
+    margin-left: 50px; }
+  .pagosFondo .pagos {
+    padding: 10px; }
+    .pagosFondo .pagos .wppFooter {
+      margin-top: 15px;
+      width: 50px;
+      height: 60px; }
+    .pagosFondo .pagos .footerTexto {
+      font-size: 15px;
+      margin: 5px; }
+    .pagosFondo .pagos .tarjeta {
+      margin-top: 25px;
+      width: 40px;
+      height: 40px; }
+    .pagosFondo .pagos .candado {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      width: 45px;
+      height: 50px; }
+  .copyright {
+    font-size: 10px; } }

@@ -57,3 +57,34 @@
     border-style: solid;
     border-radius:35px;
     }
+/* MEDIA QUERIE CONTACTO */
+@media (min-width:481px) and (max-width:768px) {
+.formulario{
+    .parrafoFormu{
+        margin-left: 20px;
+        font-size: 22px;
+        width: 680px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        } 
+        .cajaContacto{
+            width: 480px;
+        }
+        .parrafoCompletar{
+            font-size: 16px;
+        }
+        .cajaSelect{
+            margin-left:200px;
+            width: 250px;
+        }
+        .cajaArchivos{
+            width: 350px;
+        }
+    }
+}
+@media(max-width:480px){
+
+
+    
+}
