@@ -61,25 +61,24 @@
 @media (min-width:481px) and (max-width:768px) {
 .formulario{
     .parrafoFormu{
-        margin-left: 20px;
-        font-size: 22px;
-        width: 680px;
+        margin-left: 80px;
+        font-size: 20px;
+        width: 580px;
         margin-top: 30px;
         margin-bottom: 20px;
-        margin-left: 30px;
         } 
         .cajaContacto{
-            width: 480px;
+            width: 350px;
         }
         .parrafoCompletar{
-            font-size: 16px;
+            font-size: 20px;
         }
         .cajaSelect{
-            margin-left:200px;
+            margin-left:150px;
             width: 250px;
         }
         .cajaArchivos{
-            width: 350px;
+        width: 350px;
         }
     }
 }
@@ -106,5 +105,8 @@
     .cajaArchivos{
         width: 350px;
         }
+    .botonesContacto{
+        
+    }
     }
 }

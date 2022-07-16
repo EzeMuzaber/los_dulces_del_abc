@@ -1,97 +1,3 @@
-.formulario div {
-  margin-bottom: 20px; }
-
-.formulario .parrafoFormu {
-  font-family: 'Emilys Candy',cursive;
-  border: 1px solid black;
-  background-color: antiquewhite;
-  font-size: 25px;
-  text-align: center;
-  width: 900px;
-  margin-left: 70px;
-  border-radius: 30px;
-  padding: 20px; }
-
-.formulario .separacion {
-  margin-top: 20px;
-  margin-bottom: 20px; }
-
-.formulario .cajaSelect {
-  margin-left: 300px;
-  width: 300px; }
-
-.formulario .bordeFormu {
-  border: 1px dashed #413f3f;
-  border-radius: 15px;
-  padding: 15px;
-  background-color: #a5a3a362; }
-
-.formulario .cajaContacto {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-bottom: 5px;
-  width: 750px;
-  height: 250px; }
-
-.formulario .cajaArchivos {
-  display: inline-block;
-  width: 450px; }
-
-.formulario .botonesContacto {
-  margin-bottom: 20px; }
-
-.botones {
-  text-decoration: none;
-  font-weight: 600px;
-  font-size: 17px;
-  color: #333333;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: #FFD27D;
-  border-color: #d8d8d8;
-  border-width: 4px;
-  border-style: solid;
-  border-radius: 35px; }
-
-/* MEDIA QUERIE CONTACTO */
-@media (min-width: 481px) and (max-width: 768px) {
-  .formulario .parrafoFormu {
-    margin-left: 20px;
-    font-size: 22px;
-    width: 680px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-left: 30px; }
-  .formulario .cajaContacto {
-    width: 480px; }
-  .formulario .parrafoCompletar {
-    font-size: 16px; }
-  .formulario .cajaSelect {
-    margin-left: 200px;
-    width: 250px; }
-  .formulario .cajaArchivos {
-    width: 350px; } }
-
-@media (max-width: 480px) {
-  .formulario .parrafoFormu {
-    margin-left: 20px;
-    font-size: 17px;
-    width: 420px;
-    margin-top: 20px;
-    margin-bottom: 20px; }
-  .formulario .cajaContacto {
-    width: 385px; }
-  .formulario .parrafoCompletar {
-    font-size: 16px; }
-  .formulario .cajaSelect {
-    margin-left: 110px;
-    width: 150px;
-    font-size: 10px; }
-  .formulario .cajaArchivos {
-    width: 350px; } }
-
 * {
   margin: 0;
   padding: 0;
@@ -522,3 +428,96 @@ body {
       height: 50px; }
   .copyright {
     font-size: 10px; } }
+
+.formulario div {
+  margin-bottom: 20px; }
+
+.formulario .parrafoFormu {
+  font-family: 'Emilys Candy',cursive;
+  border: 1px solid black;
+  background-color: antiquewhite;
+  font-size: 25px;
+  text-align: center;
+  width: 900px;
+  margin-left: 70px;
+  border-radius: 30px;
+  padding: 20px; }
+
+.formulario .separacion {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.formulario .cajaSelect {
+  margin-left: 300px;
+  width: 300px; }
+
+.formulario .bordeFormu {
+  border: 1px dashed #413f3f;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #a5a3a362; }
+
+.formulario .cajaContacto {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  width: 750px;
+  height: 250px; }
+
+.formulario .cajaArchivos {
+  display: inline-block;
+  width: 450px; }
+
+.formulario .botonesContacto {
+  margin-bottom: 20px; }
+
+.botones {
+  text-decoration: none;
+  font-weight: 600px;
+  font-size: 17px;
+  color: #333333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #FFD27D;
+  border-color: #d8d8d8;
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 35px; }
+
+/* MEDIA QUERIE CONTACTO */
+@media (min-width: 481px) and (max-width: 768px) {
+  .formulario .parrafoFormu {
+    margin-left: 80px;
+    font-size: 20px;
+    width: 580px;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .formulario .cajaContacto {
+    width: 350px; }
+  .formulario .parrafoCompletar {
+    font-size: 20px; }
+  .formulario .cajaSelect {
+    margin-left: 150px;
+    width: 250px; }
+  .formulario .cajaArchivos {
+    width: 350px; } }
+
+@media (max-width: 480px) {
+  .formulario .parrafoFormu {
+    margin-left: 20px;
+    font-size: 17px;
+    width: 420px;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .formulario .cajaContacto {
+    width: 385px; }
+  .formulario .parrafoCompletar {
+    font-size: 16px; }
+  .formulario .cajaSelect {
+    margin-left: 110px;
+    width: 150px;
+    font-size: 10px; }
+  .formulario .cajaArchivos {
+    width: 350px; } }
