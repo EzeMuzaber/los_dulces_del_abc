@@ -146,7 +146,7 @@ body {
     grid-area: logoFinal; }
   .grid .iconosRedes {
     position: relative;
-    left: 120px; }
+    left: 100px; }
     .grid .iconosRedes .youtube {
       width: 80px; }
     .grid .iconosRedes .facebook {
@@ -166,7 +166,7 @@ body {
   .pagosFondo .banner {
     width: 600px;
     height: auto;
-    margin-left: 300px; }
+    margin-left: 230px; }
   .pagosFondo .pagos {
     display: flex;
     padding: 20px 20px;
