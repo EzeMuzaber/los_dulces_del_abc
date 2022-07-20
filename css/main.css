@@ -147,6 +147,8 @@ body {
   .grid .iconosRedes {
     position: relative;
     left: 100px; }
+    .grid .iconosRedes a {
+      text-decoration: none; }
     .grid .iconosRedes .youtube {
       width: 80px; }
     .grid .iconosRedes .facebook {
@@ -196,7 +198,7 @@ body {
 .copyright {
   text-align: right; }
 
-/* MEDIA QUERIE TABLET */
+/* -----------------------MEDIA QUERIE TABLET  -------------------------------------*/
 @media (min-width: 481px) and (max-width: 768px) {
   .logoPrincipal {
     width: 200px;
@@ -251,7 +253,7 @@ body {
         height: 100px;
     } */ }
 
-/* MEDIA QUERIE CELULAR*/
+/* --------------------------- MEDIA QUERIE CELULAR ------------------------------*/
 @media (max-width: 480px) {
   .logoPrincipal {
     width: 100px;
@@ -302,7 +304,67 @@ body {
   .parrafosIndex {
     display: none; } }
 
-/*----------------- MEDIA QUERIE FOOTER ------------------ */
+/*------------------- MEDIA QUERIES FOOTER TABLET--------------------- */
+@media (min-width: 481px) and (max-width: 768px) {
+  .grid .google {
+    margin-top: 40px;
+    width: 170px;
+    height: 200px;
+    margin-right: 15px;
+    border-radius: 20px; }
+  .grid .seguinos h2 {
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: center; }
+  .grid .logoFinal {
+    display: flex;
+    margin-top: 40px;
+    margin-right: 15px;
+    border-radius: 20px;
+    width: 180px;
+    height: 200px;
+    padding-left: 15px; }
+  .grid .iconosRedes {
+    position: relative;
+    padding: 10px;
+    left: 30px; }
+    .grid .iconosRedes .youtube {
+      width: 70px; }
+    .grid .iconosRedes .facebook {
+      width: 70px; }
+    .grid .iconosRedes .instagram {
+      width: 70px; }
+    .grid .iconosRedes .twitter {
+      width: 70px; }
+  .grid .wpp {
+    position: relative;
+    left: 140px;
+    width: 70px; }
+  .pagosFondo .banner {
+    margin-left: 50px; }
+  .pagosFondo .pagos {
+    padding: 10px; }
+    .pagosFondo .pagos .wppFooter {
+      margin-top: 15px;
+      width: 50px;
+      height: 60px; }
+    .pagosFondo .pagos .footerTexto {
+      font-size: 15px;
+      margin: 5px; }
+    .pagosFondo .pagos .tarjeta {
+      margin-top: 25px;
+      width: 40px;
+      height: 40px; }
+    .pagosFondo .pagos .candado {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      width: 45px;
+      height: 50px; }
+  .copyright {
+    font-size: 10px; } }
+
+/*------------------------------ MEDIA QUERIE FOOTER CELULAR --------------------------- */
 @media (max-width: 480px) {
   .grid {
     display: grid;
@@ -354,66 +416,6 @@ body {
       margin-top: 25px;
       width: 40px;
       height: 50px; }
-    .pagosFondo .pagos .footerTexto {
-      font-size: 15px;
-      margin: 5px; }
-    .pagosFondo .pagos .tarjeta {
-      margin-top: 25px;
-      width: 40px;
-      height: 40px; }
-    .pagosFondo .pagos .candado {
-      margin-top: 25px;
-      margin-bottom: 25px;
-      width: 45px;
-      height: 50px; }
-  .copyright {
-    font-size: 10px; } }
-
-/*------------------- MEDIA QUERIES FOOTER--------------------- */
-@media (min-width: 481px) and (max-width: 768px) {
-  .grid .google {
-    margin-top: 40px;
-    width: 170px;
-    height: 200px;
-    margin-right: 15px;
-    border-radius: 20px; }
-  .grid .seguinos h2 {
-    font-size: 25px;
-    margin-left: 20px;
-    margin-top: 10px;
-    text-align: center; }
-  .grid .logoFinal {
-    display: flex;
-    margin-top: 40px;
-    margin-right: 15px;
-    border-radius: 20px;
-    width: 180px;
-    height: 200px;
-    padding-left: 15px; }
-  .grid .iconosRedes {
-    position: relative;
-    padding: 10px;
-    left: 30px; }
-    .grid .iconosRedes .youtube {
-      width: 70px; }
-    .grid .iconosRedes .facebook {
-      width: 70px; }
-    .grid .iconosRedes .instagram {
-      width: 70px; }
-    .grid .iconosRedes .twitter {
-      width: 70px; }
-  .grid .wpp {
-    position: relative;
-    left: 140px;
-    width: 70px; }
-  .pagosFondo .banner {
-    margin-left: 50px; }
-  .pagosFondo .pagos {
-    padding: 10px; }
-    .pagosFondo .pagos .wppFooter {
-      margin-top: 15px;
-      width: 50px;
-      height: 60px; }
     .pagosFondo .pagos .footerTexto {
       font-size: 15px;
       margin: 5px; }

@@ -181,6 +181,9 @@ padding: 15px;
     .iconosRedes{
     position: relative;
     left: 100px;
+        a {
+        text-decoration: none;
+        }
         .youtube{
         width:80px;
         }
@@ -246,7 +249,7 @@ padding: 15px;
 .copyright{
     text-align:right;
 }
-/* MEDIA QUERIE TABLET */
+/* -----------------------MEDIA QUERIE TABLET  -------------------------------------*/
 @media (min-width:481px) and (max-width:768px) {
     .logoPrincipal{
         width: 200px;
@@ -317,7 +320,7 @@ padding: 15px;
     } */
 }
 
-/* MEDIA QUERIE CELULAR*/  
+/* --------------------------- MEDIA QUERIE CELULAR ------------------------------*/  
 @media(max-width:480px){ 
     .logoPrincipal{
         width: 100px;
@@ -385,7 +388,91 @@ padding: 15px;
         display: none;
     }
 }
-/*----------------- MEDIA QUERIE FOOTER ------------------ */
+
+/*------------------- MEDIA QUERIES FOOTER TABLET--------------------- */
+@media (min-width:481px) and (max-width:768px){
+    .grid{
+        .google{
+            margin-top: 40px;
+            width: 170px;
+            height: 200px;
+            margin-right: 15px;
+            border-radius: 20px;
+            }
+        .seguinos{
+            h2{
+            font-size: 25px;
+            margin-left: 20px;
+            margin-top: 10px;
+            text-align: center;
+            }
+        }
+        .logoFinal{
+            display:flex;
+            margin-top: 40px;
+            margin-right: 15px;
+            border-radius: 20px;
+            width: 180px;
+            height: 200px;
+            padding-left: 15px;
+        }
+        .iconosRedes{
+            position: relative;
+            padding: 10px;
+            left: 30px;
+                .youtube{
+                width: 70px;
+                }
+                .facebook{
+                width: 70px;
+                }
+                .instagram{
+                width: 70px;
+                }
+                .twitter{
+                width: 70px;
+                }
+        }
+        .wpp{
+            position: relative;
+            left: 140px;
+            width: 70px;
+            }
+    }
+    .pagosFondo{
+        .banner{
+            margin-left: 50px;
+        }
+        .pagos{
+            padding: 10px;
+            .wppFooter{
+                margin-top:15px;
+                width: 50px;
+                height: 60px;
+            }
+            .footerTexto{
+                font-size: 15px;
+                margin: 5px;
+            }
+            .tarjeta{
+                margin-top: 25px;
+                width: 40px;
+                height: 40px;
+            }
+            .candado{
+                margin-top: 25px;
+                margin-bottom: 25px;
+                width: 45px;
+                height: 50px;
+            }
+        } 
+    }
+    .copyright{
+        font-size: 10px;
+    }   
+}
+
+/*------------------------------ MEDIA QUERIE FOOTER CELULAR --------------------------- */
 @media(max-width:480px){
     .grid{
         display: grid;
@@ -476,85 +563,3 @@ padding: 15px;
     }
 }
 
-/*------------------- MEDIA QUERIES FOOTER--------------------- */
-@media (min-width:481px) and (max-width:768px){
-    .grid{
-        .google{
-            margin-top: 40px;
-            width: 170px;
-            height: 200px;
-            margin-right: 15px;
-            border-radius: 20px;
-            }
-        .seguinos{
-            h2{
-            font-size: 25px;
-            margin-left: 20px;
-            margin-top: 10px;
-            text-align: center;
-            }
-        }
-        .logoFinal{
-            display:flex;
-            margin-top: 40px;
-            margin-right: 15px;
-            border-radius: 20px;
-            width: 180px;
-            height: 200px;
-            padding-left: 15px;
-        }
-        .iconosRedes{
-            position: relative;
-            padding: 10px;
-            left: 30px;
-                .youtube{
-                width: 70px;
-                }
-                .facebook{
-                width: 70px;
-                }
-                .instagram{
-                width: 70px;
-                }
-                .twitter{
-                width: 70px;
-                }
-        }
-        .wpp{
-            position: relative;
-            left: 140px;
-            width: 70px;
-            }
-    }
-    .pagosFondo{
-        .banner{
-            margin-left: 50px;
-        }
-        .pagos{
-            padding: 10px;
-            .wppFooter{
-                margin-top:15px;
-                width: 50px;
-                height: 60px;
-            }
-            .footerTexto{
-                font-size: 15px;
-                margin: 5px;
-            }
-            .tarjeta{
-                margin-top: 25px;
-                width: 40px;
-                height: 40px;
-            }
-            .candado{
-                margin-top: 25px;
-                margin-bottom: 25px;
-                width: 45px;
-                height: 50px;
-            }
-        } 
-    }
-    .copyright{
-        font-size: 10px;
-    }   
-}
