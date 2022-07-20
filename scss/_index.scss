@@ -32,6 +32,9 @@ body{
         background-color: lightblue;
     }
 }
+hr{
+    border: 1px dashed #9d4edd;
+}   
 
 .carrito{
     width: 25px;
@@ -50,7 +53,7 @@ body{
     font-family: 'Dynalight', cursive;
     font-size: 125px;
     font-weight: lighter;
-    text-align: center;
+    text-align:center;
     color: #9d4edd;
     padding: 20px;
     max-width:600px;
