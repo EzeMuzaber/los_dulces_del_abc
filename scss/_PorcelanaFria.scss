@@ -12,3 +12,29 @@ section{
         padding: 20px;
     }
 }
+/* ------------------  MEDIA QUERIE TABLET-------------------- */
+@media (min-width:481px) and (max-width:768px) {
+    section{
+        .parrafoPorce{
+            padding: 10px 10px 10px 10px;
+            margin-left:90px;
+            width: 580px;
+            height: 390px;
+            font-size: 22px;
+            } 
+            
+    }
+}
+/* ------------------MEDIA QUERIE CELULAR --------------------- */
+@media(max-width:480px){
+    section{
+        .parrafoPorce{
+            margin-left:50px;
+            width: 370px;
+            height: 340px;
+            padding-top: 5px;
+            font-size: 17px;
+        } 
+        
+    }
+}

@@ -45,3 +45,80 @@ section{
         }
     }
 }
+/* ------------------ MEDIA QUERIE TABLET ------------------------ */
+@media (min-width:481px) and (max-width:768px) {
+    section{
+        .parrafosDeco{
+            width: 580px;
+            height: 380px;
+            font-size: 22px;
+            margin-left: 80px;
+            margin-bottom: 30px ;
+            margin-top: 40px;
+        }
+        .contenedorCarousel2{
+            box-sizing: border-box;
+            width: 400px;
+            height: 406px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            margin-left: 150px;
+            border: 3px solid black;
+            border-radius: 20px;
+            .img2{
+                width: 400px;
+                height: 400px;
+                border-radius: 20px;
+            }
+        }
+        .grid{
+            .pastel2{
+                width: 300px;
+                height: 400px;
+                margin-left: 0px;
+                }
+            .pastel3{
+                width: 300px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+/* ------------------MEDIA QUERIE CELULAR --------------------- */
+@media(max-width:480px){
+    section{
+        .parrafosDeco{
+            font-size: 17px;
+            width: 360px;
+            margin-left: 50px;
+            padding: 15px;  
+        }
+        .contenedorCarousel2{
+            box-sizing: border-box;
+            width: 256px;
+            height: 256px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 80px;
+            border: 3px solid black;
+            border-radius: 18px;
+            .img2{
+                width: 250px;
+                height: 250px;
+                border-radius: 20px;
+            }
+        }
+        .grid{
+                .pastel2{
+                width: 300px;
+                height: 300px;
+                margin-left: 50px;
+            }
+                .pastel3{
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+}

@@ -35,3 +35,19 @@ section{
         } 
     }
 }
+
+/* ------------------MEDIA QUERIE CELULAR --------------------- */
+@media(max-width:480px){
+    section{
+        .parrafos02{ 
+            width: 390px;
+            font-size: 15px;
+            margin-left: 30px;
+        }
+        .imagenQuienes{
+            margin-left: 20px;
+            height: 300px;
+            width: 400px;
+        } 
+    }
+}
