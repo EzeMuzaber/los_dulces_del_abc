@@ -1,8 +1,9 @@
 section{
     .parrafos02{
-        font-family:'Emilys Candy',cursive;
+        @extend.pagosFondo;
+        font-family:$fuenteParrafos;
         border: 1px solid black;
-        background-color: antiquewhite;
+        background-color: $fondoTexto;
         margin: 30px;
         padding: 5px;
         width: 900px;

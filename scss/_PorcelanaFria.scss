@@ -1,8 +1,8 @@
 section{
     .parrafoPorce{
-        font-family:'Emilys Candy',cursive;
+        font-family:$fuenteParrafos;
         border: 2px solid black;
-        background-color: antiquewhite;
+        background-color:$fondoTexto;
         font-size: 22px;
         margin: 30px;
         text-align: left;

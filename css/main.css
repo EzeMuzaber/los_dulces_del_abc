@@ -42,7 +42,7 @@ hr {
   width: 250px; }
 
 .tituloPrincipal {
-  font-family: 'Dynalight', cursive;
+  font-family: "Dynalight", cursive;
   font-size: 125px;
   font-weight: lighter;
   text-align: center;
@@ -54,7 +54,7 @@ hr {
 .wppFlotante {
   position: fixed;
   z-index: 5000;
-  left: 0px; }
+  left: 0; }
   .wppFlotante .wppLogo {
     width: 80px;
     height: 80px; }
@@ -70,7 +70,7 @@ hr {
   background-color: antiquewhite;
   text-align: center;
   font-size: 40px;
-  font-family: 'Emilys Candy',cursive;
+  font-family: "Emilys Candy", cursive;
   font-weight: lighter;
   margin-bottom: 20px;
   margin-top: 8px; }
@@ -110,7 +110,7 @@ hr {
   margin-bottom: 25px; }
 
 .parrafosIndex {
-  font-family: 'Emilys Candy',cursive;
+  font-family: "Emilys Candy", cursive;
   border: 1px solid black;
   background-color: antiquewhite;
   font-size: 30px;
@@ -140,7 +140,7 @@ hr {
   .grid .seguinos {
     grid-area: seguinos; }
     .grid .seguinos H2 {
-      font-family: 'Emilys Candy',cursive;
+      font-family: "Emilys Candy", cursive;
       font-size: 28px;
       text-align: center;
       margin-top: 20px; }
@@ -165,37 +165,37 @@ hr {
     left: 220px;
     width: 80px; }
 
-.pagosFondo {
+.pagosFondo, .parrafosIndex, section .parrafos02 {
   background: #e78bb3;
   background: radial-gradient(circle, #e78bb3 7%, #8ba2f6 100%); }
-  .pagosFondo .banner {
+  .pagosFondo .banner, .parrafosIndex .banner, section .parrafos02 .banner {
     width: 600px;
     height: auto;
     margin-left: 230px; }
-  .pagosFondo .pagos {
+  .pagosFondo .pagos, .parrafosIndex .pagos, section .parrafos02 .pagos {
     display: flex;
     padding: 20px 20px;
     border: 5px 5px;
     justify-content: space-between; }
-    .pagosFondo .pagos .wppFooter {
+    .pagosFondo .pagos .wppFooter, .parrafosIndex .pagos .wppFooter, section .parrafos02 .pagos .wppFooter {
       width: 60px; }
-    .pagosFondo .pagos .footerTexto {
+    .pagosFondo .pagos .footerTexto, .parrafosIndex .pagos .footerTexto, section .parrafos02 .pagos .footerTexto {
       border: 1px dashed black;
       background-color: lightcyan;
-      font-family: 'Emilys Candy',cursive;
+      font-family: "Emilys Candy", cursive;
       line-height: 22px;
       font-size: 20px;
       width: 280px; }
-    .pagosFondo .pagos .tarjeta {
+    .pagosFondo .pagos .tarjeta, .parrafosIndex .pagos .tarjeta, section .parrafos02 .pagos .tarjeta {
       width: 80px;
       margin-right: 5px;
       margin-left: 5px; }
-    .pagosFondo .pagos .footerTextoDos {
+    .pagosFondo .pagos .footerTextoDos, .parrafosIndex .pagos .footerTextoDos, section .parrafos02 .pagos .footerTextoDos {
       width: 250px; }
-    .pagosFondo .pagos .candado {
+    .pagosFondo .pagos .candado, .parrafosIndex .pagos .candado, section .parrafos02 .pagos .candado {
       width: 40px;
       margin-left: 5px; }
-    .pagosFondo .pagos .footerTextoTres {
+    .pagosFondo .pagos .footerTextoTres, .parrafosIndex .pagos .footerTextoTres, section .parrafos02 .pagos .footerTextoTres {
       width: 200px; }
 
 .copyright {
@@ -209,7 +209,6 @@ hr {
     padding-right: 20px; }
   .tituloPrincipal {
     font-size: 95px;
-    color: #9d4edd;
     width: 450px;
     text-align: center; }
   .wppFlotante {
@@ -217,8 +216,7 @@ hr {
     left: 0px; }
     .wppFlotante .wppParrafo {
       margin-left: 10px;
-      width: 90px;
-      background-color: antiquewhite; }
+      width: 90px; }
     .wppFlotante .wppLogo {
       width: 80px;
       height: 80px; }
@@ -247,14 +245,14 @@ hr {
     width: auto;
     height: auto;
     margin: 10px; }
-  /*   .boton{
+  /*     .boton{
         position:relative;
         top: 10px;
         bottom: 150px;
         right: 300px;
         width: 300px;
         height: 100px;
-    } */ }
+    }  */ }
 
 /* --------------------------- MEDIA QUERIE CELULAR ------------------------------*/
 @media (max-width: 480px) {
@@ -263,7 +261,6 @@ hr {
     padding-top: 40px; }
   .tituloPrincipal {
     font-size: 50px;
-    color: #9d4edd;
     width: 350px;
     margin-left: 80px;
     text-align: center; }
@@ -272,8 +269,7 @@ hr {
     left: 0px; }
     .wppFlotante .wppParrafo {
       margin-left: 10px;
-      width: 90px;
-      background-color: antiquewhite; }
+      width: 90px; }
     .wppFlotante .wppLogo {
       width: 60px;
       height: 60px; }
@@ -344,22 +340,22 @@ hr {
     position: relative;
     left: 140px;
     width: 70px; }
-  .pagosFondo .banner {
+  .pagosFondo .banner, .parrafosIndex .banner, section .parrafos02 .banner {
     margin-left: 50px; }
-  .pagosFondo .pagos {
+  .pagosFondo .pagos, .parrafosIndex .pagos, section .parrafos02 .pagos {
     padding: 10px; }
-    .pagosFondo .pagos .wppFooter {
+    .pagosFondo .pagos .wppFooter, .parrafosIndex .pagos .wppFooter, section .parrafos02 .pagos .wppFooter {
       margin-top: 15px;
       width: 50px;
       height: 60px; }
-    .pagosFondo .pagos .footerTexto {
+    .pagosFondo .pagos .footerTexto, .parrafosIndex .pagos .footerTexto, section .parrafos02 .pagos .footerTexto {
       font-size: 15px;
       margin: 5px; }
-    .pagosFondo .pagos .tarjeta {
+    .pagosFondo .pagos .tarjeta, .parrafosIndex .pagos .tarjeta, section .parrafos02 .pagos .tarjeta {
       margin-top: 25px;
       width: 40px;
       height: 40px; }
-    .pagosFondo .pagos .candado {
+    .pagosFondo .pagos .candado, .parrafosIndex .pagos .candado, section .parrafos02 .pagos .candado {
       margin-top: 25px;
       margin-bottom: 25px;
       width: 45px;
@@ -409,24 +405,24 @@ hr {
       margin-left: 120px;
       height: 40px;
       width: 50px; }
-  .pagosFondo .banner {
+  .pagosFondo .banner, .parrafosIndex .banner, section .parrafos02 .banner {
     width: 400px;
     height: auto;
     margin-left: 50px; }
-  .pagosFondo .pagos {
+  .pagosFondo .pagos, .parrafosIndex .pagos, section .parrafos02 .pagos {
     padding: 10px; }
-    .pagosFondo .pagos .wppFooter {
+    .pagosFondo .pagos .wppFooter, .parrafosIndex .pagos .wppFooter, section .parrafos02 .pagos .wppFooter {
       margin-top: 25px;
       width: 40px;
       height: 50px; }
-    .pagosFondo .pagos .footerTexto {
+    .pagosFondo .pagos .footerTexto, .parrafosIndex .pagos .footerTexto, section .parrafos02 .pagos .footerTexto {
       font-size: 15px;
       margin: 5px; }
-    .pagosFondo .pagos .tarjeta {
+    .pagosFondo .pagos .tarjeta, .parrafosIndex .pagos .tarjeta, section .parrafos02 .pagos .tarjeta {
       margin-top: 25px;
       width: 40px;
       height: 40px; }
-    .pagosFondo .pagos .candado {
+    .pagosFondo .pagos .candado, .parrafosIndex .pagos .candado, section .parrafos02 .pagos .candado {
       margin-top: 25px;
       margin-bottom: 25px;
       width: 45px;
@@ -435,7 +431,7 @@ hr {
     font-size: 10px; } }
 
 section .parrafos02 {
-  font-family: 'Emilys Candy',cursive;
+  font-family: "Emilys Candy", cursive;
   border: 1px solid black;
   background-color: antiquewhite;
   margin: 30px;
@@ -477,7 +473,7 @@ section .imagenQuienes {
     width: 400px; } }
 
 section .parrafosRepo {
-  font-family: 'Emilys Candy',cursive;
+  font-family: "Emilys Candy", cursive;
   border: 2px solid black;
   background-color: antiquewhite;
   font-size: 22px;
@@ -500,7 +496,7 @@ section .contenedorCarousel1 {
     height: 450px; }
 
 section .escribinos {
-  font-family: 'Emilys Candy',cursive;
+  font-family: "Emilys Candy", cursive;
   border: 2px solid black;
   background-color: antiquewhite;
   font-size: 20px;
@@ -583,7 +579,7 @@ section .pastel1 {
     height: 345px; } }
 
 section .parrafosDeco {
-  font-family: 'Emilys Candy',cursive;
+  font-family: "Emilys Candy", cursive;
   border: 2px solid black;
   background-color: antiquewhite;
   font-size: 22px;
@@ -683,7 +679,7 @@ section .grid .pastel3 {
     height: 300px; } }
 
 section .parrafoPorce {
-  font-family: 'Emilys Candy',cursive;
+  font-family: "Emilys Candy", cursive;
   border: 2px solid black;
   background-color: antiquewhite;
   font-size: 22px;
@@ -716,7 +712,7 @@ section .parrafoPorce {
   margin-bottom: 20px; }
 
 .formulario .parrafoFormu {
-  font-family: 'Emilys Candy',cursive;
+  font-family: "Emilys Candy", cursive;
   border: 1px solid black;
   background-color: antiquewhite;
   font-size: 25px;

@@ -1,6 +1,31 @@
+$fuenteTitulos: 'Dynalight', cursive; ;
+$fuenteParrafos: 'Emilys Candy',cursive;;
+$colorTitulos:#9d4edd;
+$colorPrincipal: black; 
+$fondoTexto: antiquewhite ;
+
+@mixin wppFixed ($position,$z-index,$left){
+    position:$position;
+    z-index:$z-index;
+    left:$left;
+}
+$redes:(      
+    youtube:80px,
+    facebook:70px,
+    instagram:80px,
+    twitter:70px,
+);
+$estilos:(
+    fuente:28px,
+    alineacion:center,
+    margen-arriba:20px,
+);
+
+
 @import "index";
 @import "QuienesSomos";
 @import "Reposteria";
 @import "DecoracionDeTortas";
 @import "PorcelanaFria";
 @import "contacto";
+

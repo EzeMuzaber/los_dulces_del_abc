@@ -50,19 +50,18 @@ hr{
     width: 250px;
 }
 .tituloPrincipal{
-    font-family: 'Dynalight', cursive;
+    font-family: $fuenteTitulos;
     font-size: 125px;
     font-weight: lighter;
     text-align:center;
-    color: #9d4edd;
+    color: $colorTitulos;
     padding: 20px;
     max-width:600px;
 	margin:auto;
 }
-.wppFlotante{  
-    position: fixed;
-    z-index: 5000;
-    left: 0px;
+
+.wppFlotante{
+    @include wppFixed(fixed,5000,0);
     .wppLogo{
         width: 80px;
         height: 80px;        
@@ -77,14 +76,15 @@ hr{
     }
 }
 .subtitulos{
-    background-color:antiquewhite ;
+    background-color:$fondoTexto;
     text-align: center;
     font-size: 40px;
-    font-family: 'Emilys Candy',cursive;
+    font-family: $fuenteParrafos;
     font-weight: lighter;
     margin-bottom: 20px;
     margin-top: 8px;
 }
+
 .gridIndex{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -131,9 +131,10 @@ hr{
 }
 
 .parrafosIndex{
-font-family:'Emilys Candy',cursive;
+    @extend.pagosFondo;
+font-family:$fuenteParrafos;
 border: 1px solid black;
-background-color: antiquewhite;
+background-color: $fondoTexto;
 font-size: 30px;
 margin: 30px;
 } 
@@ -171,10 +172,10 @@ padding: 15px;
     .seguinos{
     grid-area:seguinos;
         H2{
-        font-family:'Emilys Candy',cursive;
-        font-size: 28px;
-        text-align: center;
-        margin-top: 20px;
+        font-family:$fuenteParrafos;
+        font-size: map-get($estilos,fuente );
+        text-align: map-get($estilos,alineacion );
+        margin-top: map-get($estilos, margen-arriba );
         }
     }
     .logoFinal{
@@ -187,18 +188,12 @@ padding: 15px;
         a {
         text-decoration: none;
         }
-        .youtube{
-        width:80px;
+        @each $key, $widht in $redes{
+            .#{$key}{
+                width:$widht;
+            }
         }
-        .facebook{
-        width:70px;
-        }
-        .instagram{
-        width:80px;
-        }
-        .twitter{
-        width:70px;
-        }
+        
     }
     .wpp{
     position: relative;
@@ -227,7 +222,7 @@ padding: 15px;
         .footerTexto{
         border: 1px dashed black;
         background-color: lightcyan;
-        font-family: 'Emilys Candy',cursive;
+        font-family: $fuenteParrafos;
         line-height: 22px;
         font-size: 20px;
         width: 280px;
@@ -261,7 +256,6 @@ padding: 15px;
     }
     .tituloPrincipal{
         font-size: 95px;
-        color: #9d4edd;
         width: 450px;
         text-align: center;
     }
@@ -271,7 +265,6 @@ padding: 15px;
         .wppParrafo {
             margin-left: 10px;
             width: 90px;
-            background-color: antiquewhite;
         }
         .wppLogo {
             width: 80px;
@@ -313,14 +306,14 @@ padding: 15px;
         height: auto;
         margin: 10px;
     }
-  /*   .boton{
+/*     .boton{
         position:relative;
         top: 10px;
         bottom: 150px;
         right: 300px;
         width: 300px;
         height: 100px;
-    } */
+    }  */
 }
 
 /* --------------------------- MEDIA QUERIE CELULAR ------------------------------*/  
@@ -331,7 +324,6 @@ padding: 15px;
     }
     .tituloPrincipal{
         font-size: 50px;
-        color: #9d4edd;
         width:350px;
         margin-left: 80px;
         text-align: center;
@@ -342,7 +334,6 @@ padding: 15px;
         .wppParrafo{
             margin-left: 10px;
             width: 90px;
-            background-color: antiquewhite;
         }
         .wppLogo{
             width: 60px;
