@@ -39,11 +39,11 @@ hr {
   padding-right: 5px;
   padding-top: 60px;
   padding-left: 5px;
-  width: 250px; }
+  width: 180px; }
 
 .tituloPrincipal {
   font-family: "Dynalight", cursive;
-  font-size: 125px;
+  font-size: 90px;
   font-weight: lighter;
   text-align: center;
   color: #9d4edd;
@@ -69,7 +69,7 @@ hr {
 .subtitulos {
   background-color: antiquewhite;
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   font-family: "Emilys Candy", cursive;
   font-weight: lighter;
   margin-bottom: 20px;
@@ -92,18 +92,19 @@ hr {
     border: 2.5px solid black; }
   .gridIndex .imagenRepo {
     margin-left: 20px;
-    margin-top: 45px;
+    margin-top: 20px;
     height: 250px;
-    width: 500px; }
+    width: 440px; }
   .gridIndex .imagenDeco {
     margin-left: 20px;
-    height: 300px;
-    width: 500px; }
+    margin-top: 20px;
+    height: 240px;
+    width: 440px; }
   .gridIndex .imagenPorce {
     margin-left: 20px;
-    margin-top: 40px;
-    height: 250px;
-    width: 500px; }
+    margin-top: 30px;
+    height: 240px;
+    width: 440px; }
 
 .link {
   text-align: center;
@@ -113,7 +114,7 @@ hr {
   font-family: "Emilys Candy", cursive;
   border: 1px solid black;
   background-color: antiquewhite;
-  font-size: 30px;
+  font-size: 20px;
   margin: 30px; }
 
 .bordesIndex {
@@ -165,37 +166,40 @@ hr {
     left: 220px;
     width: 80px; }
 
-.pagosFondo, .parrafosIndex, section .parrafos02 {
+.pagosFondo, .parrafosIndex, section .parrafos02, section .parrafosRepo, section .escribinos, section .parrafosDeco, section .parrafoPorce {
   background: #e78bb3;
   background: radial-gradient(circle, #e78bb3 7%, #8ba2f6 100%); }
-  .pagosFondo .banner, .parrafosIndex .banner, section .parrafos02 .banner {
+  .pagosFondo .banner, .parrafosIndex .banner, section .parrafos02 .banner, section .parrafosRepo .banner, section .escribinos .banner, section .parrafosDeco .banner, section .parrafoPorce .banner {
     width: 600px;
     height: auto;
     margin-left: 230px; }
-  .pagosFondo .pagos, .parrafosIndex .pagos, section .parrafos02 .pagos {
+  .pagosFondo .pagos, .parrafosIndex .pagos, section .parrafos02 .pagos, section .parrafosRepo .pagos, section .escribinos .pagos, section .parrafosDeco .pagos, section .parrafoPorce .pagos {
     display: flex;
     padding: 20px 20px;
     border: 5px 5px;
     justify-content: space-between; }
-    .pagosFondo .pagos .wppFooter, .parrafosIndex .pagos .wppFooter, section .parrafos02 .pagos .wppFooter {
+    .pagosFondo .pagos .wppFooter, .parrafosIndex .pagos .wppFooter, section .parrafos02 .pagos .wppFooter, section .parrafosRepo .pagos .wppFooter, section .escribinos .pagos .wppFooter, section .parrafosDeco .pagos .wppFooter, section .parrafoPorce .pagos .wppFooter {
       width: 60px; }
-    .pagosFondo .pagos .footerTexto, .parrafosIndex .pagos .footerTexto, section .parrafos02 .pagos .footerTexto {
+    .pagosFondo .pagos .footerTexto, .parrafosIndex .pagos .footerTexto, section .parrafos02 .pagos .footerTexto, section .parrafosRepo .pagos .footerTexto, section .escribinos .pagos .footerTexto, section .parrafosDeco .pagos .footerTexto, section .parrafoPorce .pagos .footerTexto {
       border: 1px dashed black;
       background-color: lightcyan;
       font-family: "Emilys Candy", cursive;
       line-height: 22px;
-      font-size: 20px;
+      font-size: 17px;
       width: 280px; }
-    .pagosFondo .pagos .tarjeta, .parrafosIndex .pagos .tarjeta, section .parrafos02 .pagos .tarjeta {
+    .pagosFondo .pagos .tarjeta, .parrafosIndex .pagos .tarjeta, section .parrafos02 .pagos .tarjeta, section .parrafosRepo .pagos .tarjeta, section .escribinos .pagos .tarjeta, section .parrafosDeco .pagos .tarjeta, section .parrafoPorce .pagos .tarjeta {
       width: 80px;
+      height: 80px;
       margin-right: 5px;
-      margin-left: 5px; }
-    .pagosFondo .pagos .footerTextoDos, .parrafosIndex .pagos .footerTextoDos, section .parrafos02 .pagos .footerTextoDos {
+      margin-left: 5px;
+      margin-bottom: 10px; }
+    .pagosFondo .pagos .footerTextoDos, .parrafosIndex .pagos .footerTextoDos, section .parrafos02 .pagos .footerTextoDos, section .parrafosRepo .pagos .footerTextoDos, section .escribinos .pagos .footerTextoDos, section .parrafosDeco .pagos .footerTextoDos, section .parrafoPorce .pagos .footerTextoDos {
       width: 250px; }
-    .pagosFondo .pagos .candado, .parrafosIndex .pagos .candado, section .parrafos02 .pagos .candado {
-      width: 40px;
+    .pagosFondo .pagos .candado, .parrafosIndex .pagos .candado, section .parrafos02 .pagos .candado, section .parrafosRepo .pagos .candado, section .escribinos .pagos .candado, section .parrafosDeco .pagos .candado, section .parrafoPorce .pagos .candado {
+      width: 30px;
+      height: 50px;
       margin-left: 5px; }
-    .pagosFondo .pagos .footerTextoTres, .parrafosIndex .pagos .footerTextoTres, section .parrafos02 .pagos .footerTextoTres {
+    .pagosFondo .pagos .footerTextoTres, .parrafosIndex .pagos .footerTextoTres, section .parrafos02 .pagos .footerTextoTres, section .parrafosRepo .pagos .footerTextoTres, section .escribinos .pagos .footerTextoTres, section .parrafosDeco .pagos .footerTextoTres, section .parrafoPorce .pagos .footerTextoTres {
       width: 200px; }
 
 .copyright {
@@ -241,18 +245,10 @@ hr {
       margin-top: 24px;
       margin-left: 180px; }
   .parrafosIndex {
-    font-size: 22px;
-    width: auto;
+    font-size: 20px;
+    width: 650px;
     height: auto;
-    margin: 10px; }
-  /*     .boton{
-        position:relative;
-        top: 10px;
-        bottom: 150px;
-        right: 300px;
-        width: 300px;
-        height: 100px;
-    }  */ }
+    margin: 50px; } }
 
 /* --------------------------- MEDIA QUERIE CELULAR ------------------------------*/
 @media (max-width: 480px) {
@@ -340,22 +336,22 @@ hr {
     position: relative;
     left: 140px;
     width: 70px; }
-  .pagosFondo .banner, .parrafosIndex .banner, section .parrafos02 .banner {
+  .pagosFondo .banner, .parrafosIndex .banner, section .parrafos02 .banner, section .parrafosRepo .banner, section .escribinos .banner, section .parrafosDeco .banner, section .parrafoPorce .banner {
     margin-left: 50px; }
-  .pagosFondo .pagos, .parrafosIndex .pagos, section .parrafos02 .pagos {
+  .pagosFondo .pagos, .parrafosIndex .pagos, section .parrafos02 .pagos, section .parrafosRepo .pagos, section .escribinos .pagos, section .parrafosDeco .pagos, section .parrafoPorce .pagos {
     padding: 10px; }
-    .pagosFondo .pagos .wppFooter, .parrafosIndex .pagos .wppFooter, section .parrafos02 .pagos .wppFooter {
+    .pagosFondo .pagos .wppFooter, .parrafosIndex .pagos .wppFooter, section .parrafos02 .pagos .wppFooter, section .parrafosRepo .pagos .wppFooter, section .escribinos .pagos .wppFooter, section .parrafosDeco .pagos .wppFooter, section .parrafoPorce .pagos .wppFooter {
       margin-top: 15px;
       width: 50px;
       height: 60px; }
-    .pagosFondo .pagos .footerTexto, .parrafosIndex .pagos .footerTexto, section .parrafos02 .pagos .footerTexto {
+    .pagosFondo .pagos .footerTexto, .parrafosIndex .pagos .footerTexto, section .parrafos02 .pagos .footerTexto, section .parrafosRepo .pagos .footerTexto, section .escribinos .pagos .footerTexto, section .parrafosDeco .pagos .footerTexto, section .parrafoPorce .pagos .footerTexto {
       font-size: 15px;
       margin: 5px; }
-    .pagosFondo .pagos .tarjeta, .parrafosIndex .pagos .tarjeta, section .parrafos02 .pagos .tarjeta {
+    .pagosFondo .pagos .tarjeta, .parrafosIndex .pagos .tarjeta, section .parrafos02 .pagos .tarjeta, section .parrafosRepo .pagos .tarjeta, section .escribinos .pagos .tarjeta, section .parrafosDeco .pagos .tarjeta, section .parrafoPorce .pagos .tarjeta {
       margin-top: 25px;
       width: 40px;
       height: 40px; }
-    .pagosFondo .pagos .candado, .parrafosIndex .pagos .candado, section .parrafos02 .pagos .candado {
+    .pagosFondo .pagos .candado, .parrafosIndex .pagos .candado, section .parrafos02 .pagos .candado, section .parrafosRepo .pagos .candado, section .escribinos .pagos .candado, section .parrafosDeco .pagos .candado, section .parrafoPorce .pagos .candado {
       margin-top: 25px;
       margin-bottom: 25px;
       width: 45px;
@@ -379,7 +375,7 @@ hr {
       margin-right: 15px;
       border-radius: 20px; }
     .grid .seguinos h2 {
-      font-size: 20px;
+      font-size: 18px;
       margin-left: 10px;
       margin-top: 10px;
       text-align: center; }
@@ -405,24 +401,26 @@ hr {
       margin-left: 120px;
       height: 40px;
       width: 50px; }
-  .pagosFondo .banner, .parrafosIndex .banner, section .parrafos02 .banner {
+  .pagosFondo .banner, .parrafosIndex .banner, section .parrafos02 .banner, section .parrafosRepo .banner, section .escribinos .banner, section .parrafosDeco .banner, section .parrafoPorce .banner {
     width: 400px;
     height: auto;
     margin-left: 50px; }
-  .pagosFondo .pagos, .parrafosIndex .pagos, section .parrafos02 .pagos {
+  .pagosFondo .pagos, .parrafosIndex .pagos, section .parrafos02 .pagos, section .parrafosRepo .pagos, section .escribinos .pagos, section .parrafosDeco .pagos, section .parrafoPorce .pagos {
     padding: 10px; }
-    .pagosFondo .pagos .wppFooter, .parrafosIndex .pagos .wppFooter, section .parrafos02 .pagos .wppFooter {
+    .pagosFondo .pagos .wppFooter, .parrafosIndex .pagos .wppFooter, section .parrafos02 .pagos .wppFooter, section .parrafosRepo .pagos .wppFooter, section .escribinos .pagos .wppFooter, section .parrafosDeco .pagos .wppFooter, section .parrafoPorce .pagos .wppFooter {
       margin-top: 25px;
       width: 40px;
       height: 50px; }
-    .pagosFondo .pagos .footerTexto, .parrafosIndex .pagos .footerTexto, section .parrafos02 .pagos .footerTexto {
-      font-size: 15px;
+    .pagosFondo .pagos .footerTexto, .parrafosIndex .pagos .footerTexto, section .parrafos02 .pagos .footerTexto, section .parrafosRepo .pagos .footerTexto, section .escribinos .pagos .footerTexto, section .parrafosDeco .pagos .footerTexto, section .parrafoPorce .pagos .footerTexto {
+      font-size: 10px;
+      width: 120px;
+      height: auto;
       margin: 5px; }
-    .pagosFondo .pagos .tarjeta, .parrafosIndex .pagos .tarjeta, section .parrafos02 .pagos .tarjeta {
+    .pagosFondo .pagos .tarjeta, .parrafosIndex .pagos .tarjeta, section .parrafos02 .pagos .tarjeta, section .parrafosRepo .pagos .tarjeta, section .escribinos .pagos .tarjeta, section .parrafosDeco .pagos .tarjeta, section .parrafoPorce .pagos .tarjeta {
       margin-top: 25px;
       width: 40px;
       height: 40px; }
-    .pagosFondo .pagos .candado, .parrafosIndex .pagos .candado, section .parrafos02 .pagos .candado {
+    .pagosFondo .pagos .candado, .parrafosIndex .pagos .candado, section .parrafos02 .pagos .candado, section .parrafosRepo .pagos .candado, section .escribinos .pagos .candado, section .parrafosDeco .pagos .candado, section .parrafoPorce .pagos .candado {
       margin-top: 25px;
       margin-bottom: 25px;
       width: 45px;
@@ -436,18 +434,25 @@ section .parrafos02 {
   background-color: antiquewhite;
   margin: 30px;
   padding: 5px;
-  width: 900px;
+  width: 800px;
   text-align: center;
-  margin-left: 60px;
+  margin-left: 250px;
   margin-right: 40px;
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 30px; }
 
 section .imagenQuienes {
   width: 790px;
-  margin-left: 100px;
+  margin-left: 250px;
   margin-bottom: 20px;
   border-radius: 30px; }
+
+/* -----------------------MEDIA QUERIE ESCRITORIO -------------------------------------*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  section .parrafos02 {
+    margin-left: 100px; }
+  section .imagenQuienes {
+    margin-left: 120px; } }
 
 /* -----MEDIA QUERIE DE TABLET ------------- */
 @media (min-width: 481px) and (max-width: 768px) {
@@ -455,20 +460,20 @@ section .imagenQuienes {
     margin-left: 50px;
     padding: 10px 10px 10px 10px;
     width: 650px;
-    font-size: 17px; }
+    font-size: 18px; }
   section .imagenQuienes {
-    margin-left: 180px;
+    margin-left: 140px;
     height: 330px;
-    width: 410px; } }
+    width: 500px; } }
 
 /* ------------------MEDIA QUERIE CELULAR --------------------- */
 @media (max-width: 480px) {
   section .parrafos02 {
-    width: 390px;
-    font-size: 15px;
+    width: 400px;
+    font-size: 14px;
     margin-left: 30px; }
   section .imagenQuienes {
-    margin-left: 20px;
+    margin-left: 30px;
     height: 300px;
     width: 400px; } }
 
@@ -476,13 +481,13 @@ section .parrafosRepo {
   font-family: "Emilys Candy", cursive;
   border: 2px solid black;
   background-color: antiquewhite;
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   width: 600px;
-  height: 500px;
+  height: 450px;
   margin-left: 190px;
   border-radius: 20px;
-  padding: 20px; }
+  padding: 10px; }
 
 section .contenedorCarousel1 {
   width: 500px;
@@ -499,7 +504,7 @@ section .escribinos {
   font-family: "Emilys Candy", cursive;
   border: 2px solid black;
   background-color: antiquewhite;
-  font-size: 20px;
+  font-size: 17px;
   margin: 30px 30px 30px 100px;
   text-align: center;
   border-radius: 30px;
@@ -519,9 +524,9 @@ section .pastel1 {
 @media (min-width: 481px) and (max-width: 768px) {
   section .parrafosRepo {
     width: 500px;
-    height: 500px;
+    height: 420px;
     margin-left: 150px;
-    font-size: 22px;
+    font-size: 18px;
     margin-bottom: 30px;
     margin-top: 40px; }
   section .contenedorCarousel1 {
@@ -539,9 +544,9 @@ section .pastel1 {
       border-radius: 20px; }
   section .escribinos {
     margin: 20px 20px 20px 80px;
-    font-size: 22px;
-    width: 580px;
-    height: 120px; }
+    font-size: 18px;
+    width: 590px;
+    height: 100px; }
   section .pastel1 {
     margin-left: 160px;
     width: 400px;
@@ -582,23 +587,25 @@ section .parrafosDeco {
   font-family: "Emilys Candy", cursive;
   border: 2px solid black;
   background-color: antiquewhite;
-  font-size: 22px;
+  font-size: 20px;
   text-align: left;
-  width: 850px;
-  margin-left: 80px;
+  width: 750px;
+  margin-left: 100px;
   border-radius: 30px;
   padding: 15px; }
 
 section .contenedorCarousel2 {
   width: 550px;
-  height: 506px;
+  height: 456px;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 250px;
-  border: 3px solid black; }
+  margin-left: 200px;
+  border: 3px solid black;
+  border-radius: 30px; }
   section .contenedorCarousel2 .img2 {
+    border-radius: 30px;
     width: 550px;
-    height: 500px; }
+    height: 450px; }
 
 section .grid .pastel2 {
   border: 2px solid black;
@@ -620,13 +627,19 @@ section .grid .pastel3 {
   height: 400px;
   width: 345px; }
 
+/* -----------------------MEDIA QUERIE ESCRITORIO -------------------------------------*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  section .parrafosDeco {
+    margin-left: 120px;
+    font-size: 22px; } }
+
 /* ------------------ MEDIA QUERIE TABLET ------------------------ */
 @media (min-width: 481px) and (max-width: 768px) {
   section .parrafosDeco {
     width: 580px;
-    height: 380px;
-    font-size: 22px;
-    margin-left: 80px;
+    height: 300px;
+    font-size: 18px;
+    margin-left: 90px;
     margin-bottom: 30px;
     margin-top: 40px; }
   section .contenedorCarousel2 {
@@ -635,7 +648,7 @@ section .grid .pastel3 {
     height: 406px;
     margin-top: 30px;
     margin-bottom: 20px;
-    margin-left: 150px;
+    margin-left: 180px;
     border: 3px solid black;
     border-radius: 20px; }
     section .contenedorCarousel2 .img2 {
@@ -655,7 +668,7 @@ section .grid .pastel3 {
   section .parrafosDeco {
     font-size: 17px;
     width: 360px;
-    margin-left: 50px;
+    margin-left: 60px;
     padding: 15px; }
   section .contenedorCarousel2 {
     box-sizing: border-box;
@@ -663,7 +676,7 @@ section .grid .pastel3 {
     height: 256px;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 80px;
+    margin-left: 100px;
     border: 3px solid black;
     border-radius: 18px; }
     section .contenedorCarousel2 .img2 {
@@ -682,7 +695,7 @@ section .parrafoPorce {
   font-family: "Emilys Candy", cursive;
   border: 2px solid black;
   background-color: antiquewhite;
-  font-size: 22px;
+  font-size: 20px;
   margin: 30px;
   text-align: left;
   width: 800px;
@@ -696,8 +709,8 @@ section .parrafoPorce {
     padding: 10px 10px 10px 10px;
     margin-left: 90px;
     width: 580px;
-    height: 390px;
-    font-size: 22px; } }
+    height: 320px;
+    font-size: 18px; } }
 
 /* ------------------MEDIA QUERIE CELULAR --------------------- */
 @media (max-width: 480px) {

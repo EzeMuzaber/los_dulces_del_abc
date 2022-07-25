@@ -1,8 +1,9 @@
 $fuenteTitulos: 'Dynalight', cursive; ;
-$fuenteParrafos: 'Emilys Candy',cursive;;
+$fuenteParrafos: 'Emilys Candy',cursive;
 $colorTitulos:#9d4edd;
 $colorPrincipal: black; 
 $fondoTexto: antiquewhite ;
+$fuentePx:20px;
 
 @mixin wppFixed ($position,$z-index,$left){
     position:$position;

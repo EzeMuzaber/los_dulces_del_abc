@@ -6,19 +6,31 @@ section{
         background-color: $fondoTexto;
         margin: 30px;
         padding: 5px;
-        width: 900px;
+        width: 800px;
         text-align: center;
-        margin-left:60px;
+        margin-left:250px;
         margin-right: 40px;
-        font-size: 25px;
+        font-size: $fuentePx;
         border-radius: 30px;
     }
     .imagenQuienes{
         width: 790px;
-        margin-left: 100px;
+        margin-left: 250px;
         margin-bottom: 20px;
         border-radius: 30px;
     }
+}
+/* -----------------------MEDIA QUERIE ESCRITORIO -------------------------------------*/
+@media (min-width:769px) and (max-width:1024px){
+    section{
+        .parrafos02{
+            margin-left:100px;
+        }
+        .imagenQuienes{
+            margin-left: 120px;
+        }
+    }
+    
 }
 /* -----MEDIA QUERIE DE TABLET ------------- */
 @media (min-width:481px) and (max-width:768px) {
@@ -27,12 +39,12 @@ section{
             margin-left: 50px;
             padding: 10px 10px 10px 10px;
             width: 650px;
-            font-size: 17px;
+            font-size: 18px;
         }
         .imagenQuienes{
-            margin-left: 180px;
+            margin-left: 140px;
             height: 330px;
-            width: 410px;
+            width: 500px;
         } 
     }
 }
@@ -41,12 +53,12 @@ section{
 @media(max-width:480px){
     section{
         .parrafos02{ 
-            width: 390px;
-            font-size: 15px;
+            width: 400px;
+            font-size: 14px;
             margin-left: 30px;
         }
         .imagenQuienes{
-            margin-left: 20px;
+            margin-left: 30px;
             height: 300px;
             width: 400px;
         } 
