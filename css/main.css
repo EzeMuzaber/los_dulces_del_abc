@@ -654,7 +654,7 @@ section .grid .pastel3 {
 @media (min-width: 481px) and (max-width: 768px) {
   section .parrafosDeco {
     width: 580px;
-    height: 380px;
+    height: 280px;
     font-size: 17px;
     margin-left: 90px;
     margin-bottom: 30px;
