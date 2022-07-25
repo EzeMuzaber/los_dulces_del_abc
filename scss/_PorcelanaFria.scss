@@ -7,10 +7,18 @@ section{
         font-size: $fuentePx;
         margin: 30px;
         text-align: left;
-        width: 800px;
-        margin-left: 80px;
+        width: 750px;
+        margin-left: 240px;
         border-radius: 30px;
         padding: 20px;
+    }
+}
+/* -----------------------MEDIA QUERIE ESCRITORIO -------------------------------------*/
+@media (min-width:769px) and (max-width:1024px){
+    section{
+        .parrafoPorce{
+            margin-left: 180px;
+        }
     }
 }
 /* ------------------  MEDIA QUERIE TABLET-------------------- */
