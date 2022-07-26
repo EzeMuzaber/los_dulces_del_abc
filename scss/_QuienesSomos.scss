@@ -1,3 +1,9 @@
+main{
+    .tituloPrincipal1{
+        @extend.tituloPrincipal;
+        color: $colorTitulo2;
+    }
+}
 section{
     .parrafos02{
         @extend.pagosFondo;

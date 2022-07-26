@@ -41,7 +41,7 @@ hr {
   padding-left: 5px;
   width: 180px; }
 
-.tituloPrincipal {
+.tituloPrincipal, main .tituloPrincipal1 {
   font-family: "Dynalight", cursive;
   font-size: 90px;
   font-weight: lighter;
@@ -208,11 +208,12 @@ hr {
 /* -----------------------MEDIA QUERIE TABLET  -------------------------------------*/
 @media (min-width: 481px) and (max-width: 768px) {
   .logoPrincipal {
-    width: 200px;
+    width: 128px;
     padding-top: 40px;
-    padding-right: 20px; }
-  .tituloPrincipal {
-    font-size: 95px;
+    padding-right: 20px;
+    padding-left: 20px; }
+  .tituloPrincipal, main .tituloPrincipal1 {
+    font-size: 70px;
     width: 450px;
     text-align: center; }
   .wppFlotante {
@@ -255,7 +256,7 @@ hr {
   .logoPrincipal {
     width: 100px;
     padding-top: 40px; }
-  .tituloPrincipal {
+  .tituloPrincipal, main .tituloPrincipal1 {
     font-size: 50px;
     width: 350px;
     margin-left: 80px;
@@ -427,6 +428,9 @@ hr {
       height: 50px; }
   .copyright {
     font-size: 10px; } }
+
+main .tituloPrincipal1 {
+  color: #007ea7; }
 
 section .parrafos02 {
   font-family: "Emilys Candy", cursive;
