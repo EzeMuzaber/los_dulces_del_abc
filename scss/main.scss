@@ -3,8 +3,9 @@ $fuenteParrafos: 'Emilys Candy',cursive;
 $colorTitulos:#9d4edd;
 $colorTitulo2:#007ea7;
 $colorPrincipal: black; 
-$fondoTexto: antiquewhite ;
-$fuentePx:20px;
+$fondoTexto: #e0aaff;
+$fuentePx:28px;
+$fondoParrafo: #e5e5e5;
 
 @mixin wppFixed ($position,$z-index,$left){
     position:$position;
@@ -30,4 +31,5 @@ $estilos:(
 @import "DecoracionDeTortas";
 @import "PorcelanaFria";
 @import "contacto";
+@import "paginaError";
 

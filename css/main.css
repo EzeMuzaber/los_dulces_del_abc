@@ -4,18 +4,13 @@
   box-sizing: border-box; }
 
 .menu1 {
+  max-width: 100%;
   background: #e78bb3;
   background: linear-gradient(342deg, rgba(231, 139, 179, 0.971606) 7%, rgba(139, 162, 246, 0.971606) 100%);
   font-size: 20px; }
 
 body {
-  background-image: url("../img/fondo_liso.jpg");
-  height: 600px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 50px; }
+  background-color: white; }
 
 .dropdown-menu {
   background: #e78bb3;
@@ -67,7 +62,7 @@ hr {
     margin-left: 10px; }
 
 .subtitulos {
-  background-color: antiquewhite;
+  background-color: #e0aaff;
   text-align: center;
   font-size: 35px;
   font-family: "Emilys Candy", cursive;
@@ -89,7 +84,7 @@ hr {
     grid-area: linkGridindex; }
   .gridIndex .bordes {
     border-radius: 25px;
-    border: 2.5px solid black; }
+    border: 2px solid #e0aaff; }
   .gridIndex .imagenRepo {
     margin-left: 20px;
     margin-top: 20px;
@@ -112,98 +107,89 @@ hr {
 
 .parrafosIndex {
   font-family: "Emilys Candy", cursive;
-  border: 1px solid black;
-  background-color: antiquewhite;
-  font-size: 20px;
+  background-color: #e5e5e5;
+  font-size: 28px;
   margin: 30px; }
 
 .bordesIndex {
   border-radius: 25px;
-  border: 2.5px solid black;
+  border: 2px solid #e0aaff;
   line-height: 40px;
   padding: 15px; }
 
 /*------------ FOOTER ----------------------*/
-.grid {
-  background: #e78bb3;
-  background: radial-gradient(circle, #e78bb3 7%, #8ba2f6 100%);
-  padding-top: 20px;
-  padding-bottom: 10px;
-  padding-left: 20px;
+.container {
+  max-width: 97%;
   display: grid;
-  grid-template-columns: 3 440px;
-  grid-template-rows: 1 1fr;
-  grid-template-areas: "google seguinos logoFinal" "google seguinos logoFinal" "google seguinos logoFinal" "google seguinos logoFinal"; }
-  .grid .google {
-    grid-area: google;
-    width: 250px;
-    height: 250px; }
-  .grid .seguinos {
-    grid-area: seguinos; }
-    .grid .seguinos H2 {
-      font-family: "Emilys Candy", cursive;
-      font-size: 28px;
-      text-align: center;
-      margin-top: 20px; }
-  .grid .logoFinal {
-    width: 250px;
-    grid-area: logoFinal; }
-  .grid .iconosRedes {
-    position: relative;
-    left: 100px; }
-    .grid .iconosRedes a {
-      text-decoration: none; }
-    .grid .iconosRedes .youtube {
-      width: 80px; }
-    .grid .iconosRedes .facebook {
-      width: 70px; }
-    .grid .iconosRedes .instagram {
-      width: 80px; }
-    .grid .iconosRedes .twitter {
-      width: 70px; }
-  .grid .wpp {
-    position: relative;
-    left: 220px;
-    width: 80px; }
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas: "mapaGoogle redes";
+  background-color: #bde0fe; }
+  .container .mapaGoogle {
+    grid-area: mapaGoogle;
+    padding: 20px;
+    margin-top: 20px;
+    width: 350px;
+    height: 170px; }
+    .container .mapaGoogle .google {
+      width: 170%;
+      height: 270px; }
 
-.pagosFondo, .parrafosIndex, section .parrafos02, section .parrafosRepo, section .escribinos, section .parrafosDeco, section .parrafoPorce {
-  background: #e78bb3;
-  background: radial-gradient(circle, #e78bb3 7%, #8ba2f6 100%); }
-  .pagosFondo .banner, .parrafosIndex .banner, section .parrafos02 .banner, section .parrafosRepo .banner, section .escribinos .banner, section .parrafosDeco .banner, section .parrafoPorce .banner {
-    width: 600px;
-    height: auto;
-    margin-left: 230px; }
-  .pagosFondo .pagos, .parrafosIndex .pagos, section .parrafos02 .pagos, section .parrafosRepo .pagos, section .escribinos .pagos, section .parrafosDeco .pagos, section .parrafoPorce .pagos {
+.grid .seguinos {
+  grid-area: seguinos;
+  justify-self: start;
+  align-self: flex-end; }
+  .grid .seguinos H2 {
+    font-family: "Emilys Candy", cursive;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px; }
+
+.redes {
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: 0.6fr 1.4fr;
+  gap: 0px 0px;
+  grid-template-areas: "tituloRedes" "iconosRedes" "iconosRedes";
+  grid-area: redes; }
+  .redes .tituloRedes {
+    font-family: "Emilys Candy", cursive;
+    font-size: 18px;
+    grid-area: tituloRedes;
+    text-align: center;
+    padding: 10px;
+    margin-top: 60px; }
+  .redes .iconosRedes {
+    grid-area: iconosRedes;
     display: flex;
-    padding: 20px 20px;
-    border: 5px 5px;
-    justify-content: space-between; }
-    .pagosFondo .pagos .wppFooter, .parrafosIndex .pagos .wppFooter, section .parrafos02 .pagos .wppFooter, section .parrafosRepo .pagos .wppFooter, section .escribinos .pagos .wppFooter, section .parrafosDeco .pagos .wppFooter, section .parrafoPorce .pagos .wppFooter {
-      width: 60px; }
-    .pagosFondo .pagos .footerTexto, .parrafosIndex .pagos .footerTexto, section .parrafos02 .pagos .footerTexto, section .parrafosRepo .pagos .footerTexto, section .escribinos .pagos .footerTexto, section .parrafosDeco .pagos .footerTexto, section .parrafoPorce .pagos .footerTexto {
-      border: 1px dashed black;
-      background-color: lightcyan;
-      font-family: "Emilys Candy", cursive;
-      line-height: 22px;
-      font-size: 17px;
-      width: 280px; }
-    .pagosFondo .pagos .tarjeta, .parrafosIndex .pagos .tarjeta, section .parrafos02 .pagos .tarjeta, section .parrafosRepo .pagos .tarjeta, section .escribinos .pagos .tarjeta, section .parrafosDeco .pagos .tarjeta, section .parrafoPorce .pagos .tarjeta {
-      width: 80px;
-      height: 80px;
-      margin-right: 5px;
-      margin-left: 5px;
-      margin-bottom: 10px; }
-    .pagosFondo .pagos .footerTextoDos, .parrafosIndex .pagos .footerTextoDos, section .parrafos02 .pagos .footerTextoDos, section .parrafosRepo .pagos .footerTextoDos, section .escribinos .pagos .footerTextoDos, section .parrafosDeco .pagos .footerTextoDos, section .parrafoPorce .pagos .footerTextoDos {
-      width: 250px; }
-    .pagosFondo .pagos .candado, .parrafosIndex .pagos .candado, section .parrafos02 .pagos .candado, section .parrafosRepo .pagos .candado, section .escribinos .pagos .candado, section .parrafosDeco .pagos .candado, section .parrafoPorce .pagos .candado {
-      width: 30px;
-      height: 50px;
-      margin-left: 5px; }
-    .pagosFondo .pagos .footerTextoTres, .parrafosIndex .pagos .footerTextoTres, section .parrafos02 .pagos .footerTextoTres, section .parrafosRepo .pagos .footerTextoTres, section .escribinos .pagos .footerTextoTres, section .parrafosDeco .pagos .footerTextoTres, section .parrafoPorce .pagos .footerTextoTres {
-      width: 200px; }
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    margin-bottom: 150px; }
+    .redes .iconosRedes a {
+      text-decoration: none; }
+    .redes .iconosRedes .youtube {
+      width: 80px; }
+    .redes .iconosRedes .facebook {
+      width: 70px; }
+    .redes .iconosRedes .instagram {
+      width: 80px; }
+    .redes .iconosRedes .twitter {
+      width: 70px; }
+
+.pagosFondo {
+  margin-left: 10px; }
+  .pagosFondo .banner {
+    margin-right: 0.5%;
+    width: 98%;
+    height: 170px;
+    padding-top: 15px; }
 
 .copyright {
-  text-align: right; }
+  text-align: right;
+  color: #000000; }
 
 /* -----------------------MEDIA QUERIE TABLET  -------------------------------------*/
 @media (min-width: 481px) and (max-width: 768px) {
@@ -337,22 +323,22 @@ hr {
     position: relative;
     left: 140px;
     width: 70px; }
-  .pagosFondo .banner, .parrafosIndex .banner, section .parrafos02 .banner, section .parrafosRepo .banner, section .escribinos .banner, section .parrafosDeco .banner, section .parrafoPorce .banner {
+  .pagosFondo .banner {
     margin-left: 50px; }
-  .pagosFondo .pagos, .parrafosIndex .pagos, section .parrafos02 .pagos, section .parrafosRepo .pagos, section .escribinos .pagos, section .parrafosDeco .pagos, section .parrafoPorce .pagos {
+  .pagosFondo .pagos {
     padding: 10px; }
-    .pagosFondo .pagos .wppFooter, .parrafosIndex .pagos .wppFooter, section .parrafos02 .pagos .wppFooter, section .parrafosRepo .pagos .wppFooter, section .escribinos .pagos .wppFooter, section .parrafosDeco .pagos .wppFooter, section .parrafoPorce .pagos .wppFooter {
+    .pagosFondo .pagos .wppFooter {
       margin-top: 15px;
       width: 50px;
       height: 60px; }
-    .pagosFondo .pagos .footerTexto, .parrafosIndex .pagos .footerTexto, section .parrafos02 .pagos .footerTexto, section .parrafosRepo .pagos .footerTexto, section .escribinos .pagos .footerTexto, section .parrafosDeco .pagos .footerTexto, section .parrafoPorce .pagos .footerTexto {
+    .pagosFondo .pagos .footerTexto {
       font-size: 15px;
       margin: 5px; }
-    .pagosFondo .pagos .tarjeta, .parrafosIndex .pagos .tarjeta, section .parrafos02 .pagos .tarjeta, section .parrafosRepo .pagos .tarjeta, section .escribinos .pagos .tarjeta, section .parrafosDeco .pagos .tarjeta, section .parrafoPorce .pagos .tarjeta {
+    .pagosFondo .pagos .tarjeta {
       margin-top: 25px;
       width: 40px;
       height: 40px; }
-    .pagosFondo .pagos .candado, .parrafosIndex .pagos .candado, section .parrafos02 .pagos .candado, section .parrafosRepo .pagos .candado, section .escribinos .pagos .candado, section .parrafosDeco .pagos .candado, section .parrafoPorce .pagos .candado {
+    .pagosFondo .pagos .candado {
       margin-top: 25px;
       margin-bottom: 25px;
       width: 45px;
@@ -402,26 +388,26 @@ hr {
       margin-left: 120px;
       height: 40px;
       width: 50px; }
-  .pagosFondo .banner, .parrafosIndex .banner, section .parrafos02 .banner, section .parrafosRepo .banner, section .escribinos .banner, section .parrafosDeco .banner, section .parrafoPorce .banner {
+  .pagosFondo .banner {
     width: 400px;
     height: auto;
     margin-left: 50px; }
-  .pagosFondo .pagos, .parrafosIndex .pagos, section .parrafos02 .pagos, section .parrafosRepo .pagos, section .escribinos .pagos, section .parrafosDeco .pagos, section .parrafoPorce .pagos {
+  .pagosFondo .pagos {
     padding: 10px; }
-    .pagosFondo .pagos .wppFooter, .parrafosIndex .pagos .wppFooter, section .parrafos02 .pagos .wppFooter, section .parrafosRepo .pagos .wppFooter, section .escribinos .pagos .wppFooter, section .parrafosDeco .pagos .wppFooter, section .parrafoPorce .pagos .wppFooter {
+    .pagosFondo .pagos .wppFooter {
       margin-top: 25px;
       width: 40px;
       height: 50px; }
-    .pagosFondo .pagos .footerTexto, .parrafosIndex .pagos .footerTexto, section .parrafos02 .pagos .footerTexto, section .parrafosRepo .pagos .footerTexto, section .escribinos .pagos .footerTexto, section .parrafosDeco .pagos .footerTexto, section .parrafoPorce .pagos .footerTexto {
+    .pagosFondo .pagos .footerTexto {
       font-size: 10px;
       width: 120px;
       height: auto;
       margin: 5px; }
-    .pagosFondo .pagos .tarjeta, .parrafosIndex .pagos .tarjeta, section .parrafos02 .pagos .tarjeta, section .parrafosRepo .pagos .tarjeta, section .escribinos .pagos .tarjeta, section .parrafosDeco .pagos .tarjeta, section .parrafoPorce .pagos .tarjeta {
+    .pagosFondo .pagos .tarjeta {
       margin-top: 25px;
       width: 40px;
       height: 40px; }
-    .pagosFondo .pagos .candado, .parrafosIndex .pagos .candado, section .parrafos02 .pagos .candado, section .parrafosRepo .pagos .candado, section .escribinos .pagos .candado, section .parrafosDeco .pagos .candado, section .parrafoPorce .pagos .candado {
+    .pagosFondo .pagos .candado {
       margin-top: 25px;
       margin-bottom: 25px;
       width: 45px;
@@ -434,21 +420,18 @@ main .tituloPrincipal1 {
 
 section .parrafos02 {
   font-family: "Emilys Candy", cursive;
+  font-size: 28px;
   border: 1px solid black;
-  background-color: antiquewhite;
-  margin: 30px;
+  background-color: #e5e5e5;
   padding: 5px;
-  width: 800px;
+  width: 80%;
   text-align: center;
-  margin-left: 250px;
-  margin-right: 40px;
-  font-size: 20px;
+  margin: 4% 5% 1% 8%;
   border-radius: 30px; }
 
 section .imagenQuienes {
-  width: 790px;
-  margin-left: 250px;
-  margin-bottom: 20px;
+  width: 85%;
+  margin: 5% 5% 5% 5%;
   border-radius: 30px; }
 
 /* -----------------------MEDIA QUERIE ESCRITORIO -------------------------------------*/
@@ -484,21 +467,19 @@ section .imagenQuienes {
 section .parrafosRepo {
   font-family: "Emilys Candy", cursive;
   border: 2px solid black;
-  background-color: antiquewhite;
-  font-size: 20px;
+  background-color: #e5e5e5;
+  font-size: 28px;
   text-align: center;
-  width: 600px;
-  height: 450px;
-  margin-left: 320px;
+  width: 60%;
+  height: 50%;
+  margin: 4% 10% 3% 20%;
   border-radius: 20px;
   padding: 10px; }
 
 section .contenedorCarousel1 {
-  width: 500px;
-  height: 456px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 340px;
+  width: 60%;
+  height: 50%;
+  margin: 4% 10% 4% 20%;
   border: 3px solid black;
   border-radius: 30px; }
   section .contenedorCarousel1 .img1 {
@@ -509,22 +490,20 @@ section .contenedorCarousel1 {
 section .escribinos {
   font-family: "Emilys Candy", cursive;
   border: 2px solid black;
-  background-color: antiquewhite;
+  background-color: #e5e5e5;
   font-size: 20px;
-  margin: 30px 30px 30px 220px;
+  margin: 4% 10% 3% 20%;
   text-align: center;
   border-radius: 30px;
   padding: 10px 10px 10px 10px;
-  width: 800px;
-  height: 80px; }
+  width: 60%;
+  height: 20%; }
 
 section .pastel1 {
   border-radius: 30px;
   height: 445px;
   width: 345px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  margin-left: 450px; }
+  margin: 3% 15% 3% 38%; }
 
 /* -----------------------MEDIA QUERIE ESCRITORIO -------------------------------------*/
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -605,34 +584,33 @@ section .pastel1 {
 section .parrafosDeco {
   font-family: "Emilys Candy", cursive;
   border: 2px solid black;
-  background-color: antiquewhite;
-  font-size: 20px;
+  background-color: #e5e5e5;
+  font-size: 28px;
   text-align: left;
-  width: 750px;
-  margin-left: 210px;
+  width: 77%;
+  margin: 3% 10% 3% 10%;
   border-radius: 30px;
-  padding: 15px; }
+  padding: 10px; }
 
 section .contenedorCarousel2 {
-  width: 550px;
-  height: 456px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 300px;
+  width: 65%;
+  height: 506px;
+  margin: 4% 10% 4% 15%;
   border: 3px solid black;
   border-radius: 30px; }
   section .contenedorCarousel2 .img2 {
     border-radius: 30px;
     width: 550px;
-    height: 450px; }
+    height: 500px; }
 
 section .grid .pastel2 {
   border: 2px solid black;
   border-radius: 30px;
   padding: 0px 0px 0px 0px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  margin-left: 50px;
+  margin: 3% 10% 3% 15%;
+  /*   margin-top:20px;
+            margin-bottom: 30px;
+            margin-left: 10%; */
   height: 400px;
   width: 360px; }
 
@@ -715,12 +693,12 @@ section .grid .pastel3 {
 section .parrafoPorce {
   font-family: "Emilys Candy", cursive;
   border: 2px solid black;
-  background-color: antiquewhite;
-  font-size: 20px;
+  background-color: #e5e5e5;
+  font-size: 28px;
   margin: 30px;
   text-align: left;
-  width: 750px;
-  margin-left: 240px;
+  width: 77%;
+  margin: 3% 10% 2% 12%;
   border-radius: 30px;
   padding: 20px; }
 
@@ -753,11 +731,11 @@ section .parrafoPorce {
 .formulario .parrafoFormu {
   font-family: "Emilys Candy", cursive;
   border: 1px solid black;
-  background-color: antiquewhite;
+  background-color: #d0f4de;
   font-size: 25px;
   text-align: center;
-  width: 900px;
-  margin-left: 180px;
+  width: 70%;
+  margin-left: 15%;
   border-radius: 30px;
   padding: 20px; }
 
@@ -766,7 +744,7 @@ section .parrafoPorce {
   margin-bottom: 20px; }
 
 .formulario .cajaSelect {
-  margin-left: 300px;
+  margin-left: 35%;
   width: 300px; }
 
 .formulario .bordeFormu {
@@ -779,7 +757,7 @@ section .parrafoPorce {
   margin-top: 5px;
   margin-bottom: 5px;
   padding-bottom: 5px;
-  width: 750px;
+  width: 80%;
   height: 250px; }
 
 .formulario .cajaArchivos {
