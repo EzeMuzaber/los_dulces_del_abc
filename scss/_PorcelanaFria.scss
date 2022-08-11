@@ -1,7 +1,7 @@
 section{
     .parrafoPorce{ 
         font-family:$fuenteParrafos;
-        border: 2px solid black;
+        border: 2px solid $colorBordes;
         background-color:$fondoParrafo;
         font-size: $fuentePx;
         margin: 30px;
@@ -12,22 +12,12 @@ section{
         padding: 20px;
     }
 }
-/* -----------------------MEDIA QUERIE ESCRITORIO -------------------------------------*/
-@media (min-width:769px) and (max-width:1024px){
-    section{
-        .parrafoPorce{
-            margin-left: 180px;
-        }
-    }
-}
+
 /* ------------------  MEDIA QUERIE TABLET-------------------- */
 @media (min-width:481px) and (max-width:768px) {
     section{
         .parrafoPorce{
             padding: 10px 10px 10px 10px;
-            margin-left:90px;
-            width: 580px;
-            height: 320px;
             font-size: 18px;
             } 
             
@@ -37,10 +27,9 @@ section{
 @media(max-width:480px){
     section{
         .parrafoPorce{
-            margin-left:50px;
-            width: 370px;
-            height: 340px;
             padding-top: 5px;
+            width: 80%;
+            margin-left: 8%;
             font-size: 17px;
         } 
         

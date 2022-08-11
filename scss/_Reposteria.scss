@@ -1,21 +1,22 @@
 section{
     .parrafosRepo{
         font-family:$fuenteParrafos;
-        border: 2px solid black;
+        border: 1.5px solid $colorBordes;
+        border-radius: 22px;
         background-color: $fondoParrafo;
         font-size: $fuentePx;
         text-align: center;
         width: 60%;
         height: 50%;
         margin: 4% 10% 3% 20%; 
-        border-radius: 20px;
+        
         padding: 10px;
     }
     .contenedorCarousel1{
         width: 60%;
         height: 50%;
         margin: 4% 10% 4% 20%;
-        border: 3px solid black;
+        border: 2.5px solid $colorCarousel;
         border-radius: 30px;
         .img1{
             border-radius: 30px;
@@ -25,7 +26,7 @@ section{
     }
     .escribinos{
         font-family:$fuenteParrafos;
-        border: 2px solid black;
+        border: 1.5px solid $colorBordes;
         background-color: $fondoParrafo;
         font-size: 20px;
         margin: 4% 10% 3% 20%;
@@ -35,69 +36,52 @@ section{
         width: 60%;
         height: 20%;
         }
-    .pastel1{
-        border-radius: 30px;
-        height:445px;
-        width:345px;
-      margin: 3% 15% 3% 38%;
+    .video1{
+        .pastel1{
+            margin: 3% 15% 3% 38%;
+            border-radius: 30px;
+            height:445px;
+            width:345px;
+        }
+        .boton2{
+            display: none;
+        }
     }
 }
 /* -----------------------MEDIA QUERIE ESCRITORIO -------------------------------------*/
 @media (min-width:769px) and (max-width:1024px){
     section{
         .parrafosRepo{
-            margin-left: 200px;
             font-size:22px;
-            height: 490px;
         }
-        .contenedorCarousel1{
-            margin-left: 250px;
-        }
-        .escribinos{
-            margin-left: 140px;
-        }
-        .pastel1{
+        .video1{
+            .pastel1{
             margin-left: 350px;
+            }
+            .boton2{
+            display:none;
+            }
         }
-
     }
 }
 /* --------------- MEDIA QUERI TABLET ----------------- */
 @media (min-width:481px) and (max-width:768px) {
 section{
-    .parrafosRepo{
-        width: 500px;
-        height: 420px;
-        margin-left: 150px;
+        .parrafosRepo{
         font-size: 18px;
-        margin-bottom: 30px ;
-        margin-top: 40px;
         }
-    .contenedorCarousel1{
-        box-sizing: border-box;
-        width: 400px;
-        height: 406px;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        margin-left: 180px;
-        border: 3px solid black;
-        border-radius: 20px;
-        .img1{
+        .escribinos{
+        font-size: 18px;
+        }
+        .video1{
+            .pastel1{
+            margin-left: 25%;
             width: 400px;
-            height: 400px;
-            border-radius: 20px;
-        }
-        }
-    .escribinos{
-        margin: 20px 20px 20px 80px;
-        font-size: 18px;
-        width: 590px;
-        height: 100px;
-        }
-    .pastel1{
-        margin-left: 160px;
-        width: 400px;
-        height: 350px;
+            height: 350px;
+            }
+            .boton2{
+            display: none;
+            }
         }
     }
 }
@@ -106,20 +90,15 @@ section{
 @media(max-width:480px){
     section{
         .parrafosRepo{
-            width: 390px;
+            width: 80%;
             height: 410px;
-            margin-left: 30px;
+            margin: 4% 5% 2% 9%;
             font-size: 17px;
-            margin-bottom: 20px ;
         }
         .contenedorCarousel1{
-            box-sizing: border-box;
-            width: 256px;
+            width: 70%;
             height: 256px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            margin-left: 80px;
-            border: 3px solid black;
+            margin: 2% 4% 2% 12%;
             border-radius: 20px;
             .img1{
                 width: 250px;
@@ -129,14 +108,34 @@ section{
         }
         .escribinos{
             font-size: 17px;
-            margin-left:25px;
-            width: 400px;
-            height: 115px;
+            width: 90%;
+            margin: 2% 2% 2% 4%;
         }
-        .pastel1{
-            margin-left: 50px;
-            width: 300px;
-            height: 345px;
+        .video1{
+            background-color: beige;
+            .pastel1{
+                margin: 2% 10% 2% 18%;
+                width: 300px;
+                height: 345px;
+            }
+            .boton2{
+                display: none;
+            }
+        }
+    }
+}
+/* ------------------- MEDIA QUERIE MINI-CELULAR ---------------------*/
+@media(max-width:320px){
+    section{
+        .video1{
+            .pastel1{
+                display:none;
+            }
+            .boton2{
+                display: block;
+                width: 150px;
+                margin-left:25%;
+            }
         }
     }
 }

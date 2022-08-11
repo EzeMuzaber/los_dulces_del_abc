@@ -4,12 +4,15 @@
     box-sizing: border-box; 
 }
 .menu1{
-    max-width: 100%;
+
     background: rgb(231,139,179);
     background: linear-gradient(342deg, 
     rgba(231,139,179,0.9716058298319328) 7%, 
     rgba(139,162,246,0.9716058298319328) 100%);
     font-size: 20px;
+}
+.container-fluid{
+  max-width: 100%;  
 }
 body{
    background-color: white;
@@ -100,33 +103,34 @@ hr{
     }
     .bordes{
     border-radius: 25px;
-    border: 2px solid #e0aaff;
+    border: 2px solid $colorBordes;
     }
     .imagenRepo{
         margin-left: 20px;
         margin-top: 20px;
         height: 250px;
-        width: 440px;
+        width: 70%;
     }
     .imagenDeco{
         margin-left: 20px;
         margin-top: 20px;
         height: 240px;
-        width: 440px;
+        width: 70%;
     }
     .imagenPorce{
         margin-left: 20px;
         margin-top: 30px;
         height: 240px;
-        width: 440px;
+        width: 70%;
     }
 }
 .link{
     text-align: center; 
-    margin-bottom:25px
+    margin-bottom:25px;
 }
 
 .parrafosIndex{
+    max-width: 95%;
 font-family:$fuenteParrafos;
 background-color: $fondoParrafo;
 font-size: $fuentePx;
@@ -134,7 +138,7 @@ margin: 30px;
 } 
 .bordesIndex{
 border-radius: 25px;
-border: 2px solid #e0aaff;
+border: 2px solid $colorBordes;
 line-height: 40px;
 padding: 15px;  
 }  
@@ -147,64 +151,54 @@ padding: 15px;
     gap: 0px 0px; 
     grid-template-areas: 
     "mapaGoogle redes"; 
-    background-color: #bde0fe;
+    background-color: $fondoFooter;
+    border:2px solid violet;
+    border-radius: 20px;
     .mapaGoogle { 
         grid-area: mapaGoogle; 
         padding: 20px;
         margin-top:20px;
-        width: 350px;
+        width: 50%;
         height: 170px;
         .google{
             width: 170%;
             height: 270px;
         }
     }
-}
-.grid{
-    .seguinos{
-    grid-area:seguinos; 
-    justify-self:start;
-    align-self: flex-end;
-        H2{
-        font-family:$fuenteParrafos;
-        font-size: map-get($estilos,fuente );
-        text-align: map-get($estilos,alineacion );
-        margin-top: map-get($estilos, margen-arriba );
+        .redes{
+        grid-area: redes; 
+        display: grid; 
+        grid-template-columns: 90%; 
+        grid-template-rows: 0.6fr 1.4fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "tituloRedes"
+        "iconosRedes"
+        "iconosRedes"; 
+        
+        .tituloRedes { 
+            grid-area: tituloRedes;
+            font-family:$fuenteParrafos;
+            font-size: map-get($estilos,fuente);
+            text-align: map-get($estilos,alineacion );
+            margin-top: map-get($estilos, margen-arriba );
+            padding: 2%;
         }
-    }
-}
-.redes{
-    display: grid; 
-    grid-template-columns: 90%; 
-    grid-template-rows: 0.6fr 1.4fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-    "tituloRedes"
-    "iconosRedes"
-    "iconosRedes"; 
-    grid-area: redes; 
-    .tituloRedes { 
-        font-family:$fuenteParrafos;
-        font-size: 18px;
-        grid-area: tituloRedes;
-        text-align: center;
-        padding: 10px;
-        margin-top: 60px;
-    }
-    .iconosRedes{
-        grid-area: iconosRedes; 
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        position: relative;
-        top:10px;
-        margin-bottom: 150px;
-        a {
-        text-decoration: none;
-        }
-        @each $key, $widht in $redes{
-            .#{$key}{
-                width:$widht;
+        .iconosRedes{
+            grid-area: iconosRedes; 
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: relative;
+            top:10px;
+            margin-bottom: 15%;
+            a {
+            text-decoration: none;
+            }
+            @each $key, $widht in $redes{
+                .#{$key}{
+                    width:$widht;
+                }
             }
         }
     }
@@ -223,7 +217,23 @@ padding: 15px;
     color: #000000;
     
 }
-
+/* -----------------------MEDIA QUERIE ESCRITORIO -------------------------------------*/
+@media (min-width:769px) and (max-width:1024px){
+    .gridIndex{
+        .imagenRepo{
+            margin-top:12%;
+            width: 80%;
+        }
+        .imagenDeco{
+            margin-top:12%;
+            width: 80%
+        }
+        .imagenPorce{
+            margin-top:15%;
+            width: 80%;
+        }
+    }
+}
 /* -----------------------MEDIA QUERIE TABLET  -------------------------------------*/
 @media (min-width:481px) and (max-width:768px) {
     .logoPrincipal{
@@ -313,14 +323,6 @@ padding: 15px;
     .subtitulos{
         font-size: 25px;
         }
-    .logoFinal{
-        width: 290px;
-        grid-area:logoFinal;
-    }
-    .iconosRedes{
-        position: relative;
-        left: 80px
-    }
     .gridIndex{
         grid-template-columns:480px;
         grid-template-areas: 
@@ -331,60 +333,52 @@ padding: 15px;
         .link{
             display: none;
         }
-        .bordes{
-            width: 400px;
-            height: 250px;
-        }
         .imagenRepo{
-            margin-top: 30px;
-            margin-left:40px;
+            margin-left:9%;
         }
         .imagenDeco{
-        margin-top: 24px;
-        margin-left: 40px;
+            margin-left:9%;
         }
         .imagenPorce{
-        margin-top: 24px;
-        margin-left: 40px;
+            margin-left:9%;
         }
     }
     .parrafosIndex{
         display: none;
     }
 }
+/* ------------------- MEDIA QUERIE MINI-CELULAR ---------------------*/
+@media(max-width:320px){
+    .tituloPrincipal{
+        font-size: 50px;
+        width: 250px;
+    }
+    .gridIndex{
+        .imagenRepo{
+            margin-left: 3%;
+            width: 60%;
+        }
+        .imagenDeco{
+            margin-left: 3%;
+            width: 60%;
+        }
+        .imagenPorce{
+            margin-left: 3%;
+            width: 60%;
+        }
+    }
+}
 
 /*------------------- MEDIA QUERIES FOOTER TABLET--------------------- */
 @media (min-width:481px) and (max-width:768px){
-    .grid{
-        .google{
-            margin-top: 40px;
-            width: 170px;
-            height: 200px;
-            margin-right: 15px;
-            border-radius: 20px;
+    
+    .container{
+        .mapaGoogle{
+            .google{
+                height: 220px;
             }
-        .seguinos{
-            h2{
-            font-size: 25px;
-            margin-left: 20px;
-            margin-top: 10px;
-            text-align: center;
-            }
-        }
-        .logoFinal{
-            display:flex;
-            margin-top: 40px;
-            margin-right: 15px;
-            border-radius: 20px;
-            width: 180px;
-            height: 200px;
-            padding-left: 15px;
         }
         .iconosRedes{
-            position: relative;
-
-            padding: 10px;
-            left: 30px;
                 .youtube{
                 width: 70px;
                 }
@@ -398,39 +392,6 @@ padding: 15px;
                 width: 70px;
                 }
         }
-        .wpp{
-            position: relative;
-            left: 140px;
-            width: 70px;
-            }
-    }
-    .pagosFondo{
-        .banner{
-            margin-left: 50px;
-        }
-        .pagos{
-            padding: 10px;
-            .wppFooter{
-                margin-top:15px;
-                width: 50px;
-                height: 60px;
-            }
-            .footerTexto{
-                font-size: 15px;
-                margin: 5px;
-            }
-            .tarjeta{
-                margin-top: 25px;
-                width: 40px;
-                height: 40px;
-            }
-            .candado{
-                margin-top: 25px;
-                margin-bottom: 25px;
-                width: 45px;
-                height: 50px;
-            }
-        } 
     }
     .copyright{
         font-size: 10px;
@@ -439,39 +400,34 @@ padding: 15px;
 
 /*------------------------------ MEDIA QUERIE FOOTER CELULAR --------------------------- */
 @media(max-width:480px){
-    .grid{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows:1fr;
+    .container{
+        grid-template-columns: 95%;
+        grid-template-rows:180px 250px;
         grid-template-areas:
-        "seguinos";
-        .google{
-            display:none;
-        }
-        .google{
-            margin-top: 40px;
-            width: 170px;
-            height: 200px;
-            margin-right: 15px;
-            border-radius: 20px;
-        }
-        .seguinos{
-            h2{
-            font-size: 18px;
-            margin-left: 10px;
-            margin-top: 10px;
-            text-align: center;
+        "mapaGoogle"
+        "redes";
+        .mapaGoogle{
+            padding: 10px;
+            width: 100%;
+            height: 170px ;
+            .google{
+                width: 99%;
+                height: 140px;
             }
         }
-        .logoFinal{
-            display:none;
-        }
-        .iconosRedes{
+        .redes{
+            grid-template-columns: 400px;
+            .tituloRedes{
+                font-size: 50px;
+                padding: 0%;
+            }
+            .iconosRedes{
             position: relative;
             left: 1px;
-            margin-top: 11px;
-            margin-bottom: 5px;
-            margin-left: 140px;
+            justify-content:space-evenly;
+            align-items: start;
+            height: 100px;
+            margin-bottom: 0%;
                 .youtube{
                 width: 50px;
                 }
@@ -484,48 +440,19 @@ padding: 15px;
                 .twitter{
                 width: 50px;
                 }
+            }
         }
-        .wpp{
-            position: relative;
-            left: 90px;
-            margin-left: 120px;
-            height: 40px;
-            width: 50px;
-            }
     }
-    .pagosFondo{
-        .banner{
-            width: 400px;
-            height: auto;
-            margin-left:50px;
-        }
-        .pagos{
-            padding: 10px;
-            .wppFooter{
-                margin-top:25px;
-                width: 40px;
-                height: 50px;
-            }
-            .footerTexto{
-                font-size: 10px;
-                width: 120px;
-                height: auto;
-                margin: 5px;
-            }
-            .tarjeta{
-                margin-top: 25px;
-                width: 40px;
-                height: 40px;
-            }
-            .candado{
-                margin-top: 25px;
-                margin-bottom: 25px;
-                width: 45px;
-                height: 50px;
-            }
-        } 
-    }
+    
     .copyright{
         font-size: 10px;
         }
+}
+/* ------------------- MEDIA QUERIE FOOTER MINI-CELULAR ---------------------*/
+@media(max-width:320px){
+    .container{
+        .redes{
+            grid-template-columns: 300px;
+        }
+    }
 }

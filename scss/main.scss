@@ -3,9 +3,12 @@ $fuenteParrafos: 'Emilys Candy',cursive;
 $colorTitulos:#9d4edd;
 $colorTitulo2:#007ea7;
 $colorPrincipal: black; 
-$fondoTexto: #e0aaff;
+$fondoTexto: #e0aaff;/* fondo SUBTITULOS */
+$fondoFooter:#d0f4de;
 $fuentePx:28px;
 $fondoParrafo: #e5e5e5;
+$colorBordes: #ff69eb;
+$colorCarousel:#7b2cbf;
 
 @mixin wppFixed ($position,$z-index,$left){
     position:$position;
@@ -21,9 +24,8 @@ $redes:(
 $estilos:(
     fuente:28px,
     alineacion:center,
-    margen-arriba:20px,
+    margen-arriba:12%,
 );
-
 
 @import "index";
 @import "QuienesSomos";

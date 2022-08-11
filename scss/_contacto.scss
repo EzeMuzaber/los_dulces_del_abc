@@ -57,23 +57,12 @@
     border-style: solid;
     border-radius:35px;
     }
-/* -----------------------MEDIA QUERIE ESCRITORIO -------------------------------------*/
-@media (min-width:769px) and (max-width:1024px){
-    .formulario{
-        .parrafoFormu{
-            margin-left: 60px;
-        }
-    }
-}
+
     /* ----------------  MEDIA QUERIE CONTACTO TABLET  --------------------------*/
 @media (min-width:481px) and (max-width:768px) {
 .formulario{
     .parrafoFormu{
-        margin-left: 80px;
         font-size: 20px;
-        width: 580px;
-        margin-top: 30px;
-        margin-bottom: 20px;
         } 
         .cajaContacto{
             width: 350px;
@@ -82,7 +71,7 @@
             font-size: 20px;
         }
         .cajaSelect{
-            margin-left:150px;
+            margin-left:28%;
             width: 250px;
         }
         .cajaArchivos{
@@ -94,11 +83,9 @@
 @media(max-width:480px){
 .formulario{
     .parrafoFormu{
-        margin-left: 20px;
+        margin-left: 5%;
         font-size: 17px;
         width: 420px;
-        margin-top: 20px;
-        margin-bottom: 20px;
         }
     .cajaContacto{
         width: 385px;
@@ -107,7 +94,6 @@
         font-size: 16px;
         }
     .cajaSelect{
-        margin-left:110px;
         width: 150px;
         font-size: 10px;
         } 
@@ -115,4 +101,23 @@
         width: 350px;
         }
     }
+}
+/* MEDIA QUERIE CONTACTO MINI-CELULAR */
+@media(max-width:320px){
+    .formulario{
+        .parrafoFormu{
+            width: 290px;
+            font-size: 15px;
+        }
+        .cajaSelect{
+            margin-left: 20%;
+        }
+        .cajaContacto{
+            width: 240px;
+        }
+        .cajaArchivos{
+            width: 240px;
+        }
+    }
+
 }
