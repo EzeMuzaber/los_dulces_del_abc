@@ -60,49 +60,69 @@
 
     /* ----------------  MEDIA QUERIE CONTACTO TABLET  --------------------------*/
 @media (min-width:481px) and (max-width:768px) {
-.formulario{
-    .parrafoFormu{
-        font-size: 20px;
-        } 
-        .cajaContacto{
-            width: 350px;
-        }
-        .parrafoCompletar{
+    .formulario{
+        .parrafoFormu{
             font-size: 20px;
+            } 
+            .cajaContacto{
+                width: 350px;
+            }
+            .parrafoCompletar{
+                font-size: 20px;
+            }
+            .cajaSelect{
+                margin-left:28%;
+                width: 250px;
+            }
+            .cajaArchivos{
+            width: 350px;
+            }
+        }
+}
+/* ------------------- MEDIA QUERIE CELULAR  MEDIUM ---------------------*/
+
+@media(max-width:375px){
+    .formulario{
+        .parrafoFormu{
+            max-width: 325px;
+            font-size: 15px;
         }
         .cajaSelect{
-            margin-left:28%;
-            width: 250px;
+            margin-left: 22%;
+        }
+        .escribi{
+            .cajaContacto{
+            }
         }
         .cajaArchivos{
-        width: 350px;
+            width: 140px;
         }
     }
 }
 /* --------------------- MEDIA QUERIE CONTACTO CELULAR -------------------- */
 @media(max-width:480px){
-.formulario{
-    .parrafoFormu{
-        margin-left: 5%;
-        font-size: 17px;
-        width: 420px;
-        }
-    .cajaContacto{
-        width: 385px;
-        }
-    .parrafoCompletar{
-        font-size: 16px;
-        }
-    .cajaSelect{
-        width: 150px;
-        font-size: 10px;
-        } 
-    .cajaArchivos{
-        width: 350px;
+    .formulario{
+        .parrafoFormu{
+            margin-left: 5%;
+            font-size: 17px;
+            width: 420px;
+            }
+        .cajaContacto{
+            width: 385px;
+            }
+        .parrafoCompletar{
+            font-size: 16px;
+            }
+        .cajaSelect{
+            width: 150px;
+            font-size: 10px;
+            } 
+        .cajaArchivos{
+            width: 350px;
+            }
         }
     }
-}
-/* MEDIA QUERIE CONTACTO MINI-CELULAR */
+/*----------- MEDIA QUERIE CONTACTO MINI-CELULAR -------------------*/
 @media(max-width:320px){
     .formulario{
         .parrafoFormu{
@@ -112,8 +132,10 @@
         .cajaSelect{
             margin-left: 20%;
         }
-        .cajaContacto{
-            width: 240px;
+        .escribi{
+            .cajaContacto{
+                width: 240px;
+            }
         }
         .cajaArchivos{
             width: 240px;

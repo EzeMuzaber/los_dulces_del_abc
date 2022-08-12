@@ -8,8 +8,7 @@ section{
         text-align: center;
         width: 60%;
         height: 50%;
-        margin: 4% 10% 3% 20%; 
-        
+        margin: 4% 10% 3% 20%;
         padding: 10px;
     }
     .contenedorCarousel1{
@@ -121,6 +120,16 @@ section{
             .boton2{
                 display: none;
             }
+        }
+    }
+}
+/* ------------------- MEDIA QUERIE CELULAR  MEDIUM ---------------------*/
+
+@media(max-width:375px){
+    section{
+        .parrafosRepo{
+            font-size: 14px;
+            height: 370px;
         }
     }
 }

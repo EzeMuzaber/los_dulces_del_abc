@@ -183,7 +183,7 @@ hr {
     padding-top: 15px; }
 
 .copyright {
-  text-align: right;
+  text-align: center;
   color: #000000; }
 
 /* -----------------------MEDIA QUERIE ESCRITORIO -------------------------------------*/
@@ -345,7 +345,8 @@ hr {
         .container .redes .iconosRedes .twitter {
           width: 50px; }
   .copyright {
-    font-size: 10px; } }
+    text-align: center;
+    font-size: 8px; } }
 
 /* ------------------- MEDIA QUERIE FOOTER MINI-CELULAR ---------------------*/
 @media (max-width: 320px) {
@@ -481,6 +482,12 @@ section .video1 .boton2 {
       height: 345px; }
     section .video1 .boton2 {
       display: none; } }
+
+/* ------------------- MEDIA QUERIE CELULAR  MEDIUM ---------------------*/
+@media (max-width: 375px) {
+  section .parrafosRepo {
+    font-size: 14px;
+    height: 370px; } }
 
 /* ------------------- MEDIA QUERIE MINI-CELULAR ---------------------*/
 @media (max-width: 320px) {
@@ -689,6 +696,16 @@ section .parrafoPorce {
   .formulario .cajaArchivos {
     width: 350px; } }
 
+/* ------------------- MEDIA QUERIE CELULAR  MEDIUM ---------------------*/
+@media (max-width: 375px) {
+  .formulario .parrafoFormu {
+    max-width: 325px;
+    font-size: 15px; }
+  .formulario .cajaSelect {
+    margin-left: 22%; }
+  .formulario .cajaArchivos {
+    width: 140px; } }
+
 /* --------------------- MEDIA QUERIE CONTACTO CELULAR -------------------- */
 @media (max-width: 480px) {
   .formulario .parrafoFormu {
@@ -705,14 +722,14 @@ section .parrafoPorce {
   .formulario .cajaArchivos {
     width: 350px; } }
 
-/* MEDIA QUERIE CONTACTO MINI-CELULAR */
+/*----------- MEDIA QUERIE CONTACTO MINI-CELULAR -------------------*/
 @media (max-width: 320px) {
   .formulario .parrafoFormu {
     width: 290px;
     font-size: 15px; }
   .formulario .cajaSelect {
     margin-left: 20%; }
-  .formulario .cajaContacto {
+  .formulario .escribi .cajaContacto {
     width: 240px; }
   .formulario .cajaArchivos {
     width: 240px; } }

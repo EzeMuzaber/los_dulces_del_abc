@@ -213,9 +213,8 @@ padding: 15px;
     } 
 }
 .copyright{
-    text-align:right;
+    text-align:center;
     color: #000000;
-    
 }
 /* -----------------------MEDIA QUERIE ESCRITORIO -------------------------------------*/
 @media (min-width:769px) and (max-width:1024px){
@@ -445,7 +444,8 @@ padding: 15px;
     }
     
     .copyright{
-        font-size: 10px;
+        text-align: center;
+        font-size: 8px;
         }
 }
 /* ------------------- MEDIA QUERIE FOOTER MINI-CELULAR ---------------------*/
