@@ -136,6 +136,12 @@ section{
 /* ------------------- MEDIA QUERIE MINI-CELULAR ---------------------*/
 @media(max-width:320px){
     section{
+        .parrafosRepo{
+            font-size: 12px;
+        }
+        .escribinos{
+            font-size: 12px;
+        }
         .video1{
             .pastel1{
                 display:none;

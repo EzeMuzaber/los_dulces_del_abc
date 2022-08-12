@@ -273,11 +273,11 @@ hr {
     .gridIndex .link {
       display: none; }
     .gridIndex .imagenRepo {
-      margin-left: 9%; }
+      margin-left: 15%; }
     .gridIndex .imagenDeco {
-      margin-left: 9%; }
+      margin-left: 15%; }
     .gridIndex .imagenPorce {
-      margin-left: 9%; }
+      margin-left: 15%; }
   .parrafosIndex {
     display: none; } }
 
@@ -351,7 +351,9 @@ hr {
 /* ------------------- MEDIA QUERIE FOOTER MINI-CELULAR ---------------------*/
 @media (max-width: 320px) {
   .container .redes {
-    grid-template-columns: 300px; } }
+    grid-template-columns: 300px; }
+  .pagosFondo .banner {
+    height: 150px; } }
 
 main .tituloPrincipal1 {
   color: #007ea7; }
@@ -491,6 +493,10 @@ section .video1 .boton2 {
 
 /* ------------------- MEDIA QUERIE MINI-CELULAR ---------------------*/
 @media (max-width: 320px) {
+  section .parrafosRepo {
+    font-size: 12px; }
+  section .escribinos {
+    font-size: 12px; }
   section .video1 .pastel1 {
     display: none; }
   section .video1 .boton2 {
@@ -558,14 +564,17 @@ section .videos {
       height: 400px;
       border-radius: 20px; }
   section .videos {
+    justify-content: space-between;
     max-width: 745px; }
     section .videos .pastel2 {
       width: 310px;
       height: 400px;
-      margin-right: 2%; }
+      margin-left: 5%;
+      margin-right: 3%; }
     section .videos .pastel3 {
       margin-left: 1%;
       margin-right: 2%;
+      margin-top: 3%;
       width: 310px;
       height: 401px; } }
 
@@ -598,6 +607,16 @@ section .videos {
       width: 330px;
       height: 500px;
       margin-left: 18%; } }
+
+@media (max-width: 320px) {
+  section .videos {
+    max-width: 310px; }
+    section .videos .pastel2 {
+      width: 290px;
+      height: 400px; }
+    section .videos .pastel3 {
+      width: 290px;
+      height: 400px; } }
 
 section .parrafoPorce {
   font-family: "Emilys Candy", cursive;
@@ -696,16 +715,6 @@ section .parrafoPorce {
   .formulario .cajaArchivos {
     width: 350px; } }
 
-/* ------------------- MEDIA QUERIE CELULAR  MEDIUM ---------------------*/
-@media (max-width: 375px) {
-  .formulario .parrafoFormu {
-    max-width: 325px;
-    font-size: 15px; }
-  .formulario .cajaSelect {
-    margin-left: 22%; }
-  .formulario .cajaArchivos {
-    width: 140px; } }
-
 /* --------------------- MEDIA QUERIE CONTACTO CELULAR -------------------- */
 @media (max-width: 480px) {
   .formulario .parrafoFormu {
@@ -722,6 +731,16 @@ section .parrafoPorce {
   .formulario .cajaArchivos {
     width: 350px; } }
 
+/* ------------------- MEDIA QUERIE CELULAR  MEDIUM ---------------------*/
+@media (max-width: 375px) {
+  .formulario .parrafoFormu {
+    max-width: 325px;
+    font-size: 15px; }
+  .formulario .cajaSelect {
+    margin-left: 22%; }
+  .formulario .cajaArchivos {
+    width: 140px; } }
+
 /*----------- MEDIA QUERIE CONTACTO MINI-CELULAR -------------------*/
 @media (max-width: 320px) {
   .formulario .parrafoFormu {
@@ -729,7 +748,7 @@ section .parrafoPorce {
     font-size: 15px; }
   .formulario .cajaSelect {
     margin-left: 20%; }
-  .formulario .escribi .cajaContacto {
+  .formulario .cajaContacto {
     width: 240px; }
-  .formulario .cajaArchivos {
+  .cajaArchivos {
     width: 240px; } }

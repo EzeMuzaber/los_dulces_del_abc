@@ -79,26 +79,7 @@
             }
         }
 }
-/* ------------------- MEDIA QUERIE CELULAR  MEDIUM ---------------------*/
 
-@media(max-width:375px){
-    .formulario{
-        .parrafoFormu{
-            max-width: 325px;
-            font-size: 15px;
-        }
-        .cajaSelect{
-            margin-left: 22%;
-        }
-        .escribi{
-            .cajaContacto{
-            }
-        }
-        .cajaArchivos{
-            width: 140px;
-        }
-    }
-}
 /* --------------------- MEDIA QUERIE CONTACTO CELULAR -------------------- */
 @media(max-width:480px){
     .formulario{
@@ -122,6 +103,26 @@
             }
         }
     }
+
+/* ------------------- MEDIA QUERIE CELULAR  MEDIUM ---------------------*/
+@media(max-width:375px){
+    .formulario{
+        .parrafoFormu{
+            max-width: 325px;
+            font-size: 15px;
+        }
+        .cajaSelect{
+            margin-left: 22%;
+        }
+        .escribi{
+            .cajaContacto{
+            }
+        }
+        .cajaArchivos{
+            width: 140px;
+        }
+    }
+}
 /*----------- MEDIA QUERIE CONTACTO MINI-CELULAR -------------------*/
 @media(max-width:320px){
     .formulario{
@@ -132,8 +133,7 @@
         .cajaSelect{
             margin-left: 20%;
         }
-        .escribi{
-            .cajaContacto{
+        .cajaContacto{
                 width: 240px;
             }
         }
@@ -141,5 +141,3 @@
             width: 240px;
         }
     }
-
-}

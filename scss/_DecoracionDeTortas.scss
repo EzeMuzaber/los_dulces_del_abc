@@ -71,15 +71,18 @@ section{
             }
         }
         .videos{
+            justify-content: space-between;
             max-width: 745px;
             .pastel2{
                 width: 310px;
                 height: 400px;
-                margin-right: 2%;
+                margin-left: 5%;    
+                margin-right: 3%;
             }
             .pastel3{
                 margin-left:1%;
                 margin-right:2%;
+                margin-top: 3%;
                 width: 310px;
                 height: 401px;
             }
@@ -122,6 +125,22 @@ section{
                 width: 330px;
                 height: 500px;
                 margin-left: 18%;
+            }
+        }
+    }
+}
+
+@media(max-width:320px){
+    section{
+        .videos{
+            max-width: 310px;
+            .pastel2{
+                width: 290px;
+                height: 400px;
+            }
+            .pastel3{
+                width: 290px;
+                height: 400px;
             }
         }
     }
