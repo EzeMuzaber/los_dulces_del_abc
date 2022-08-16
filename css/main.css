@@ -281,6 +281,34 @@ hr {
   .parrafosIndex {
     display: none; } }
 
+/* ------------------- MEDIA QUERIE CELULAR  Large---------------------*/
+@media (max-width: 425px) {
+  .tituloPrincipal, main .tituloPrincipal1 {
+    width: 340px; }
+  .gridIndex .imagenRepo {
+    margin-left: 11%;
+    width: 65%; }
+  .gridIndex .imagenDeco {
+    margin-left: 11%;
+    width: 65%; }
+  .gridIndex .imagenPorce {
+    margin-left: 11%;
+    width: 65%; } }
+
+/* ------------------- MEDIA QUERIE MINI-CELULAR ---------------------*/
+@media (max-width: 375px) {
+  .tituloPrincipal, main .tituloPrincipal1 {
+    width: 290px; }
+  .gridIndex .imagenRepo {
+    margin-left: 6%;
+    width: 65%; }
+  .gridIndex .imagenDeco {
+    margin-left: 6%;
+    width: 65%; }
+  .gridIndex .imagenPorce {
+    margin-left: 6%;
+    width: 65%; } }
+
 /* ------------------- MEDIA QUERIE MINI-CELULAR ---------------------*/
 @media (max-width: 320px) {
   .tituloPrincipal, main .tituloPrincipal1 {
@@ -347,6 +375,11 @@ hr {
   .copyright {
     text-align: center;
     font-size: 8px; } }
+
+/* ------------------- MEDIA QUERIE MINI-CELULAR ---------------------*/
+@media (max-width: 375px) {
+  .container .redes {
+    grid-template-columns: 350px; } }
 
 /* ------------------- MEDIA QUERIE FOOTER MINI-CELULAR ---------------------*/
 @media (max-width: 320px) {
@@ -484,6 +517,12 @@ section .video1 .boton2 {
       height: 345px; }
     section .video1 .boton2 {
       display: none; } }
+
+/* ------------------- MEDIA QUERIE CELULAR  Large---------------------*/
+@media (max-width: 425px) {
+  section .parrafosRepo {
+    font-size: 14px;
+    height: 370px; } }
 
 /* ------------------- MEDIA QUERIE CELULAR  MEDIUM ---------------------*/
 @media (max-width: 375px) {
@@ -731,15 +770,25 @@ section .parrafoPorce {
   .formulario .cajaArchivos {
     width: 350px; } }
 
+/* ------------------- MEDIA QUERIE CELULAR  Large---------------------*/
+@media (max-width: 425px) {
+  .formulario .parrafoFormu {
+    max-width: 380px;
+    font-size: 15px; }
+  .formulario .cajaContacto {
+    width: 340px; } }
+
 /* ------------------- MEDIA QUERIE CELULAR  MEDIUM ---------------------*/
 @media (max-width: 375px) {
   .formulario .parrafoFormu {
-    max-width: 325px;
+    max-width: 335px;
     font-size: 15px; }
   .formulario .cajaSelect {
     margin-left: 22%; }
   .formulario .cajaArchivos {
-    width: 300px; } }
+    width: 300px; }
+  .formulario .cajaContacto {
+    width: 280px; } }
 
 /*----------- MEDIA QUERIE CONTACTO MINI-CELULAR -------------------*/
 @media (max-width: 320px) {

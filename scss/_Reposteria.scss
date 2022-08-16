@@ -123,6 +123,15 @@ section{
         }
     }
 }
+/* ------------------- MEDIA QUERIE CELULAR  Large---------------------*/
+@media(max-width:425px){
+    section{
+        .parrafosRepo{
+            font-size: 14px;
+            height: 370px;
+        }
+    }
+}
 /* ------------------- MEDIA QUERIE CELULAR  MEDIUM ---------------------*/
 
 @media(max-width:375px){

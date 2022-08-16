@@ -103,12 +103,23 @@
             }
         }
     }
-
+/* ------------------- MEDIA QUERIE CELULAR  Large---------------------*/
+@media(max-width:425px){
+    .formulario{
+        .parrafoFormu{
+            max-width: 380px;
+            font-size: 15px;
+        }
+        .cajaContacto{
+            width: 340px;
+        }
+    }
+}
 /* ------------------- MEDIA QUERIE CELULAR  MEDIUM ---------------------*/
 @media(max-width:375px){
     .formulario{
         .parrafoFormu{
-            max-width: 325px;
+            max-width: 335px;
             font-size: 15px;
         }
         .cajaSelect{
@@ -116,6 +127,9 @@
         }
         .cajaArchivos{
             width: 300px;
+        }
+        .cajaContacto{
+            width: 280px;
         }
     }
 }
